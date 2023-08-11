@@ -1,0 +1,70 @@
+Along with the transformation from an industrial society to an information society starting from the 1970s, knowledge becomes one of
+the key assets for the organizations. In the information society, the
+creation, distribution, utilization, and manipulation of information
+become important works, making the importance of intellectual work
+significantly increased. There is a consensus that effective knowledge
+management can bring an organization competitive advantage over its
+rivals [1]. When researchers and practitioners paid much of their attention to the knowledge management to explore its value, more and
+more documentation has been accumulated to record the generated
+knowledge. Due to human’s limited cognitive capacity, it is a great
+challenge to retrieve and obtain the knowledge from the accumulated
+documentation in a human-friendly and efficient way.
+According to epistemology, there exist two perspectives on the
+knowledge related principles for a consensus: objectivist perspective
+and practice-based perspective [1]. From the objectivist perspective,
+knowledge is regarded as an entity that can be codified and kept independently among people who possesses and uses it. In contrast, the
+practice-based perspective assumes that knowledge is embedded in,
+developed through, and related to people’s workplaces and practices
+[2,3]. The practice-based knowledge can be translated into objective
+knowledge to some extent through generalizing, summarizing, and
+abstracting. Literature is one of the most common sources of objective
+knowledge, as it generally presents the facts with clear and systematical
+discourses. The methodologies and experiments presented in the literature are reproducible, indicating that embedded knowledge can be
+transmitted independently. More and more literature is accumulated in
+the journal databases, offering a valuable way for knowledge management. Up to now, the Web of Science core collection database indexes more than 20,000 journals and 1.4 billion references data; ScienceDirect database indexes over 250,000 academic articles which can
+be openly accessed; Scopus indexes over 69 million article records and
+over 1.4 billion references data, which are extremely large knowledge
+bases.
+The accumulated knowledge in a large volume not only significantly
+enhances science and technology research, but also offers strong support for industry practice and education. Powerful search engines have
+been designed to support fast retrieval for given reference items or
+related topic keywords. However, since all the academic literature is
+unstructured data, the data retrieval mainly relies on the similarity
+matching of the text features. The similarity matching mechanism
+would retrieve hundreds and thousands of records for a given keyword,
+while most of them are unintended records simply because those records contain the text of the given keyword. It is quite a challenging
+work to construct the reasoning network with unstructured data, in
+which most of the valuable knowledge are embedded. Without an appropriate reasoning network, it would be quite time-consuming to retrieve the knowledge when needed. Citation data, along with the development of information theory and literature management, is defined
+as structured features to represent and identify literature. However, the
+citation data only contains the authors’ names, affiliations, source
+journals of the paper, and very limited knowledge embedded in the
+title. The paper’s abstract, a concise and powerful statement describing
+the works in the paper, could provide more information about the
+paper. An abstract usually contains the background, objectives, solutions, and findings of the work. If the abstract data can be characterized
+into these four aspects, the unstructured abstract data can be presented
+by structured data, which tells in what background, who targeted at
+what objectives, used what solutions, and discovered what findings.
+This structured data can offer fundament knowledge to construct a
+reasoning network. The key challenges now become how to automatically extract these four aspects from the abstract, and how to
+connect the tetrad to construct a reasoning network.
+Therefore, in addition to the conventional representation of citation
+data, the abstract data is processed in this study using natural language
+processing (NLP) technology. An ontology model based on the tetrad
+structure (background, objective, solution, finding) is proposed to interpret abstract data of the literature. Key phases for each item in the
+tetrads are extracted as features, which can be quantified using word
+vectors. A reasoning network is constructed by connecting the tetrads
+through calculating the correlation and difference. Therefore, based on
+the citation and abstract data, each knowledge entity in the reasoning
+network contains six aspects: authors, affiliations, background, objective, solution, and findings. With the constructed reasoning network,
+the following knowledge can be deduced: (1) for a given background,
+what objectives can be targeted; (2) for a given objective, what the
+solutions are and how they perform; (3) for a given objective, who
+would be the potential experts and organizations to handle the problems. Thus, the values of literature would be optimized.
+The remaining of this paper is organized as follows: Section 2 presents and summarizes the background and related works of this study.
+The proposed automatic knowledge graph and reasoning network
+modeling framework based on ontology and NLP is presented in Section
+3. In Section 4, a case study with the research field of "construction
+management2 is conducted to demonstrate and validate the proposed
+framework. Section 5 discusses the findings in the case study. Finally,
+the conclusions and limitations of the study are summarized in Section
+6.

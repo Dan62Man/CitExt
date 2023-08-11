@@ -1,0 +1,141 @@
+Information consumed every day by people in a variety
+of services such as supermarkets, banks, libraries, and web
+search engines is internally stored in a structured fashion to be efficiently queried and transformed. However,
+nearly 95% of data is unstructured (Tanwar et al., 2015),
+which means that valuable information has not been explored and that would be useful in applications such as
+user preferences (satisfiability), merchandising, or demographic movements, to mention a few. Hence, such data
+need to be transformed into a structured format in order
+to be handled and processed by applications and users.
+The Web has been a valuable data source for several tasks
+such as NLP, Information Extraction, Machine Learning,
+among others. However, much of such data is unstructured, in the form of text, which is unfeasible or very expensive to process due to its large scale and heterogeneity.
+In this sense, one of the aims of the Semantic Web (Daconta et al., 2003) is to extract and formally represent information by leveraging formal data interchange formats,
+standards, and technologies of the Web.
+In recent years, many data publishers have relied on the
+benefits provided by the Semantic Web for quickly publishing, parsing and processing data by machines. This development has been partially supported by the Linked Open
+Data (LOD) initiative with more than 80 billion published RDF triples. Such data has been mainly extracted
+from (semi-) structured sources (e.g., relational databases,
+meta-data, Wikipedia infoboxes, HTML tables). Nevertheless, a huge amount of information from the Web is
+mainly stated as plain text (without any structure or description), and translating it into a structured format requires text manipulation tasks provided by areas such as
+Natural Language Processing (NLP), Information Extraction (IE), and Information Retrieval (IR). With the support of such areas, two main elements are typically extracted and semantically annotated from text: named entities and semantic relations between them. The extraction of such elements and their representation on the
+Semantic Web are the main components of a task that we
+coin as Relation Extraction and Linking (REL). Broadly
+speaking, the output of the REL task is a (RDF) graph
+that, in the context of the Semantic Web, is known as a
+Knowledge Graph (KG) (Ehrlinger & Wöß, 2016), where
+nodes refer to named entities and edges to the semantic relation between them. The difficulty of constructing Knowledge Graphs by REL-based approaches relies
+on the large scale and heterogeneity of the text (as seen
+in the Web) and linguistic problems such as detection of
+synonymy (e.g., words cat and kitty) and ambiguity (e.g.,
+identify the word orange as fruit or as color), to mention
+a few. Moreover, there are no defined standards that indicate the specific information to be extracted and formally
+represented, which is a difficult decision even for a knowledge domain expert. However, we identified three kinds
+of REL approaches that deal (partially) with such issues:
+Discourse-based, Distant Supervised-based, and OpenIEbased.
+First, Discourse-based approaches analyze the use of
+language in terms of written and spoken communication
+structures (Exner & Nugues, 2012; Corcoglioniti et al.,
+2016), whose goal is the unsupervised understanding of
+text. Such approaches are useful for constructing taxonomies and building connections between propositions
+extracted from text. However, their use involves the representation of text with a combination of logical implications and linguistic structures that may complicate the
+data consumption (i.e., querying and parsing data).
+Second, Distant Supervised-based approaches train a
+machine learning algorithm with information from a KG.
+Thus, similar facts to those represented in a KG are extracted from text. Although such approaches often provides high levels of precision, their use is limited to a closed
+world assumption (everything not in the training KG is
+false) and to the often complex adjustment of parameters
+used by such algorithms.
+Finally, and the focus of this work, OpenIE-based approaches (Dutta et al., 2014, 2015) obtain propositions
+(usually binary relations) with no restriction of a domain
+and without requiring training data. Although OpenIE
+has received less attention (in the context of RDF triple
+extractions) than the above-mentioned approaches, it is
+a useful technique that allows a semantic representation
+through predicative statements (clauses where the verb is
+the core of the relation) that may be helpful for shallow
+questions (e.g., who directed the Star Wars movie?). However, REL approaches based on OpenIE present some issues regarding the recognition of entities, properties and
+the representation of binary relations. For example, given the following running example "The clinician –Dr. Gregory
+House– diagnosed a cancer patient in New York City", we
+can explain the following aspects:
+- Entity Linking. Named entities extracted from text
+must be linked to resources of a KG. The often reduced number of extractions returned by existing systems for such purpose (further explained in this paper as Entity Extraction and Linking) limit the number of relations that can be represented. For example,
+in the running example, we may only obtain and link
+to a KB (DBpedia) the entity clinician(dbr:clinician)
+but additional entities (such as Cancer(dbr:Cancer), or
+New York(dbr:New_York_City)) are necessary to represent a complete RDF triple. In consequence, REL approaches (Gangemi et al., 2017) are sometimes prone
+to automatically generate IRI identifiers for the named
+entities, resulting in differences of meaning and interpretation (data heterogeneity).
+- Entity selection. Several entities might appear as the
+subject or object of the relation. However, there are no
+criteria for picking a single one. For example, given
+the binary relation (extracted from the running example) diagnosed(Dr. Gregory House, cancer patient in
+New York) and the entities cancer(dbr:Cancer) and patient(dbr:patient), the selection of one entity over the
+other to represent the object of such relation is not a
+straightforward task. Existing REL approaches (Dutta
+et al., 2014; Exner & Nugues, 2012) address this aspect
+by rules that restrict the selection of specific types of
+entities. However, such restrictions limit the result to a
+particular kind of relations to be extracted.
+- Property linking. In the previous binary relation, the relation phrase "diagnosed" should also be identified with
+an IRI from a resource associated to an ontology or a
+KG. Existing approaches (Exner & Nugues, 2012; Dutta
+et al., 2015) map relation phrases to KG properties
+through generated rules and text similarity measures.
+However, such mappings may not always exist and thus,
+an alternative solution needs to be stated.
+- Representation. OpenIE-based REL approaches typically represent a binary relation with only one triple.
+However, due to the number of involved elements, a single RDF triple is often insufficient for representing the
+information and thus, some elements can not be represented. In the case of the extracted relation previously
+presented, the named entity New York City would not be
+represented within the triple if we select Gregory House
+as subject and cancer as object (because the same triple
+element can not contain two resources).
+According to the above mentioned issues, in this paper,
+we propose an approach based on OpenIE relations for the
+construction of KGs from plain text in English. Similar to
+existing systems, our approach consists of the integration
+of NLP/IE tools and Semantic Web technologies for processing and representing elements of text. Moreover, we
+propose some linguistic associations that allow for extracting and integrating semantic relation elements and named
+entities on RDF triples. We opted for OpenIE before other
+approaches because it provides binary relations that constitute atomic units of information used to convey facts
+(with no need of training and additional configurations),
+which can simplify the querying and presentation of data.
+As a motivating example, given the running example
+sentence, our approach would be able to extract and represent binary relations like diagnosed(Dr. Gregory House,
+cancer patient) using an RDF graph model as presented
+in Figure 1. We rely on an n-ary representation (several
+triples that convey ideas of the same statement), where the
+binary relation is broadly represented through the node
+(ex:d1evt5); the relation phrase is described by the node
+(pmn:pb215-diagnose.01), which denotes the main action or event of the semantic relation and which was disambiguated over resources of a lexical database to get the
+correct sense. With the correct sense of the relation, we
+are able to represent the causer of the action (denoted by
+the property ex:agent) and the undergoer of the action
+(denoted by the property ex:patient) through a semantic
+analysis. Finally, entities that belong to the same grammatical unit of information (particularly Nominal Phrases
+(NP)) are associated to the same resource through the
+property ex:partOf. A more detailed example is provided
+later in this paper.
+Contributions. In order to deal with the previously mentioned issues and solution, we propose the following strategies:
+- We propose a strategy for the extraction and linking of
+named entities with KG data based on the integration
+of Entity Extraction and Linking (EEL) systems (as an
+ensemble-like strategy). The intuition is that a greater
+number of coupled extractors provide more extractions
+than only one single tool.
+.-We provide a strategy for the selection and representation of the named entities contained within a semantic
+relation. The strategy is based on the closeness of entities to the relation phrase and on the association of
+named entities with NPs in order to keep the semantic
+cohesion and coherence of components in a statement.
+- We provide a strategy to select and associate an identifier for the relation phrase of a semantic relation. For
+such purpose, the semantic role of the words in the se mantic relation is obtained and associated to information provided by a lexical database (with IRI identifiers).
+- Based on the previous contribution, we propose a strategy for the representation of elements in a binary semantic relation through a n-ary model. For such purpose,
+we also propose support rules for the selection of entities acting as causer and undergoer of an action in a
+semantic relation.
+Our results demonstrate the benefits of combining Entity Extraction and Linking systems in terms of the F1
+measure regarding individual systems. Results also demonstrate that the integration of named entities with grammatical structures provides a better understanding (regarding a baseline system) of proposition-based representations provided by OpenIE for supporting the construction of KGs.
+The remainder of this paper is organized as follows.
+Section 2 provides a background of concepts and related
+work. Details of the approach are provided in Section 3.
+Section 4 presents implementation details. Section 5
+presents some experiments and results. Finally, conclusions are presented in Section 6.

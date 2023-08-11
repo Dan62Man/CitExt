@@ -1,0 +1,118 @@
+of a triple extracted from unstructured text to its identical predicate in the KG. Generally, many studies (Augenstein, Pado, and Rudolph 2012; Ratinov et al. 2011;
+Mendes et al. 2011) focus on mapping only an entity, which
+is usually a subject or an object of a triple, to its identical entity in a KG. Mapping a whole predicate to its identical predicate is usually ignored. Mapping a predicate to its identical
+predicate in a KG is an essential procedure because it can
+reduce the heterogeneity problem and increase the searchability over a KG. Although one study (Exner and Nugues
+2012) introduced mapping a predicate of a triple extracted
+from unstructured text to an identical predicate in a KG, the
+approach uses the simple rule-based approach. As a result, it
+cannot efficiently deal with the limitation of rule generation
+due to the sparsity of unstructured text.
+In this paper, we introduce T2KG: an end-to-end system
+for creating a KG from unstructured text. In T2KG, we propose a hybrid approach that combines a rule-based approach
+and a similarity-based approach for mapping a predicate of
+a triple extracted from unstructured text to its identical predicate in an existing KG. The existing KG is used as control
+knowledge when creating a new KG. In the similarity-based
+approach, we present a novel vector-based similarity metric
+for computing the similarity between the elements of triples
+to overcome the sparsity problem.
+The rest of this paper is organized as follows. Section 2
+gives a brief survey and related work regarding KG creation.
+In Section 3, the detail of T2KG is presented. Experiments
+and results are conducted in Section 4. Eventually, this work
+is concluded in section 5.
+The related problem of generating text from
+a given KG is generally more widely studied,
+with many suggested architectures and approaches.
+Among the proposed methods, some of the current state-of-the-art systems that work on small or
+moderately-sized graphs, (Li et al., 2020; Ribeiro
+et al., 2020; Agarwal et al., 2020; Xie et al.,
+2022), usually formulate it as a simple sequenceto-sequence problem by representing the graph in
+a linearized form and fine-tune the pre-trained language models (PLMs), such as T5 (Raffel et al.,
+2020) or BART (Lewis et al., 2020), on the task
+of translating the sequence of triples to the corresponding textual description.
+Nevertheless, KG generation remains a popular
+research area, receiving attention from many communities, including natural language processing
+(NLP), data mining, and machine learning. Recent success of the Transformer-based language
+models from the NLP community (Vaswani et al.,
+2017; Devlin et al., 2019; Raffel et al., 2020), pretrained on large textual corpora, led to a series of
+works that attempted to exploit the vast amounts of
+learned linguistic knowledge for the downstream
+task of KG construction. Some of these approaches
+looked into a simpler problem of graph completion
+(Li et al., 2016; Yao et al., 2019; Malaviya et al.,
+2020). The drawback of these methods is that they
+are limited to the task of extending existing graphs
+by local neighborhood modifications and are not
+suitable for building the entire global graph structures. Alternatively, other works (Petroni et al.,
+2019; Roberts et al., 2020; Jiang et al., 2019; Shin
+et al., 2020; Li and Liang, 2021) proposed to query
+the pre-trained models to extract the learned factual and commonsense knowledge. The idea is to
+prompt the language model to predict the masked
+objects in cloze sentences describing the partially
+complete triples. Similarly as before, these methods are usually only suitable for local graph patching, lacking the ability to perceive the global graph
+structure.
+Alternatively, there are a number of works that
+propose to generate the entire graph structure
+ground up. One example is GraphRNN from You
+et al. (2018), which models a graph as a sequence
+of additions of new nodes using node-level RNN
+and edges using another edge-level RNN. Although
+promising for our task of KG construction, the sequential and greedy nature of its generation can
+cause sub-optimal graph structures. CycleGT of
+(Guo et al., 2020b) is an unsupervised method for
+text-to-graph and graph-to-text generation, where
+the graph generation part relies on off-the-shelf
+entity extractor followed by a classifier to predict
+the relationships. The reliance on external NLP
+pipelines breaks the end-to-end continuity of system training, potentially leading to sub-optimal
+results. Similarly, (Dognin et al., 2020) proposed
+DualTKB employing unsupervised cycle loss to
+enable the graph-text translation in both directions.
+However, their method was applied only to single
+sentence-single triple generation, limiting applicability for larger graphs. Other approaches, such
+as BT5 from (Agarwal et al., 2020) proposed to
+utilize large pre-trained T5 model to generate KG
+in a linearized form, where the object-predicatesubject triples are concatenated together and the
+entire text-to-graph problem is viewed as sequenceto-sequence modeling. The potential issue with
+this approach is that the graph linearization is not
+unique and inefficient due to the repetition of graph
+components multiple times, leading to long sequences and increased complexity. (Lu et al., 2022)
+is another text-to-structure method, however it uses
+predefined schema (e.g., for entity or triplet extraction), while our method is schema-free and generalizes to any text form of nodes and edges. Finally, (Wang et al., 2020) proposed MaMa for KG
+construction, where entities and relationships are
+first matched using the attention weight matrices
+from the forward pass of the LM. Those are then
+mapped to the existing KG schema to generate the
+final graph.
+The proposed system: Grapher Analyzing the
+shortcomings of the existing methods, in this work
+we propose to address them with a novel Knowledge Graph construction system which we call Grapher, presented schematically in Fig. 1. Given input
+text, the graph generation is split into two steps. In
+the first step, we leverage the representation power
+of pre-trained language models, e.g., T5 (Raffel
+et al., 2020), fine-tuned on the task of entity (graph
+nodes) extraction, while in the second stage the
+relationships (graph edges) are generated using the
+available entity information. There are three main
+properties of Grapher: (i) The use of state-of-theart language models pre-trained on large textual
+corpora, used for node generation is key to the algorithm’s performance as it lays out the foundation
+for the entire graph. The available parallel data
+for learning the text to graph translation is usually small, therefore training custom-built entity
+extraction architectures from scratch on this limited data is inferior to fine-tuning the already pretrained Transformer-based language models. (ii)
+The partitioning of graph construction process into
+two steps ensures efficiency that each node and
+edge is generated only once, which is in contrast
+to graph linearization approaches, e.g., (Agarwal
+et al., 2020) (Dognin et al., 2021), whose graph
+sequence representation is non-unique and can be
+inefficient. (iii) Finally, the entire system is end-toend trainable, where the node and edge generation
+are optimized jointly, enabling efficient information transfer between the two modules, avoiding
+the need of any external NLP pipelines such as
+entity/relation extraction, co-reference resolution,
+etc. We evaluate the proposed Grapher on three
+datasets: the WebNLG+ 2020 Challenge (Ferreira
+et al., 2020) matching state-of-the-art performance
+for Text-to-RDF generation as well as on NYT
+(Riedel et al., 2010) and a recent large-scale TEKGEN (Agarwal et al., 2021) dataset showing strong
+results outperforming existing baselines.

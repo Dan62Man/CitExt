@@ -1,0 +1,29 @@
+The evolution of scientific ideas happens when old ideas are replaced by
+new ones. Researchers usually conduct scientific experiments based on the
+previous publications. They either take use of others work as a solution
+to solve their specific problem, or they improve the results documented in
+the previous publications by introducing new solutions. I refer to the former as positive citation and the later negative citation. Citation sentence
+examples 1 with different sentiment polarity are shown in Table 1.
+Sentiment analysis of citations plays an important role in plotting scientific idea flow. I can see from Table 1, one of the ideas introduced in
+paper A0 is Hidden Markov Model (HMM) based part-of-speech (POS)
+tagging, which has been referenced positively in paper A1. In paper A2,
+however, a better approach was brought up making the idea (HMM based
+POS) in paper A0 negative. This citation sentiment analysis could lead
+to future-works in such a way that new approaches (mentioned in paper A2) are recommended to other papers which cited A0 positively 2.
+Analyzing citation sentences during literature review is time consuming.
+Recently, researchers developed algorithms to automatically analyze citation sentiment. For example, [1] extracted several features for citation
+purpose and polarity classification, such as reference count, contrary expression and dependency relations. Jochim et al. tried to improve the
+result by using unigram and bigram features [2]. [3] used word level features, contextual polarity features, and sentence structure based features
+to detect sentiment citations. Although they generated good results using
+the combination of features, it required a lot of engineering work and big
+amount of annotated data to obtain the features. Further more, capturing
+accurate features relies on other NLP techniques, such as part-of-speech
+tagging (POS) and sentence parsing. Therefore, it is necessary to explore other techniques that are free from hand-crafted features. With the
+development of neural networks and deep learning, it is possible to learn
+the representations of concepts from unlabeled text corpus automatically.
+These representations can be treated as concept features for classification.
+An important advance in this area is the development of the word2vec
+technique [4], which has proved to be an effective approach in Twitter
+sentiment classification [5].
+In this work, the word2vec technique on sentiment analysis of citations
+was explored. Word embeddings trained from different corpora were compared.

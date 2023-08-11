@@ -1,0 +1,41 @@
+In many fields, a scholar needs to show an understanding of the context of his problem and relate
+his work to prior community knowledge. A related work section is often the vehicle for this purpose; it contextualizes the scholar’s contributions
+and helps readers understand the critical aspects
+of the previous works that current work addresses.
+Creating such a summary requires the author to
+position his own work within the contextual research to showcase the advantages of his method.
+We envision an NLP application that assists in
+creating a related work summary. We propose this
+related work summarization task as a challenge
+to the automatic summarization community. In
+its full form, it is a topic-biased, multi-document
+summarization problem that takes as input a target scientific document for which a related work
+section needs to be drafted. The output goal is to
+create a related work section that finds the relevant
+related works and contextually describes them in
+relationship to the scientific document at hand.
+We dissect the full challenge as bringing together work of disparate interests; 1) in finding
+relevant documents; 2) in identifying the salient
+aspects of these documents in relation to the current work worth summarizing; and 3) in generating the final topic-biased summary. While it is
+clear that current NLP technology does not let us
+build a complete solution for this task, we believe
+that tackling the individual components will help
+bring us towards an eventual solution.
+In fact, existing works in the NLP and recommendation systems communities have already
+begun work that fits towards the completion of
+the first two tasks. Citation prediction (Nallapati
+et al., 2008) is a growing research area that has
+aimed both at predicting citation growth over time
+within a community and at individual paper citation patterns. This year, an automatic keyphrase
+extraction task from scientific articles was first
+fielded in SemEval-2, partially addressing Task
+1. Also, automatic survey generation (Mohammad et al., 2009) is becoming a growing field
+within the summarization community. However,
+to date, we have not yet seen any work that examines topic-biased summarization of multiple scientific articles. For these reasons, we focus on
+Task 3 here – the creation of a related work section, given a structured input of the topics for summary.. The remaining contributions of our paper
+consists of work towards this goal:
+• We conduct a study of the argumentative patterns used in related work sections, to describe the
+plausible summarization tactics for their creation
+in Section 3.
+• We describe our approach to generate an extractive related work summary given an input topic hierarchy tree, using two separate strategies to differentiate between summarizing shallow internal
+nodes from deep detailed leaf nodes of the topic tree in Section 4.

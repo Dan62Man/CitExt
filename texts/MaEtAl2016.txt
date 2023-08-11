@@ -1,0 +1,37 @@
+1.1 Background.
+Citation count between scientific publications have
+been the primary metric to measure importance and
+impact of articles or authors for decades. The advantage is simplicity and effectiveness. However,
+with the progress of machine learning, NLP and
+other disciplines, researchers developed various
+techniques to improve the quality of citation analysis and hence the quality of scholarly importance
+measurement. One of the efforts was to apply PageRank in citation network, which introduces weight
+on citation links for more accurate measurement
+(Ding, 2011). Although, this type of weighting is
+widely criticized (Alvarez and Soriano, 2014). Recent bibliometric studies showed that "there is no
+bad publicity in science", because criticized and
+controversial papers tend to be highly cited too (Radicch, 2012; Perc, 2014). Consequently, these controversial papers are positively estimated according
+to citation-count-based metrics, for example, impact
+factor and h-index. As Bonzi (1982) argued that if a
+cited work is criticized, it should consequently carry
+lower or even negative weight for bibliometric
+measures (Athar and Teufel, 2011).
+1.2 Our contribution.
+Sentiment analysis of citation sentence makes this
+kind of fine-grained bibliometric measures possible.
+Augmented with polarized citation links, the citation network can be weighted more accurately by
+using negative weights. We introduce the p-index,
+which is the h-index extended by citation polarities.
+Our assumption is that papers from prominent researchers are more probable to be cited in a positive
+manner than the papers from controversial researchers. Generally, if we know more about a researcher,
+it should be easier to determine the polarity of citations his/her paper receives. Our research question
+is whether or not the performance of citation sentiment analysis can be improved with better author
+modelling, in particular modeling with citation polarity.
+In this paper, we report our on-going work on the
+citation sentiment analysis task. The rest of the paper is structured as follows: the next section briefly
+reviews some important work in this field. Then we
+introduce our method. In section 4, we present our
+experiment details. Preliminary experiment results
+and discussions about the results are structured in
+section 5 and 6. Finally, we summarize our work
+and discuss possible directions of future work. 

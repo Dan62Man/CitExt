@@ -1,0 +1,59 @@
+As scientific communities grow and evolve, new
+tasks, methods, and datasets are introduced and
+different methods are compared with each other.
+Despite advances in search engines, it is still hard
+to identify new technologies and their relationships
+with what existed before. To help researchers more
+quickly identify opportunities for new combinations of tasks, methods and data, it is important to
+design intelligent algorithms that can extract and
+organize scientific information from a large collection of documents.
+Organizing scientific information into structured
+knowledge bases requires information extraction
+(IE) about scientific entities and their relationships.
+However, the challenges associated with scientific
+IE are greater than for a general domain. First, annotation of scientific text requires domain expertise
+which makes annotation costly and limits resources.
+In addition, most relation extraction systems are designed for within-sentence relations. However, extracting information from scientific articles requires
+extracting relations across sentences. Figure 1 illustrates this problem. The cross-sentence relations
+between some entities can only be connected by
+entities that refer to the same scientific concept,
+including generic terms (such as the pronoun it,
+or phrases like our method) that are not informative by themselves. With co-reference, context-free
+grammar can be connected to MORPA through the
+intermediate co-referred pronoun it. Applying existing IE systems to this data, without co-reference,
+will result in much lower relation coverage (and a
+sparse knowledge base).
+In this paper, we develop a unified learning
+model for extracting scientific entities, relations,
+and coreference resolution. This is different from
+previous work (Luan et al., 2017b; Gupta and Manning, 2011; Tsai et al., 2013; Gabor et al. ´ , 2018)
+which often addresses these tasks as independent
+components of a pipeline. Our unified model is
+a multi-task setup that shares parameters across
+low-level tasks, making predictions by leveraging
+context across the document through coreference
+links. Specifically, we extend prior work for learning span representations and coreference resolution
+(Lee et al., 2017; He et al., 2018). Different from a
+standard tagging system, our system enumerates all
+possible spans during decoding and can effectively
+detect overlapped spans. It avoids cascading errors
+between tasks by jointly modeling all spans and
+span-span relations.
+To explore this problem, we create a dataset SCIERC for scientific information extraction, which
+includes annotations of scientific terms, relation
+categories and co-reference links. Our experiments
+show that the unified model is better at predicting span boundaries, and it outperforms previous
+state-of-the-art scientific IE systems on entity and
+relation extraction (Luan et al., 2017b; Augenstein
+et al., 2017). In addition, we build a scientific
+knowledge graph integrating terms and relations
+extracted from each article. Human evaluation
+shows that propagating coreference can significantly improve the quality of the automatic constructed knowledge graph.
+In summary we make the following contributions. We create a dataset for scientific information
+extraction by jointly annotating scientific entities,
+relations, and coreference links. Extending a previous end-to-end coreference resolution system, we
+develop a multi-task learning framework that can
+detect scientific entities, relations, and coreference
+clusters without hand-engineered features. We use
+our unified framework to build a scientific knowledge graph from a large collection of documents
+and analyze information in scientific literature.

@@ -1,0 +1,31 @@
+Current estimates indicate that the number of scientific publications grows at unprecedented rates: between 0.7 and 1.5 million new papers are published every year (Bornmann and Mutz, 2015; Jinha, 2010). In this context of scientific information overload, text mining tools are of utmost importance for researchers who must read scientific papers in order to assess their value and make use of their contents. Research papers are not isolated units, but they are inter-connected by means of co-citation relations or citation networks which are useful to quantitatively understand the value of a piece of scientific work. However, citation networks are limited in that they do not provide information about why a paper is being cited or what part of the reference paper the citing paper is referring to. This qualitative information is very important in order to allow fine-grained automatic analysis of scientific works. Identifying which sentences of a reference paper contain the information being referred to by a set of citing papers is a difficult task in part due to the short context provided by the explicit citation, so it becomes necessary to look beyond this explicit citation for other information in the citing paper that might be relevant. Although the detection of explicit or formal citations (for example in the form of author name and paper year, or using a bracketed notation) is a problem that can be resolved with high precision, papers usually contain more information about their references that is not necessarily present in a sentence containing a formal citation. We call these sentences implicit citations. This paper describes some experiments on the detection of implicit citations in a paper, i.e. sentences that refer to the work done in another paper but do not contain an explicit citation marker. Consider the fragment shown in Figure 1, which is an extract from (He et al., 2008) where they cite, amongst other papers, the Pyramid method defined in (Nenkova et al., 2007). The explicit citation is in sentence 217: The marker "[5]" refers to (Nenkova et al., 2007). Several paragraphs later, from sentence 247 onwards, they describe properties of the Pyramid method and compare it to what they did and to other methods. In this example, we could consider
+sentence 217 as a formal citation, sentences 247, 249 and
+256 as implicit citations, and sentences 248 and 250 are
+not considered citations. Notice that in these sentences,
+they use the name of the method defined in the reference
+paper instead of the author, but nonetheless they are talking
+about the same paper.
+Authors can use several techniques for implicitly referring to a paper (Athar and Teufel, 2012), for example:
+using only the name of the main author, using pronouns
+that could be resolved as the mentioned work, or using
+keywords that refer to a distinguishing topic in the paper
+(in the previous example, the Pyramid method). Also,
+the implicit citations can be present far from the explicit
+citations.
+The problem can be framed as a sentence classification
+task: considering one sentence of the citing paper at a time,
+try to identify if the sentence is talking about the work
+done in the target reference paper, but does not contain an
+explicit citation to it.
+This task has attracted considerable attention because of
+its applicability in several problems in scientific literature
+analysis. Our approach, which is based on training a
+classifier with task-motivated features improves over the
+state of the art in a publicly available dataset.
+The contributions of this work are the following:
+a novel set of features for implicit citation identification;
+a set of experiments demonstrating the improved performance of the taken approach; and
+a novel data-set for the implicit citation identification
+task.
+The software and data developed are being made available
+to the research community.

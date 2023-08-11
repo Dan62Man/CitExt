@@ -1,0 +1,48 @@
+Many information extraction tasks – including
+named entity recognition, relation extraction, event
+extraction, and coreference resolution – can benefit
+from incorporating global context across sentences
+or from non-local dependencies among phrases.
+For example, knowledge of a coreference relationship can provide information to help infer the type
+of a difficult-to-classify entity mention. In event
+extraction, knowledge of the entities present in a
+sentence can provide information that is useful for
+predicting event triggers.
+To model global context, previous works have
+used pipelines to extract syntactic, discourse, and
+other hand-engineered features as inputs to structured prediction models (Li et al., 2013; Yang and
+Mitchell, 2016; Li and Ji, 2014) and neural scoring functions (Nguyen and Nguyen, 2019), or as a
+guide for the construction of neural architectures
+(Peng et al., 2017; Zhang et al., 2018; Sha et al.,
+2018; Christopoulou et al., 2018). Recent end-to-end systems have achieved strong performance by
+dynmically constructing graphs of spans whose
+edges correspond to task-specific relations (Luan
+et al., 2019; Lee et al., 2018; Qian et al., 2018).
+Meanwhile, contextual language models (Dai
+and Le, 2015; Peters et al., 2017, 2018; Devlin
+et al., 2018) have proven successful on a range of
+natural language processing tasks (Bowman et al.,
+2015; Sang and De Meulder, 2003; Rajpurkar et al.,
+2016). Some of these models are also capable of
+modeling context beyond the sentence boundary.
+For instance, the attention mechanism in BERT’s
+transformer architecture can capture relationships
+between tokens in nearby sentences.
+In this paper, we study different methods to incorporate global context in a general multi-task IE
+framework, building upon a previous span-based IE
+method (Luan et al., 2019). Our DYGIE++ framework, shown in Figure 1, enumerates candidate text
+spans and encodes them using contextual language
+models and task-specific message updates passed
+over a text span graph. Our framework achieves
+state-of-the results across three IE tasks, leveraging
+the benefits of both contextualization methods.
+We conduct experiments and a thorough analysis of the model on named entity, relation, and
+event extraction. Our findings are as follows: (1)
+Our general span-based framework produces stateof-the-art results on all tasks and all but one subtasks across four text domains, with relative error
+reductions ranging from 0.2 - 27.9%. (2) BERT
+encodings are able to capture important within
+and adjacent-sentence context, achieving improved
+performance by increasing the input window size.
+(3) Contextual encoding through message passing
+updates enables the model to incorporate crosssentence dependencies, improving performance beyond that of BERT alone, especially on IE tasks in
+specialized domains.

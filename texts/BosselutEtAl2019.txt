@@ -1,0 +1,56 @@
+When reading text, humans make commonsense
+inferences that frame their understanding of the
+narrative being presented. For machines to achieve
+this capability, they must be able to acquire relevant and correct commonsense for an unbounded
+set of situations. In this work, we cast commonsense acquisition as knowledge base construction
+and investigate whether large-scale language models can effectively learn to generate the knowledge
+necessary to automatically construct a commonsense knowledge base (KB).
+Automatic KB construction is a long-standing
+goal of artificial intelligence research due to the
+difficulty of achieving high concept coverage in
+high-precision curated KBs (Lenat, 1995; Miller,
+1995). Previous work has developed models capable of reading and extracting semi-structured text
+(Suchanek et al., 2007; Hoffart et al., 2013; Auer
+et al., 2007; Bollacker et al., 2008) and unstructured text (Dong et al., 2014; Carlson et al., 2010;
+Nakashole et al., 2011, 2012; Niu, 2012) into relational schemas that can be queried for downstream applications. A common thread of these
+approaches, however, is the focus on encyclopedic knowledge, which lends itself to a well-defined
+space of entities and relations that can be modeled.
+Commonsense knowledge, however, does not
+cleanly fit into a schema comparing two entities
+with a known relation, leading current approaches
+to model "entities" as natural language phrases
+and relations as any concept that can link them
+(Li et al., 2016; Sap et al., 2019). OpenIE approaches display this property of open text entities and relations (Etzioni et al., 2011; Fader et al.,
+2011; Mausam et al., 2012), but being extractive, they only capture knowledge that is explicitly mentioned in text, limiting their applicability
+for capturing commonsense knowledge, which is
+often implicit (Gordon and Van Durme, 2013).
+Meanwhile, recent progress in training deep
+contextualized language models (Peters et al.,
+2018; Radford et al., 2018; Devlin et al., 2018)
+provides an opportunity to explore beyond extractive methods as an avenue for commonsense KB
+construction. These large-scale language models
+display impressive performance when their underlying representations are tuned to solve end tasks,
+achieving state-of-the-art results on a variety of
+complex problems. In this work, we define the
+COMmonsEnse Transformer (COMET ), which
+constructs commonsense KBs by using existing
+tuples as a seed set of knowledge on which to
+train. Using this seed set, a pre-trained language
+model learns to adapt its learned representations to
+knowledge generation, and produces novel tuples
+that are high quality.
+We summarize our contributions in this work as
+follows. First, we develop a generative approach
+to knowledge base construction. A model must
+learn to produce new nodes and identify edges between existing nodes by generating phrases that
+coherently complete an existing seed phrase and
+relation type. Second, we develop a framework
+for using large-scale transformer language models
+to learn to produce commonsense knowledge tuples. Finally, we perform an empirical study on
+the quality, novelty, and diversity of the commonsense knowledge produced by our approach for
+two domains, ATOMIC and ConceptNet, as well as
+an efficiency study on the number of seed tuples
+needed to learn an effective knowledge model.
+The results indicate that COMET is able to produce high quality tuples as human judges find that
+77.5% of generated tuples for ATOMIC events and
+91.7% of generated tuples for ConceptNet relations are correct.

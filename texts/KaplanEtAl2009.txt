@@ -1,0 +1,47 @@
+Review and comprehension of existing research is
+fundamental to the ongoing process of conducting
+research; however, the ever increasing volume of
+research papers makes accomplishing this task increasingly more difficult. To mitigate this problem
+of information overload, a form of knowledge reduction may be necessary.
+Past research (Garfield et al., 1964; Small,
+1973) has shown that citations contain a plethora
+of latent information available and that much
+can be gained by exploiting it. Indeed, there
+is a wealth of literature on topic-clustering, e.g.
+bibliographic coupling (Kessler, 1963), or cocitation analysis (Small, 1973). Subsequent research demonstrated that citations could be clustered on their quality, using keywords that appeared in the running-text of the citation (Weinstock, 1971; Nanba et al., 2000; Nanba et al.,
+2004; Teufel et al., 2006).
+Similarly, other work has shown the utility in
+the IR domain of ranking the relevance of cited papers by using supplementary index terms extracted
+from the content of citations in citing papers,
+including methods that search through a fixed
+character-length window (O’Connor, 1982; Bradshaw, 2003), or that focus solely on the sentence
+containing the citation (Ritchie et al., 2008) for
+acquiring these terms. A prior case study (Ritchie
+et al., 2006) pointed out the challenges in proper
+identification of the full span of a citation in running text and acknowledged that fixed-width windows have their limits. In contrast to this, endeavors have been made to extract the entire span
+of a citation by using cue-phrases collected and
+deemed salient by statistical merit (Nanba et al.,
+2000; Nanba et al., 2004). This has met in evaluations with some success.
+The Cite-Sum system (Kaplan and Tokunaga,
+2008) also aims at knowledge reduction through
+use of citations. It receives a paper title as a query
+and attempts to generate a summary of the paper
+by finding citing papers1 and extracting citations
+in the running-text that refer to the paper. Before
+outputting a summary, it also classifies extracted
+citation text, and removes citations with redundant content. Another similar study (Qazvinian
+and Radev, 2008) aims at using the content of citations within citing papers to generate summaries
+of fields of research.
+It is clear that merit exists behind extraction
+of citations in running text. This paper proposes
+a new method for performing this task based on
+coreference-chains. To evaluate our method we
+created a corpus of citations comprised of citing
+papers for 4 cited papers. We also analyze some
+phenomena of citations that are present in our corpus.
+The paper organization is as follows. We first
+define terminology, discuss the construction of our
+corpus and the results found through its analysis,
+and then move on to our proposed method using coreference-chains. We evaluate the proposed
+method by using the constructed corpus, and then
+conclude the paper

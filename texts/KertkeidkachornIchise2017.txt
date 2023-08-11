@@ -1,0 +1,39 @@
+A knowledge graph (KG) is a graph-structured knowledge
+base that stores knowledge in the form of the relation between entities. An example KG is DBpedia(Auer et al.
+2007). The KG plays an important role in various applications, e.g., question answering, browsing knowledge and
+data visualization. However, most of the published data is
+unstructured data and the trend of publishing such data is
+dramatically growing faster than publishing structured data
+(Kriz et al. 2014). Consequently, a large amount of data cannot be straightforwardly transformed into a KG and so is left
+as unstructured data.
+Recently, many approaches have proposed transforming
+unstructured text to structured text in order to create a KG
+(Carlson et al. 2010; Fader, Soderland, and Etzioni 2011;
+Schmitz et al. 2012; Cattoni et al. 2012; Augenstein, Pado,
+and Rudolph 2012; Kriz et al. 2014; Exner and Nugues
+2012). Although those studies perform well for extracting
+triples (subject, predicate, object) from unstructured text,
+they still have a limitation regarding mapping a predicate
+of a triple extracted from unstructured text to its identical predicate in the KG. Generally, many studies (Augenstein, Pado, and Rudolph 2012; Ratinov et al. 2011;
+Mendes et al. 2011) focus on mapping only an entity, which
+is usually a subject or an object of a triple, to its identical entity in a KG. Mapping a whole predicate to its identical predicate is usually ignored. Mapping a predicate to its identical
+predicate in a KG is an essential procedure because it can
+reduce the heterogeneity problem and increase the searchability over a KG. Although one study (Exner and Nugues
+2012) introduced mapping a predicate of a triple extracted
+from unstructured text to an identical predicate in a KG, the
+approach uses the simple rule-based approach. As a result, it
+cannot efficiently deal with the limitation of rule generation
+due to the sparsity of unstructured text.
+In this paper, we introduce T2KG: an end-to-end system
+for creating a KG from unstructured text. In T2KG, we propose a hybrid approach that combines a rule-based approach
+and a similarity-based approach for mapping a predicate of
+a triple extracted from unstructured text to its identical predicate in an existing KG. The existing KG is used as control
+knowledge when creating a new KG. In the similarity-based
+approach, we present a novel vector-based similarity metric
+for computing the similarity between the elements of triples
+to overcome the sparsity problem.
+The rest of this paper is organized as follows. Section 2
+gives a brief survey and related work regarding KG creation.
+In Section 3, the detail of T2KG is presented. Experiments
+and results are conducted in Section 4. Eventually, this work
+is concluded in section 5.

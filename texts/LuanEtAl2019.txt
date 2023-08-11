@@ -1,0 +1,62 @@
+Most Information Extraction (IE) tasks require
+identifying and categorizing phrase spans, some
+of which might be nested. For example, entity
+recognition involves assigning an entity label to
+a phrase span. Relation Extraction (RE) involves
+assigning a relation type between pairs of spans.
+Coreference resolution groups spans referring to
+the same entity into one cluster. Thus, we might
+expect that knowledge learned from one task might
+benefit another.
+Most previous work in IE (e.g., (Nadeau and
+Sekine, 2007; Chan and Roth, 2011)) employs a
+pipeline approach, first detecting entities and then
+using the detected entity spans for relation extraction and coreference resolution. To avoid cascading
+errors introduced by pipeline-style systems, recent
+work has focused on coupling different IE tasks as
+in joint modeling of entities and relations (Miwa
+and Bansal, 2016; Zhang et al., 2017), entities and
+coreferences (Hajishirzi et al., 2013; Durrett and
+Klein, 2014), joint inference (Singh et al., 2013)
+or multi-task (entity/relation/coreference) learning (Luan et al., 2018a). These models mostly
+rely on the first layer LSTM to share span representations between different tasks and are usually
+designed for specific domains.
+In this paper, we introduce a general framework
+Dynamic Graph IE (DYGIE) for coupling multiple
+information extraction tasks through shared span
+representations which are refined leveraging contextualized information from relations and coreferences. Our framework is effective in several domains, demonstrating a benefit from incorporating
+broader context learned from relation and coreference annotations.
+Figure 1 shows an example illustrating the potential benefits of entity, relation, and coreference
+contexts. It is impossible to predict the entity labels for This thing and it from within-sentence context alone. However, the antecedent car strongly
+suggests that these two entities have a VEH type.
+Similarly, the fact that Tom is located at Starbucks
+and Mike has a relation to Tom provides support for
+the fact that Mike is located at Starbucks.
+DYGIE uses multi-task learning to identify entities, relations, and coreferences through shared
+span representations using dynamically constructed
+span graphs. The nodes in the graph are dynamically selected from a beam of highly-confident
+mentions, and the edges are weighted according
+to the confidence scores of relation types or coreferences. Unlike the multi-task method that only
+shares span representations from the local context (Luan et al., 2018a), our framework leverages
+rich contextual span representations by propagating information through coreference and relation
+links. Unlike previous BIO-based entity recognition systems (Collobert and Weston, 2008; Lample
+et al., 2016; Ma and Hovy, 2016) that assign a text
+span to at most one entity, our framework enumerates and represents all possible spans to recognize
+arbitrarily overlapping entities.
+We evaluate DYGIE on several datasets spanning many domains (including news, scientific articles, and wet lab experimental protocols), achieving state-of-the-art performance across all tasks and
+domains and demonstrating the value of coupling
+related tasks to learn richer span representations.
+For example, DYGIE achieves relative improvements of 5.7% and 9.9% over state of the art on the
+ACE05 entity and relation extraction tasks, and an
+11.3% relative improvement on the ACE05 overlapping entity extraction task.
+The contributions of this paper are threefold.
+1) We introduce the dynamic span graph framework as a method to propagate global contextual
+information, making the code publicly available.
+2) We demonstrate that our framework significantly
+outperforms the state-of-the-art on joint entity and
+relation detection tasks across four datasets: ACE
+2004, ACE 2005, SciERC and the Wet Lab Protocol Corpus. 3) We further show that our approach
+excels at detecting entities with overlapping spans,
+achieving an improvement of up to 8 F1 points on
+three benchmarks annotated with overlapped spans:
+ACE 2004, ACE 2005 and GENIA.
