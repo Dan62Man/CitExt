@@ -1,0 +1,205 @@
+{
+    "id": "FaderEtAl2011",
+    "sentences": [
+        {
+            "0": [
+                "Typically, Information Extraction (IE) systems learn an extractor for each target relation from labeled training examples (Kim and Moldovan, 1993; Riloff, 1996; Soderland, 1999).",
+                0
+            ],
+            "1": [
+                "This approach to IE does not scale to corpora where the number of target relations is very large, or where the target relations cannot be specified in advance.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "This approach to IE does not scale to corpora where the number of target relations is very large, or where the target relations cannot be specified in advance.",
+                -1
+            ],
+            "0": [
+                "Open IE solves this problem by identifying relation phrases\u2014phrases that denote relations in English sentences (Banko et al., 2007).",
+                1
+            ],
+            "1": [
+                "The automatic identification of relation phrases enables the extraction of arbitrary relations from sentences, obviating the restriction to a pre-specified vocabulary.",
+                0.5
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "The automatic identification of relation phrases enables the extraction of arbitrary relations from sentences, obviating the restriction to a pre-specified vocabulary.",
+                0
+            ],
+            "0": [
+                "Open IE systems have achieved a notable measure of success on massive, open-domain corpora drawn from the Web, Wikipedia, and elsewhere. (Banko et al., 2007; Wu and Weld, 2010; Zhu et al., 2009).",
+                1
+            ],
+            "final_score": 1
+        },
+        {
+            "0": [
+                "The output of Open IE systems has been used to support tasks like learning selectional preferences (Ritter et al., 2010), acquiring common sense knowledge (Lin et al., 2010), and recognizing entailment (Schoenmackers et al., 2010; Berant et al., 2011).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "In addition, Open IE extractions have been mapped onto existing ontologies (Soderland et al., 2010).",
+                0
+            ],
+            "1": [
+                "We have observed that two types of errors are frequent in the output of Open IE systems such as TEXTRUNNER and WOE: incoherent extractions and uninformative extractions.",
+                -0.5
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "This type of error is caused by improper handling of relation phrases that are expressed by a combination of a verb with a noun, such as light verb constructions (LVCs).",
+                -1
+            ],
+            "0": [
+                "An LVC is a multi-word expression composed of a verb and a noun, with the noun carrying the semantic content of the predicate (Grefenstette and Teufel, 1995; Stevenson et al., 2004; Allerton, 2002).",
+                0
+            ],
+            "1": [
+                "Table 2 illustrates the wide range of relations expressed this way, which are not captured by existing open extractors.",
+                0
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "Section 6 concludes with a summary and discussion of future work.",
+                0
+            ],
+            "0": [
+                "Open IE systems like TEXTRUNNER (Banko et al., 2007), WOEpos, and WOEparse (Wu and Weld, 2010) focus on extracting binary relations of the form (arg1, relation phrase, arg2) from text.",
+                0
+            ],
+            "1": [
+                "These systems all use the following three-step method: 1. Label: Sentences are automatically labeled with extractions using heuristics or distant supervision.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "This is a topic for future work, which we consider in Section 6.",
+                0
+            ],
+            "0": [
+                "The first Open IE system was TEXTRUNNER (Banko et al., 2007), which used a Naive Bayes model with unlexicalized POS and NP-chunk features, trained using examples heuristically generated from the Penn Treebank.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Subsequent work showed that utilizing a linear-chain CRF (Banko and Etzioni, 2008) or Markov Logic Network (Zhu et al., 2009) can lead to improved extraction.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "The WOE systems introduced by Wu and Weld make use of Wikipedia as a source of training data for their extractors, which leads to further improvements over TEXTRUNNER (Wu and Weld, 2010).",
+                1
+            ],
+            "1": [
+                "Wu and Weld also show that dependency parse features result in a dramatic increase in precision and recall over shallow linguistic features, but at the cost of extraction speed.",
+                -0.5
+            ],
+            "final_score": 0.5
+        },
+        {
+            "-1": [
+                "Wu and Weld also show that dependency parse features result in a dramatic increase in precision and recall over shallow linguistic features, but at the cost of extraction speed.",
+                -0.5
+            ],
+            "0": [
+                "Other approaches to large-scale IE have included Preemptive IE (Shinyama and Sekine, 2006), OnDemand IE (Sekine, 2006), and weak supervision for IE (Mintz et al., 2009; Hoffmann et al., 2010).",
+                0
+            ],
+            "1": [
+                "Preemptive IE and On-Demand IE avoid relationspecific extractors, but rely on document and entity clustering, which is too costly for Web-scale IE.",
+                -0.5
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "While this allows for learning relation-specific extractors at a larger scale than what was previously possible, the extractions are still restricted to a specific ontology.",
+                -0.5
+            ],
+            "0": [
+                "Many systems have used syntactic patterns based on verbs to extract relation phrases, usually relying on a full dependency parse of the input sentence (Lin and Pantel, 2001; Stevenson, 2004; Specia and Motta, 2006; Kathrin Eichler and Neumann, 2008).",
+                0
+            ],
+            "1": [
+                "Our work differs from these approaches by focusing on relation phrase patterns expressed in terms of POS tags and NP chunks, instead of full parse trees.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Our work differs from these approaches by focusing on relation phrase patterns expressed in terms of POS tags and NP chunks, instead of full parse trees.",
+                0
+            ],
+            "0": [
+                "Banko and Etzioni (Banko and Etzioni, 2008) showed that a small set of POS-tag patterns cover a large fraction of relationships in English, but never incorporated the patterns into an extractor.",
+                0
+            ],
+            "1": [
+                "This paper reports on a substantially improved model of binary relation phrases, which increases the recall of the Banko-Etzioni model (see Section 3.3).",
+                1 (?)
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Further, while previous work in Open IE has mainly focused on syntactic patterns for relation extraction, we introduce a lexical constraint that boosts precision and recall.",
+                0
+            ],
+            "0": [
+                "Finally, Open IE is closely related to semantic role labeling (SRL) (Punyakanok et al., 2008; Toutanova et al., 2008) in that both tasks extract relations and arguments from sentences.",
+                0
+            ],
+            "1": [
+                "However, SRL systems traditionally rely on syntactic parsers, which makes them susceptible to parser errors and substantially slower than Open IE systems such as REVERB.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "This difference is particularly important when operating on the Web corpus due to its size and heterogeneity.",
+                1
+            ],
+            "0": [
+                "Finally, SRL requires hand-constructed semantic resources like Propbank and Framenet (Martha and Palmer, 2002; Baker et al., 1998) as input.",
+                0
+            ],
+            "1": [
+                "In contrast, Open IE systems require no relation-specific training data.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "ReVerb, in particular, relies on its explicit lexical and syntactic constraints, which have no correlate in SRL systems.",
+                0
+            ],
+            "0": [
+                "For a more detailed comparison of SRL and Open IE, see (Christensen et al., 2010).",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "ChenEtAl2018",
+    "sentences": [
+        {
+            "-1": [
+                "In the education domain, a few studies have been conducted on knowledge graph construction recently.",
+                0
+            ],
+            "0": [
+                "Chaplot and Koedinger use educational data to induce the prerequisite relations among multiple units in a course [2], and Liang et al. recovers prerequisite relations from course dependencies [4].",
+                0
+            ],
+            "1": [
+                "Another group of researchers utilize the observed relations among courses to create a directed universal concept graph [8, 5].",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

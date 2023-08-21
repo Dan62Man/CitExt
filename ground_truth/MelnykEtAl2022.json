@@ -1,0 +1,180 @@
+{
+    "id": "MelnykEtAl2022",
+    "sentences": [
+        {
+            "-1": [
+                "The related problem of generating text from a given KG is generally more widely studied, with many suggested architectures and approaches.",
+                0
+            ],
+            "0": [
+                "Among the proposed methods, some of the current state-of-the-art systems that work on small or moderately-sized graphs, (Li et al., 2020; Ribeiro et al., 2020; Agarwal et al., 2020; Xie et al., 2022), usually formulate it as a simple sequenceto-sequence problem by representing the graph in a linearized form and fine-tune the pre-trained language models (PLMs), such as T5 (Raffel et al., 2020) or BART (Lewis et al., 2020), on the task of translating the sequence of triples to the corresponding textual description.",
+                0
+            ],
+            "1": [
+                "Nevertheless, KG generation remains a popular research area, receiving attention from many communities, including natural language processing (NLP), data mining, and machine learning.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Nevertheless, KG generation remains a popular research area, receiving attention from many communities, including natural language processing (NLP), data mining, and machine learning.",
+                0
+            ],
+            "0": [
+                "Recent success of the Transformer-based language models from the NLP community (Vaswani et al., 2017; Devlin et al., 2019; Raffel et al., 2020), pretrained on large textual corpora, led to a series of works that attempted to exploit the vast amounts of learned linguistic knowledge for the downstream task of KG construction.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Some of these approaches looked into a simpler problem of graph completion (Li et al., 2016; Yao et al., 2019; Malaviya et al., 2020).",
+                0
+            ],
+            "1": [
+                "The drawback of these methods is that they are limited to the task of extending existing graphs by local neighborhood modifications and are not suitable for building the entire global graph structures.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "The drawback of these methods is that they are limited to the task of extending existing graphs by local neighborhood modifications and are not suitable for building the entire global graph structures.",
+                -1
+            ],
+            "0": [
+                "Alternatively, other works (Petroni et al., 2019; Roberts et al., 2020; Jiang et al., 2019; Shin et al., 2020; Li and Liang, 2021) proposed to query the pre-trained models to extract the learned factual and commonsense knowledge.",
+                0
+            ],
+            "1": [
+                "The idea is to prompt the language model to predict the masked objects in cloze sentences describing the partially complete triples.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Alternatively, there are a number of works that propose to generate the entire graph structure ground up.",
+                0
+            ],
+            "0": [
+                "One example is GraphRNN from You et al. (2018), which models a graph as a sequence of additions of new nodes using node-level RNN and edges using another edge-level RNN.",
+                0
+            ],
+            "1": [
+                "Although promising for our task of KG construction, the sequential and greedy nature of its generation can cause sub-optimal graph structures.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "Although promising for our task of KG construction, the sequential and greedy nature of its generation can cause sub-optimal graph structures.",
+                -1
+            ],
+            "0": [
+                "CycleGT of (Guo et al., 2020b) is an unsupervised method for text-to-graph and graph-to-text generation, where the graph generation part relies on off-the-shelf entity extractor followed by a classifier to predict the relationships.",
+                0
+            ],
+            "1": [
+                "The reliance on external NLP pipelines breaks the end-to-end continuity of system training, potentially leading to sub-optimal results.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "The reliance on external NLP pipelines breaks the end-to-end continuity of system training, potentially leading to sub-optimal results.",
+                -1
+            ],
+            "0": [
+                "Similarly, (Dognin et al., 2020) proposed DualTKB employing unsupervised cycle loss to enable the graph-text translation in both directions.",
+                0
+            ],
+            "1": [
+                "However, their method was applied only to single sentence-single triple generation, limiting applicability for larger graphs.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "However, their method was applied only to single sentence-single triple generation, limiting applicability for larger graphs.",
+                -1
+            ],
+            "0": [
+                "Other approaches, such as BT5 from (Agarwal et al., 2020) proposed to utilize large pre-trained T5 model to generate KG in a linearized form, where the object-predicatesubject triples are concatenated together and the entire text-to-graph problem is viewed as sequenceto-sequence modeling.",
+                0
+            ],
+            "1": [
+                "The potential issue with this approach is that the graph linearization is not unique and inefficient due to the repetition of graph components multiple times, leading to long sequences and increased complexity.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "The potential issue with this approach is that the graph linearization is not unique and inefficient due to the repetition of graph components multiple times, leading to long sequences and increased complexity.",
+                -1
+            ],
+            "0": [
+                "(Lu et al., 2022) is another text-to-structure method, however it uses predefined schema (e.g., for entity or triplet extraction), while our method is schema-free and generalizes to any text form of nodes and edges.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Finally, (Wang et al., 2020) proposed MaMa for KG construction, where entities and relationships are first matched using the attention weight matrices from the forward pass of the LM.",
+                0
+            ],
+            "1": [
+                "Those are then mapped to the existing KG schema to generate the final graph.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Given input text, the graph generation is split into two steps.",
+                0
+            ],
+            "0": [
+                "In the first step, we leverage the representation power of pre-trained language models, e.g., T5 (Raffel et al., 2020), fine-tuned on the task of entity (graph nodes) extraction, while in the second stage the relationships (graph edges) are generated using the available entity information.",
+                0
+            ],
+            "1": [
+                "There are three main properties of Grapher: (i) The use of state-of-theart language models pre-trained on large textual corpora, used for node generation is key to the algorithm\u2019s performance as it lays out the foundation for the entire graph.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The available parallel data for learning the text to graph translation is usually small, therefore training custom-built entity extraction architectures from scratch on this limited data is inferior to fine-tuning the already pretrained Transformer-based language models.",
+                -1
+            ],
+            "0": [
+                "(ii) The partitioning of graph construction process into two steps ensures efficiency that each node and edge is generated only once, which is in contrast to graph linearization approaches, e.g., (Agarwal et al., 2020) (Dognin et al., 2021), whose graph sequence representation is non-unique and can be inefficient.",
+                0
+            ],
+            "1": [
+                "(iii) Finally, the entire system is end-toend trainable, where the node and edge generation are optimized jointly, enabling efficient information transfer between the two modules, avoiding the need of any external NLP pipelines such as entity/relation extraction, co-reference resolution, etc.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "(iii) Finally, the entire system is end-toend trainable, where the node and edge generation are optimized jointly, enabling efficient information transfer between the two modules, avoiding the need of any external NLP pipelines such as entity/relation extraction, co-reference resolution, etc.",
+                0
+            ],
+            "0": [
+                "We evaluate the proposed Grapher on three datasets: the WebNLG+ 2020 Challenge (Ferreira et al., 2020) matching state-of-the-art performance for Text-to-RDF generation as well as on NYT (Riedel et al., 2010) and a recent large-scale TEKGEN (Agarwal et al., 2021) dataset showing strong results outperforming existing baselines.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

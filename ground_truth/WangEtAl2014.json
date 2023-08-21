@@ -1,0 +1,198 @@
+{
+    "id": "WangEtAl2014",
+    "sentences": [
+        {
+            "0": [
+                "Knowledge graphs such as Freebase (Bollacker et al. 2008), WordNet (Miller 1995) and GeneOntology (Ashburner et al. 2000) have become very important resources to support many AI related applications, such as web/mobile search, Q&A, etc.",
+                1
+            ],
+            "1": [
+                "A knowledge graph is a multi-relational graph composed of entities as nodes and relations as different types of edges.",
+                0
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "The traditional method of reasoning by formal logic is neither tractable nor robust when dealing with long range reasoning over a real large scale knowledge graph.",
+                -1
+            ],
+            "0": [
+                "Recently a new approach has been proposed to deal with the problem, which attempts to embed a knowledge graph into a continuous vector space while preserving certain properties of the original graph (Socher et al. 2013; Bordes et al. 2013a; Weston et al. 2013; Bordes et al. 2011; 2013b; 2012; Chang, Yih, and Meek 2013).",
+                0
+            ],
+            "1": [
+                "For example, each entity h (or t) is represented as a point h (or t) in the vector space while each relation r is modeled as an operation in the space which is characterized by an a vector r, such as translation, projection, etc.",
+                0
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "The score function implies a transformation r on the pair of entities which characterizes the relation r.",
+                0
+            ],
+            "0": [
+                "For example, in translation based method (TransE) (Bordes et al. 2013b), fr(h, t) , kh+r\u2212tk`1/2 , i.e., relation r is characterized by the translating (vector) r.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "With different scoring functions, the implied transformations vary between simple difference (Bordes et al. 2012), translation (Bordes et al. 2013b), affine (Chang, Yih, and Meek 2013), general linear (Bordes et al. 2011), bilinear (Jenatton et al. 2012; Sutskever, Tenenbaum, and Salakhutdinov 2009), and nonlinear transformations (Socher et al. 2013).",
+                0
+            ],
+            "1": [
+                "Accordingly the model complexities (in terms of number of parameters) vary significantly.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "(Please refer to Table 1 and Section \u201cRelated Works\u201d for details.",
+                0
+            ],
+            "0": [
+                ") Among previous methods, TransE (Bordes et al. 2013b) is a promising one as it is simple and efficient while achieving state-of-the-art predictive performance.",
+                0.5
+            ],
+            "1": [
+                "However, we find that there are flaws in TransE when dealing with relations with mapping properties of reflexive/one-to-many/manyto-one/many-to-many.",
+                -1
+            ],
+            "final_score": -0.5
+        },
+        {
+            "-1": [
+                "Some advanced models with more free parameters are capable of preserving these mapping properties, however, the model complexity and running time is significantly increased accordingly.",
+                0
+            ],
+            "0": [
+                "Moreover, the overall predictive performances of the advanced models are even worse than TransE (Bordes et al. 2013b).",
+                -1 (?)
+            ],
+            "1": [
+                "This motivates us to propose a method which makes a good trad-off between model complexity and efficiency so that it can overcome the flaws of TransE while inheriting the efficiency.",
+                0
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "All these methods embed entities into a vector space and enforce the embedding compatible under a scoring function.",
+                0
+            ],
+            "0": [
+                "Different models differ in the definition of scoring functions fr(h, r) which imply some transformations on h and t. TransE (Bordes et al. 2013b) represents a relation by a translation vector r so that the pair of embedded entities in a triplet (h, r, t) can be connected by r with low error.",
+                0
+            ],
+            "1": [
+                "TransE is very efficient while achieving state-of-theart predictive performance.",
+                1
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "Unstructured is a simplified case of TransE, which considers the graph as mono-relational and sets all translations r = 0, i.e., the scoring function is kh \u2212 tk.",
+                0
+            ],
+            "0": [
+                "It is used as a naive baseline in (Bordes et al. 2012; 2013b).",
+                0
+            ],
+            "1": [
+                "Obviously it cannot distinguish different relations.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Obviously it cannot distinguish different relations.",
+                0
+            ],
+            "0": [
+                "Distant Model (Bordes et al. 2011) introduces two independent projections to the entities in a relation.",
+                0
+            ],
+            "1": [
+                "It represents a relation by a left matrix Wrh and a right matrix Wrt.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Dissimilarity is measured by L1 distance between Wrhh and Wrtt.",
+                0
+            ],
+            "0": [
+                "As pointed out by (Socher et al. 2013), this model is weak in capturing correlations between entities and relations as it uses two separate matrices.",
+                0 (?) [the other model is weak, not the referenced one]
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Bilinear Model (Jenatton et al. 2012; Sutskever, Tenenbaum, and Salakhutdinov 2009) models second-order correlations between entity embeddings by a quadratic form: h >Wrt.",
+                0
+            ],
+            "1": [
+                "Thus, each component of an entity interacts with each component of the other entity.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Thus, each component of an entity interacts with each component of the other entity.",
+                0
+            ],
+            "0": [
+                "Single Layer Model (Socher et al. 2013) introduces nonlinear transformations by neural networks.",
+                0
+            ],
+            "1": [
+                "It concatenates h and t as an input layer to a non-linear hidden layer then the linear output layer gives the resulting score: u > r f(Wrhh + Wrtt + br).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "It concatenates h and t as an input layer to a non-linear hidden layer then the linear output layer gives the resulting score: u > r f(Wrhh + Wrtt + br).",
+                0
+            ],
+            "0": [
+                "A similar structure is proposed in (Collobert and Weston 2008).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "NTN (Socher et al. 2013) is the most expressive model so far.",
+                0
+            ],
+            "1": [
+                "It extends the Single Layer Model by considering the second-order correlations into nonlinear transformation (neural networks).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Beyond these works directly targeting the same problem of embedding knowledge graphs, there are extensive related works in the wider area of multi-relational data modeling, matrix factorization, and recommendations.",
+                0
+            ],
+            "0": [
+                "Please refer to the Introduction part of (Bordes et al. 2013b).",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

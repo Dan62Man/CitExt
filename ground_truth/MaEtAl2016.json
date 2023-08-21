@@ -1,0 +1,115 @@
+{
+    "id": "MaEtAl2016",
+    "sentences": [
+        {
+            "-1": [
+                "However, with the progress of machine learning, NLP and other disciplines, researchers developed various techniques to improve the quality of citation analysis and hence the quality of scholarly importance measurement.",
+                0
+            ],
+            "0": [
+                "One of the efforts was to apply PageRank in citation network, which introduces weight on citation links for more accurate measurement (Ding, 2011).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Although, this type of weighting is widely criticized (Alvarez and Soriano, 2014).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Recent bibliometric studies showed that \"there is no bad publicity in science\", because criticized and controversial papers tend to be highly cited too (Radicch, 2012; Perc, 2014).",
+                0
+            ],
+            "1": [
+                "Consequently, these controversial papers are positively estimated according to citation-count-based metrics, for example, impact factor and h-index.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Consequently, these controversial papers are positively estimated according to citation-count-based metrics, for example, impact factor and h-index.",
+                0
+            ],
+            "0": [
+                "As Bonzi (1982) argued that if a cited work is criticized, it should consequently carry lower or even negative weight for bibliometric measures (Athar and Teufel, 2011).",
+                0
+            ],
+            "1": [
+                "1.2 Our contribution.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Finally, we summarize our work and discuss possible directions of future work.",
+                0
+            ],
+            "0": [
+                " Teufel et al. (2006) was one of the pioneers in the field of citation classification.",
+                1 (?) ["was"]
+            ],
+            "1": [
+                "She proposed a classification scheme of 12 citation functions and used supervised technique for the classification task.",
+                0
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "She proposed a classification scheme of 12 citation functions and used supervised technique for the classification task.",
+                0
+            ],
+            "0": [
+                " Athar (2011) continued this thread of research and focused in polarity classification of citations.",
+                0
+            ],
+            "1": [
+                "They experimented the SVM classifier with rich features, such as negation, sentence splitting and dependency features.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They experimented the SVM classifier with rich features, such as negation, sentence splitting and dependency features.",
+                0
+            ],
+            "0": [
+                "Athar (2012) published the Citation Sentiment Corpus, which contains 8736 annotated sentences.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Jochim (2012) used the following facet scheme to describe the nature of a citation: conceptual vs. operational; organic vs. perfunctory; evolutionary vs. juxtapositional; based on vs. alternative work; confirmative vs. negational.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Dong (2011) performed semi-supervised classification over categories: background, fundamental idea, technical basis and performance comparison.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "They have also developed the ACL Anthology Searchbench, which provides very practical paper search functionality with graphical presentation of local citation network of searched paper.1 Abu-jbara et al. (2013) has also contributed to this field by working on citation context identification, citation purpose classification and citation polarity identification.",
+                0
+            ],
+            "1": [
+                "Their method achieved good performance by using SVM with linear kernel on a rich feature set.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

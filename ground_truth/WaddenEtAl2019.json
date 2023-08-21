@@ -1,0 +1,49 @@
+{
+    "id": "WaddenEtAl2019",
+    "sentences": [
+        {
+            "-1": [
+                "In event extraction, knowledge of the entities present in a sentence can provide information that is useful for predicting event triggers.",
+                0
+            ],
+            "0": [
+                "To model global context, previous works have used pipelines to extract syntactic, discourse, and other hand-engineered features as inputs to structured prediction models (Li et al., 2013; Yang and Mitchell, 2016; Li and Ji, 2014) and neural scoring functions (Nguyen and Nguyen, 2019), or as a guide for the construction of neural architectures (Peng et al., 2017; Zhang et al., 2018; Sha et al., 2018; Christopoulou et al., 2018).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Recent end-to-end systems have achieved strong performance by dynmically constructing graphs of spans whose edges correspond to task-specific relations (Luan et al., 2019; Lee et al., 2018; Qian et al., 2018).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Meanwhile, contextual language models (Dai and Le, 2015; Peters et al., 2017, 2018; Devlin et al., 2018) have proven successful on a range of natural language processing tasks (Bowman et al., 2015; Sang and De Meulder, 2003; Rajpurkar et al., 2016).",
+                1
+            ],
+            "1": [
+                "Some of these models are also capable of modeling context beyond the sentence boundary.",
+                1
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "For instance, the attention mechanism in BERT\u2019s transformer architecture can capture relationships between tokens in nearby sentences.",
+                0
+            ],
+            "0": [
+                "In this paper, we study different methods to incorporate global context in a general multi-task IE framework, building upon a previous span-based IE method (Luan et al., 2019).",
+                0
+            ],
+            "1": [
+                "Our DYGIE++ framework, shown in Figure 1, enumerates candidate text spans and encodes them using contextual language models and task-specific message updates passed over a text span graph.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

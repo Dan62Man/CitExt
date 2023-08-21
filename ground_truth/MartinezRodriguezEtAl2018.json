@@ -1,0 +1,110 @@
+{
+    "id": "MartinezRodriguezEtAl2018",
+    "sentences": [
+        {
+            "-1": [
+                "Information consumed every day by people in a variety of services such as supermarkets, banks, libraries, and web search engines is internally stored in a structured fashion to be efficiently queried and transformed.",
+                0
+            ],
+            "0": [
+                "However, nearly 95% of data is unstructured (Tanwar et al., 2015), which means that valuable information has not been explored and that would be useful in applications such as user preferences (satisfiability), merchandising, or demographic movements, to mention a few.",
+                0
+            ],
+            "1": [
+                "Hence, such data need to be transformed into a structured format in order to be handled and processed by applications and users.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "However, much of such data is unstructured, in the form of text, which is unfeasible or very expensive to process due to its large scale and heterogeneity.",
+                0
+            ],
+            "0": [
+                "In this sense, one of the aims of the Semantic Web (Daconta et al., 2003) is to extract and formally represent information by leveraging formal data interchange formats, standards, and technologies of the Web.",
+                0
+            ],
+            "1": [
+                "In recent years, many data publishers have relied on the benefits provided by the Semantic Web for quickly publishing, parsing and processing data by machines.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "However, we identified three kinds of REL approaches that deal (partially) with such issues: Discourse-based, Distant Supervised-based, and OpenIEbased.",
+                0
+            ],
+            "0": [
+                "First, Discourse-based approaches analyze the use of language in terms of written and spoken communication structures (Exner & Nugues, 2012; Corcoglioniti et al., 2016), whose goal is the unsupervised understanding of text.",
+                0
+            ],
+            "1": [
+                "Such approaches are useful for constructing taxonomies and building connections between propositions extracted from text.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Although such approaches often provides high levels of precision, their use is limited to a closed world assumption (everything not in the training KG is false) and to the often complex adjustment of parameters used by such algorithms.",
+                0
+            ],
+            "0": [
+                "Finally, and the focus of this work, OpenIE-based approaches (Dutta et al., 2014, 2015) obtain propositions (usually binary relations) with no restriction of a domain and without requiring training data.",
+                0
+            ],
+            "1": [
+                "Although OpenIE has received less attention (in the context of RDF triple extractions) than the above-mentioned approaches, it is a useful technique that allows a semantic representation through predicative statements (clauses where the verb is the core of the relation) that may be helpful for shallow questions (e.g., who directed the Star Wars movie?).",
+                0
+            ],
+            "final_score": 0 (?)
+        },
+        {
+            "-1": [
+                "For example, in the running example, we may only obtain and link to a KB (DBpedia) the entity clinician(dbr:clinician) but additional entities (such as Cancer(dbr:Cancer), or New York(dbr:New_York_City)) are necessary to represent a complete RDF triple.",
+                0
+            ],
+            "0": [
+                "In consequence, REL approaches (Gangemi et al., 2017) are sometimes prone to automatically generate IRI identifiers for the named entities, resulting in differences of meaning and interpretation (data heterogeneity).",
+                0
+            ],
+            "1": [
+                "- Entity selection.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "For example, given the binary relation (extracted from the running example) diagnosed(Dr. Gregory House, cancer patient in New York) and the entities cancer(dbr:Cancer) and patient(dbr:patient), the selection of one entity over the other to represent the object of such relation is not a straightforward task.",
+                0
+            ],
+            "0": [
+                "Existing REL approaches (Dutta et al., 2014; Exner & Nugues, 2012) address this aspect by rules that restrict the selection of specific types of entities.",
+                0
+            ],
+            "1": [
+                "However, such restrictions limit the result to a particular kind of relations to be extracted.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "In the previous binary relation, the relation phrase \"diagnosed\" should also be identified with an IRI from a resource associated to an ontology or a KG.",
+                0
+            ],
+            "0": [
+                "Existing approaches (Exner & Nugues, 2012; Dutta et al., 2015) map relation phrases to KG properties through generated rules and text similarity measures.",
+                0
+            ],
+            "1": [
+                "However, such mappings may not always exist and thus, an alternative solution needs to be stated.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

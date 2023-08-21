@@ -1,0 +1,59 @@
+{
+    "id": "AburaedEtAl2020",
+    "sentences": [
+        {
+            "0": [
+                "Most scientific papers include a related work section providing, in a well organized and condensed form, the key information from a carefully selected list of publications which contextualize and ground the research being presented by an author (Rowley and Slack, 2004).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Related work sections are critical for quality assessment since journals pay particular attention to them where evaluation of manuscripts is of concern (Maggio et al., 2016).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Past research has shown that related work sections can be produced following cut-and-paste summarization strategies (Jaidka et al., 2013) which are typical of document abstracting (insertion, deletion, substitution, etc.) (Endres-Niggemeyer et al., 1995; Saggion, 2011).",
+                0
+            ],
+            "1": [
+                "Recent studies have proposed to take advantage of the scientific paper\u2019s citation network to approach scientific literature summarization.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "For that reason we introduce here our corpus which we hope will facilitate the usage of citation networks to boost scientific literature summarization research.",
+                0
+            ],
+            "0": [
+                "The generation of related work sections has been studied from different viewpoints (Hoang and Kan, 2010; Vu, 2010; Hu and Wan, 2014), however no manual annotated data-set, analog to the one we will present here, has been produced until now.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Our corpus expands considerably the data-set of related work sections used in (Hoang and Kan, 2010) by providing: (i) related work sections, (ii) a manually annotated layer of cited papers and sentences, (iii) citing papers referring to the cited papers in the related work section, and (iv) a layer of rich linguistic, rhetorical, and semantic annotations computed automatically.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "While the manually identified cited sentences are useful to support the study of sequence to sequence models in scientific summarization, the new layer of citing papers facilitates the test of citation-based summarization approaches (Qazvinian and Radev, 2008; Jaidka et al., 2014b) which rely on citation networks to assess sentence relevance.",
+                0
+            ],
+            "1": [
+                "In this corpus we refer to three types of scientific papers: target papers, reference papers, and citing papers which we organize in a two-level network.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

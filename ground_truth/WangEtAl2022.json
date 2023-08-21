@@ -1,0 +1,119 @@
+{
+    "id": "WangEtAl2022",
+    "sentences": [
+        {
+            "0": [
+                "Natural language inference (NLI), an essential task for natural language understanding, aims to deduce relationship between the given premise and hypothesis [1].",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "NLI is a fundamental problem in many natural language processing (NLP) tasks, such as sentence embeddings [2], question answering [3] and commonsense reasoning [4].",
+                0
+            ],
+            "1": [
+                "Therefore, it has been widely concerned by many researchers.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Therefore, it has been widely concerned by many researchers.",
+                0
+            ],
+            "0": [
+                "With the widespread NLP application, a rising demand for NLI methods is to handle specific-domain text, such as scientific texts [5], medical articles [6] and financial news [7].",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "To build a large NLI dataset related to scientific texts, SciNLI dataset [5] is built from scholarly papers on NLP and computational linguistics.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Due to the success of pre-trained language models (PTM) (e.g., BERT [8] and RoBERTa [9]), a general paradigm for NLI is to fine-tune a PTM on downstream dataset.",
+                1
+            ],
+            "1": [
+                "However, PTMs fine-tuned on specific-domain data often suffer from a cross-domain problem since they are pre-trained on general domain corpora such as news articles and Wikipedia.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "However, PTMs fine-tuned on specific-domain data often suffer from a cross-domain problem since they are pre-trained on general domain corpora such as news articles and Wikipedia.",
+                0
+            ],
+            "0": [
+                "Many works generalize PTM to specific-domain via pre-train on specific-domain corpus [10, 11] or introducing specificdomain knowledge graph [12].",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Although Beltagy et al. [10] consume enormous training resources to exclusively pre-train SciBERT on scientific texts, RoBERTa with a more sophisticated pre-training leads to better performance.",
+                0
+            ],
+            "1": [
+                "Therefore, it is necessary to introduce a scientific knowledge graph to generalize PTM to scientific domain.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Due to fast inference and not requiring any labeled data and training sources, our method can easy to extend to large corpora in other domains.",
+                0
+            ],
+            "0": [
+                "To improve PTM reasoning, previous works [15] mainly use sentences as queries to retrieve triplets in knowledge graph and integrate them into PTM.",
+                0
+            ],
+            "1": [
+                "However, since there are still some noise samples in SKG, directly integrating knowledge into model damages model learning.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "To reduce the effect of noise data and complement knowledge in sentences better, we propose an event-centric knowledge infusion framework.",
+                0
+            ],
+            "0": [
+                "Precisely, we follow [16] to split events into sentences and then use all events as queries to retrieve relevant triplets, which can prevent the retrieved knowledge only relevant to limited semantics in sentences.",
+                0
+            ],
+            "1": [
+                "Moreover, we integrate knowledge into multiple event units, improving context reasoning via enriching semantic information in each event.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Moreover, we integrate knowledge into multiple event units, improving context reasoning via enriching semantic information in each event.",
+                0
+            ],
+            "0": [
+                "We conduct an extensive evaluation on SciNLI dataset [5].",
+                0
+            ],
+            "1": [
+                "Results show that our method achieves state-of-the-art performance compared with other methods.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

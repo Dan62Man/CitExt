@@ -1,0 +1,38 @@
+{
+    "id": "AburaedEtAl2017",
+    "sentences": [
+        {
+            "0": [
+                "Scientific publications such as scientific papers are some of the most valuable sources of human knowledge, containing information as relevant as how to cure diseases, create medicaments or construct useful life-saving machines; they are permanent records of what has been discovered so far (Kuhn, 1970).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "The amount of scientific publications is growing at unprecedented rates (Bornmann and Mutz, 2015; Saggion and Ronzano, 2016) with recent estimates indicating that a new research paper is published every 13 seconds.",
+                0
+            ],
+            "1": [
+                "Scientific research needs awareness of what has been discovered or published before us to progress: as Newton has put it, \"If I have seen further it is by standing on the shoulders of Giants.\" The value of a scientific article is sometimes assessed by the number of publications citing the article, although this way of measuring research is well established, it is only quantitative, leaving qualitative considerations out of the picture.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Scientific research needs awareness of what has been discovered or published before us to progress: as Newton has put it, \"If I have seen further it is by standing on the shoulders of Giants.\" The value of a scientific article is sometimes assessed by the number of publications citing the article, although this way of measuring research is well established, it is only quantitative, leaving qualitative considerations out of the picture.",
+                0
+            ],
+            "0": [
+                "Although over the years several works have been interested in qualitative aspects related to paper citations (Moravcsik and Murugesan, 1975; SpiegelRosing, 1977; Teufel et al., 2006; Abu-Jbara et al., 2013; Athar, 2011; Shotton, 2010; Fisas et al., 2016; Valenzuela et al., 2015), recently, in the context of the Computational Linguistics Scientific Summarization Challenge (Jaidka et al., 2016) (CL-SciSumm hereafter), one task was identified as relevant to citation analysis: given a scientific paper \u2013 the reference, and another paper citing it, the task is to determine what part of the reference the citing paper is referring to, and also what particular aspect is being cited (e.g. the aim of the paper? the method?).",
+                0
+            ],
+            "1": [
+                "In this paper we investigate how to address the above task and present a system which uses unsupervised sentence similarity metrics and supervised machine learning to address the challenge.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

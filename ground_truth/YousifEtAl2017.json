@@ -1,0 +1,550 @@
+{
+    "id": "YousifEtAl2017",
+    "sentences": [
+        {
+            "-1": [
+                "Citations have been used to characterize and obtain information on different types of documents.",
+                0
+            ],
+            "0": [
+                "As an example for scientific articles, the number of citations received has been used to determine the impact of a paper (Garfield 1972, 1979).",
+                0
+            ],
+            "1": [
+                "Citation information can be described as citation count or citation context.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Citation information can be described as citation count or citation context.",
+                0
+            ],
+            "0": [
+                "A citation context can be defined as a text or several sentences surrounding references in the body of a publication (Small 2011).",
+                0
+            ],
+            "1": [
+                "Citations can be classified as explicit or implicit citations.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Citations can be classified as explicit or implicit citations.",
+                0
+            ],
+            "0": [
+                "Explicit citation refers to the sentence or group of sentences around a reference position in a paper (Athar and Teufel 2012b).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Implicit citation is a sentence close to reference position but there is no direct linkage to that reference (Qazvinian and Radev 2010).",
+                0
+            ],
+            "1": [
+                "To illustrate the types of citation context, we use the following example.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "To illustrate the types of citation context, we use the following example.",
+                0
+            ],
+            "0": [
+                "Consider the following citation: Active learning (AL) (Wang et al. 2012) and semi-supervised learning (SSL) are two well-known techniques that make use of unlabeled data to improve classification performance.",
+                0
+            ],
+            "1": [
+                "Both techniques are iterative processes and reported good performance compared to supervised approaches.",
+                1
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "In this example, the first sentence is an explicit citation, and the second sentence is an implicit citation.",
+                0
+            ],
+            "0": [
+                "Citation count is one of the citation analysis methods for evaluating research results of research units such as journals and departments (Garfield 1972).",
+                0
+            ],
+            "1": [
+                "It is the number of times a particular publication has been cited by researchers.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The number of citations that a research unit has received determines its quality or impact.",
+                0
+            ],
+            "0": [
+                "However, this evaluation method is incomplete and may not calculate the impact of research units perfectly (Abu-Jbara et al. 2013).",
+                0
+            ],
+            "1": [
+                "Therefore, many researchers have exploited citation contexts to analyze the reasons, influence, and sentiment of the cited articles in the citing articles to build more accurate methods to evaluate the research results.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Therefore, many researchers have exploited citation contexts to analyze the reasons, influence, and sentiment of the cited articles in the citing articles to build more accurate methods to evaluate the research results.",
+                0
+            ],
+            "0": [
+                "Citation context is a good source for different applications that demand knowing cita- tion purpose or reasons for quoting a concept, using approaches, and criticizing an idea from prior literature (Teufel et al. 2006).",
+                0
+            ],
+            "1": [
+                "For example, researchers can capture the citation purpose or sentiment about a certain journal and build a new citation analysis method that integrates citation count with the authors\u2019 opinion when citing articles from that journal.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "This particular new technique may improve the methods of research quality assessment.",
+                0
+            ],
+            "0": [
+                "In addition, as reported by Athar (2014), it is interesting for young researchers to under- stand the common perspective of the literature in a particular field.",
+                0
+            ],
+            "1": [
+                "This understanding can aid them to discover the gaps in the literature simply by analyzing the negative citation of papers.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "It could be helpful for them to know the contributions of researchers in that field by identifying the positive polarity of cited work in citing work.",
+                0
+            ],
+            "0": [
+                "Polarity can be positive, negative or neutral; According to Abu-Jbara et al. (2013) citation polarity can be defined slightly different from the definition in sentiment analysis (SA).",
+                0
+            ],
+            "1": [
+                "Positive citation directly expresses the strength of the cited papers, e.g. if the cited work compared with other works and considered better in the final results.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Mining authors\u2019 sentiments in scholarly publications specifically analyzing the citation context of the cited works for understanding the authors\u2019 attitudes for citing the previous literature is knowns as sentiment analysis.",
+                0
+            ],
+            "0": [
+                "Scientific citation sentiment analysis (SCSA) is a new domain in the sentiment analysis field with the aim to detect the attitudes of authors towards cited works (Athar 2011).",
+                0
+            ],
+            "1": [
+                "In this study, domain refers to document types such as product reviews, forums, news articles, and citations, in which researchers can apply a specific technique to detect the sentiment.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "In this study, domain refers to document types such as product reviews, forums, news articles, and citations, in which researchers can apply a specific technique to detect the sentiment.",
+                0
+            ],
+            "0": [
+                "Parthasarathy and Tomar (2015) presented a brief review.",
+                0
+            ],
+            "1": [
+                "They focused on defining the topic of sentiment analysis of citations and suggested supervised machine learning techniques as future methods to study SCSA.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Sentiment analysis (SA) is a growing field of research influenced by and reaching into text mining, machine learning, computational linguistics, and natural language processing.",
+                0
+            ],
+            "0": [
+                "It is a method of processing and analyzing people\u2019s attitudes, opinions, sentiments, and the subjectivity of text (Liu 2012).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "SA can help to gain many benefits and achieve different goals such as measuring customer satisfaction, checking customers\u2019 opinions in the intelligence market, and forecasting movie sales (Jiang et al. 2010; Kang and Park 2014; Li and Tsai 2013; Rui et al. 2013).",
+                0
+            ],
+            "1": [
+                "Applications of SA can be found in different domains.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Such methods may help them to select the proper and high-quality items through the analysis of comments of reviewers.",
+                0
+            ],
+            "0": [
+                "Analyzing the attitudes of people in a specific event such as presidential campaign could help the voters to decide which candidate they will support (Wang et al. 2012).",
+                0
+            ],
+            "1": [
+                "A significant number of literature surveys have been published in recent years in the area of SA that have explored SA as well as opinion mining tasks, approaches, and applications in different domains.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "A significant number of literature surveys have been published in recent years in the area of SA that have explored SA as well as opinion mining tasks, approaches, and applications in different domains.",
+                0
+            ],
+            "0": [
+                "For instance, Pang and Lee (2008) conducted a comprehensive review of SA.",
+                0
+            ],
+            "1": [
+                "Their survey discussed several applications of SA, its main challenges and tasks.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The tasks include senti- ment extraction, sentiment classification, opinion summarization, and polarity determination.",
+                0
+            ],
+            "0": [
+                "On the other hand, Tang et al. (2009) presented SA issues such as sentiment classification in a different level of analysis, sentiment extraction, and subjectivity classification.",
+                0
+            ],
+            "1": [
+                "Machine learning approaches such as Na\u00efve Bayes (NB) classifier and Multiple NB classifier have been demonstrated as methods for subjectivity analysis.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Machine learning approaches such as Na\u00efve Bayes (NB) classifier and Multiple NB classifier have been demonstrated as methods for subjectivity analysis.",
+                0
+            ],
+            "0": [
+                "O\u2019Leary (2011) presented a sur- vey on SA on the blog.",
+                0
+            ],
+            "1": [
+                "This work focused on the process of searching and extracting the opinions from blogs.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "This work focused on the process of searching and extracting the opinions from blogs.",
+                0
+            ],
+            "0": [
+                "Similarly, Montoyo et al. (2012) presented the limitations of SA with achievements.",
+                0
+            ],
+            "1": [
+                "In their paper, they suggested the lack of non-English resources and social and cultural dependence of these resources for SA as open problems to be addressed.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "In their paper, they suggested the lack of non-English resources and social and cultural dependence of these resources for SA as open problems to be addressed.",
+                0
+            ],
+            "0": [
+                "Tsytsarau and Palpanas (2012) conducted a survey on SA and discussed opinion mining and opinion aggregation.",
+                0
+            ],
+            "1": [
+                "The comparison was made by applying several opinion mining techniques using public datasets.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The comparison was made by applying several opinion mining techniques using public datasets.",
+                0
+            ],
+            "0": [
+                "Liu and Zhang (2012) presented SA and opinion mining tasks and these tasks include subjectivity and sentiment classification, sentiment lexicon generation, aspect-based SA, analysis of comparative opinions, opinion summarization, opinion search and retrieval and opinion spam detection and quality of reviews.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Cambria et al. (2013) presented a survey about SA challenges and difficulties.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Moreover, Feldman (2013) concentrated on five issues related to SA areas such as sen- timent lexicon generation, comparative SA, sentence-level SA, and aspect-based SA.",
+                0
+            ],
+            "1": [
+                "The authors also presented composition statement, automatic entity recognition, sarcasm detec- tion and subjectivity classification as the new open issues in SA domains.",
+                0
+            ],
+            "final_score": 0.0007450669670745927
+        },
+        {
+            "-1": [
+                "The authors also presented composition statement, automatic entity recognition, sarcasm detec- tion and subjectivity classification as the new open issues in SA domains.",
+                0
+            ],
+            "0": [
+                "Medhat et al. (2014) performed a survey of fifty-four articles by covering sentiment classification and fea- ture selection methods.",
+                0
+            ],
+            "1": [
+                "The authors only focused on sentiment classification methods and presented its tasks, algorithms, data sources, language type and domain.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Recently, deep learning methods have become a popular solution to address SA tasks.",
+                0
+            ],
+            "0": [
+                "Rojas-Barahona (2016) reviewed recent works on deep learning for SA and grouped deep learning models into recursive, non-recursive, and the combination of both models.",
+                0
+            ],
+            "1": [
+                "The authors also compared the document level and sentence level SA on two datasets.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They con- clude that deep learning models can be a better solution for polarity detection.",
+                0
+            ],
+            "0": [
+                "Poria et al. (2016) proposed use of deep convolutional neural network (CNN) to extract features from multimodal content and feed these features to a multiple kernel learning classifier for senti- ment detection.",
+                0
+            ],
+            "1": [
+                "Their method manages to achieve good results using different datasets.",
+                1
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "Their method manages to achieve good results using different datasets.",
+                1
+            ],
+            "0": [
+                "Tang et al. (2016) proposed supervised learning model based on long short term memory algorithm.",
+                0
+            ],
+            "1": [
+                "In this model, a sentence representation was made by capturing the link between each target word and its contexts.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They reported that incorporating target information improves the clas- sification accuracy of the proposed model.",
+                0
+            ],
+            "0": [
+                "Akhtar et al. (2016) proposed a hybrid approach that utilizes CNN to learn embedded features and then used a multi-objective genetic algo- rithm based optimization technique to generate the sentiment augmented optimized vector.",
+                0
+            ],
+            "1": [
+                "They trained SVM with non-linear kernel for sentiment detection.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They trained SVM with non-linear kernel for sentiment detection.",
+                0
+            ],
+            "0": [
+                "More recently, Cambria (2016) studied affective computing and sentiment analysis and presented emotion recognition, polarity detection, subjectivity detection, opinion target iden- tification, and multimodal fusion as the main tasks.",
+                0
+            ],
+            "1": [
+                "They also listed three categories to handle these tasks with their advantages and disadvantages namely: knowledge-based techniques, statistical methods, and hybrid approaches.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They recommend ensemble application of seman- tic knowledge and machine learning as the best way for addressing the tasks of affective computing and sentiment analysis.",
+                0
+            ],
+            "0": [
+                "Piryani et al. (2017) collected opinion mining (OM) and SA publications published in Science Citation Index Expanded (SCIE) journals from the year 2000 to 2015.",
+                0
+            ],
+            "1": [
+                "They performed a useful scientometric and manual analysis to explain the SA research status.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "On the other hand, multimodal, multilingual, multi-domain SA systems have gained more attention recently.",
+                0
+            ],
+            "0": [
+                "For example, Soleymani et al. (2017) conducted a review about multi- modal sentiment analysis in different domains such as product reviews, video blogs, and images.",
+                0
+            ],
+            "1": [
+                "They introduced the problem of multimodal sentiment analysis and presented the main challenges in this field.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They introduced the problem of multimodal sentiment analysis and presented the main challenges in this field.",
+                0
+            ],
+            "0": [
+                "Dragoni (2017) built a tool for multi-domain sentiment analysis by exploiting word embedding with recurrent neural network.",
+                0
+            ],
+            "1": [
+                "They used word embedding to generate word representation and then train recurrent network model.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "They calculate the overall polarity by multiplying domain-specific polarity value with the overlap between the representation of the entire sentences and the domain itself.",
+                0
+            ],
+            "0": [
+                "Vilares et al. (2017) performed multilingual polarity classification on Twitter and compared three different approaches namely multilingual, dual monolingual, and monolingual models.",
+                0
+            ],
+            "1": [
+                "Monolingual model is based on a language identification tool.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Moreover, they presented aspect-based SA, irony and sarcasm detection, and spam detection as future challenges.",
+                0
+            ],
+            "0": [
+                "Zhao et al. (2017) pro- posed a deep learning model to detect the sentiment from product reviews by incorporating rating information of the product reviews.",
+                0
+            ],
+            "1": [
+                "The proposed model contains two steps: learning representation to capture sentiment distribution of reviews through rating information and using a few label data for sentiment prediction.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Moreover, the combination of multiple deep learning algorithms could be useful for improving the performance of SA models.",
+                0
+            ],
+            "0": [
+                "Hassan and Mahmood (2017) proposed deep learning model by combining CNN with Long Short-Term Memory (LSTM) methods and used word embedding to represent the review sentences.",
+                0
+            ],
+            "1": [
+                "In this model, they used LSTM as pooling layer to capture long term dependencies, which is one of the limitations of CNN algo- rithm.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The proposed model solved the polarity detection task and alleviates the word order problem.",
+                0
+            ],
+            "0": [
+                "Similarly, Nguyen et al. (2017) combined CNN and LSTM to solve the task of aspect-level sentiment analysis for news articles.",
+                0
+            ],
+            "1": [
+                "This combination is useful when it requires capturing the semantic of the words and the association between them.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "One of the recent directions of SA is to enhance the teaching process through analyzing the comments of students about the learning resources.",
+                0
+            ],
+            "0": [
+                "Rani and Kumar (2017) proposed SA\u2019 sys- tem for students to improve the process of teaching and learning by analyzing their feedback about a specific course.",
+                0
+            ],
+            "1": [
+                "The proposed system contains data collection and preprocessing, sen- timent detection, satisfaction and dissatisfaction computation, and data visualization.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "SCSA has become an important research field unlike other domains such as micro-blogs and product reviews because the citation texts are different in content type, language, and text styles.",
+                0
+            ],
+            "0": [
+                "One of the possible uses of SCSA is to improve the bibliometric measures (Abu-Jbara et al. 2013) such as the impact factor (Garfield 1979) that can help in identifying the article\u2019s impact.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "In addition, it can support researchers in understanding previous contributions and limitations of proposed theories, tools and methods in a specific field (Athar 2014).",
+                0
+            ],
+            "1": [
+                "Another use of SCSA is to recognize problems and gaps in a particular topic through classifying the literature findings as positive or negative contributions.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

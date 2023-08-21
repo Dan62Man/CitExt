@@ -1,26 +1,20 @@
-of a triple extracted from unstructured text to its identical predicate in the KG. Generally, many studies (Augenstein, Pado, and Rudolph 2012; Ratinov et al. 2011;
-Mendes et al. 2011) focus on mapping only an entity, which
-is usually a subject or an object of a triple, to its identical entity in a KG. Mapping a whole predicate to its identical predicate is usually ignored. Mapping a predicate to its identical
-predicate in a KG is an essential procedure because it can
-reduce the heterogeneity problem and increase the searchability over a KG. Although one study (Exner and Nugues
-2012) introduced mapping a predicate of a triple extracted
-from unstructured text to an identical predicate in a KG, the
-approach uses the simple rule-based approach. As a result, it
-cannot efficiently deal with the limitation of rule generation
-due to the sparsity of unstructured text.
-In this paper, we introduce T2KG: an end-to-end system
-for creating a KG from unstructured text. In T2KG, we propose a hybrid approach that combines a rule-based approach
-and a similarity-based approach for mapping a predicate of
-a triple extracted from unstructured text to its identical predicate in an existing KG. The existing KG is used as control
-knowledge when creating a new KG. In the similarity-based
-approach, we present a novel vector-based similarity metric
-for computing the similarity between the elements of triples
-to overcome the sparsity problem.
-The rest of this paper is organized as follows. Section 2
-gives a brief survey and related work regarding KG creation.
-In Section 3, the detail of T2KG is presented. Experiments
-and results are conducted in Section 4. Eventually, this work
-is concluded in section 5.
+Automatic Knowledge Graph (KG) construction is
+an active research area aiming at representing the
+information present in abundant textual corpora in
+a more organized, structured and compressed form,
+which can be efficiently utilized in a variety of
+downstream applications, including reasoning, decision making, question answering, to name a few.
+However, this is a challenging problem due to the
+inherent non-unique graph representation (graph
+with N nodes can have N! equivalent adjacency
+matrices), complex node and edge structure (node
+set is not fixed and edges are not binary), large
+output spaces (for graph with N nodes the system
+may need to output up to N2
+edges to specify its
+structure), lack of efficient architectures specialized
+for graph-structured generation output and limited
+parallel training data.
 The related problem of generating text from
 a given KG is generally more widely studied,
 with many suggested architectures and approaches.

@@ -1,0 +1,49 @@
+{
+    "id": "Liu2017",
+    "sentences": [
+        {
+            "-1": [
+                "Recently, researchers developed algorithms to automatically analyze citation sentiment.",
+                0
+            ],
+            "0": [
+                "For example, [1] extracted several features for citation purpose and polarity classification, such as reference count, contrary expression and dependency relations.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Jochim et al. tried to improve the result by using unigram and bigram features [2].",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "[3] used word level features, contextual polarity features, and sentence structure based features to detect sentiment citations.",
+                0
+            ],
+            "1": [
+                "Although they generated good results using the combination of features, it required a lot of engineering work and big amount of annotated data to obtain the features.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "These representations can be treated as concept features for classification.",
+                0
+            ],
+            "0": [
+                "An important advance in this area is the development of the word2vec technique [4], which has proved to be an effective approach in Twitter sentiment classification [5].",
+                1
+            ],
+            "1": [
+                "In this work, the word2vec technique on sentiment analysis of citations was explored.",
+                0
+            ],
+            "final_score": 1
+        }
+    ]
+}

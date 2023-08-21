@@ -1,0 +1,90 @@
+{
+    "id": "QiEtAl2021",
+    "sentences": [
+        {
+            "0": [
+                "A knowledge graph (KG) organizes entities, attributes, relations, and other information in a structured format [Hogan et al., 2020].",
+                0
+            ],
+            "1": [
+                "One single KG is often incomplete while different KGs can complement each other to form a larger and more comprehensive KG via alignment, i.e., discovering equivalent entities, relations, and others across two KGs.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Due to wide KG applications, KG alignment, especially entity alignment, has attracted massive attention.",
+                0
+            ],
+            "0": [
+                "KG embeddings have become a powerful tool to exploit KGs by encoding entities, relations, and others into a low-dimensional vector space [Wang et al., 2017].",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Many embedding-based models have been proposed for entity alignment [Sun et al., 2020], and usually comply with the following paradigm.",
+                0
+            ],
+            "1": [
+                "They first embed the to-be-aligned KGs into one vector space and then discover the mappings by calculating the vector distance or similarity.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "However, seed annotation requires massive manual work, which may not be available in practice.",
+                0
+            ],
+            "0": [
+                "An industrial evaluation study has shown the number and the sampling distribution of alignment seeds can dramatically influence the alignment performance [Zhang et al., 2020].",
+                0
+            ],
+            "1": [
+                "The embeddingbased models emphasize establishing expressive embeddings to capture entity features and then independently predict each mapping, ignoring the holistic analysis and logical consistency, which often leads to some false mappings.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "In contrast, conventional KG alignment systems exploit various more traditional techniques such as logical reasoning and lexical matching.",
+                0
+            ],
+            "0": [
+                "For example, the classic system LogMap [Jimenez-Ruiz and Grau, 2011 \u00b4 ] iteratively discovers mappings by lexical and graph matching, and repairs mappings by logical reasoning.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "PARIS [Suchanek et al., 2012] is another representative system that utilizes probabilistic reasoning and lexical matching.",
+                0
+            ],
+            "1": [
+                "Specifically, after getting initial mappings by matching with attributes such as names, PARIS expands the entity and relation mappings in each iteration by inferring the entity and relation equivalence with probabilistic reasoning.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "As no training is needed, these systems never rely on any alignment seeds, and are quite scalable and efficient.",
+                1
+            ],
+            "0": [
+                "It is worth noting that PARIS and LogMap often outperform those embedding-based models according to the recent studies [Sun et al., 2020; Zhang et al., 2020].",
+                0
+            ],
+            "1": [
+                "On the other hand, these conventional systems use traditional lexical and graph matching techniques that are weak at exploiting and utilizing the graph structure and other contextual information.",
+                -1
+            ],
+            "final_score": -1
+        }
+    ]
+}

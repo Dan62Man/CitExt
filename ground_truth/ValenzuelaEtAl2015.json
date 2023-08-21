@@ -1,0 +1,42 @@
+{
+    "id": "ValenzuelaEtAl2015",
+    "sentences": [
+        {
+            "-1": [
+                "Our method performs well, obtaining a precision of 65% for a recall of 90%.",
+                0
+            ],
+            "0": [
+                "There has been considerable effort in the past decade on citation indexing systems (Giles, Bollacker, and Lawrence 1998; Lawrence, Giles, and Bollacker 1999; Councill, Lee, and Giles 2006) and on algorithms that analyze these citation graphs to, e.g., understand the flow of research topics in the literature, model the influence of specific papers in their field, or recommend citations for a given topic",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "; see, inter alia, (Dietz, Bickel, and Scheffer 2007; Gruber, Rosen-Zvi, and Weiss. 2008; Nallapati et al. 2008; Daume III 2009; Sun et al. 2009; Wong et al. 2009; Nallapati, McFarland, and Manning 2011).",
+                0
+            ],
+            "1": [
+                "However, by and large, these works assume that all citations are important, which we dispute in our work.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "We argue that by identifying the citations that are truly important, we will arrive at a better understanding of published research, which will lead to novel or more accurate applications of scholarly big data.",
+                0
+            ],
+            "0": [
+                "Our work is closest to (Zhu et al. 2013), which focuses on identifying key references for a given paper.",
+                0
+            ],
+            "1": [
+                "Zhu et al. create a dataset of citations, labeled according to their influence by the authors of the citing papers, and train a supervised classifier with four features to predict academic influence.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

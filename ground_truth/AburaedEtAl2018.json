@@ -1,0 +1,53 @@
+{
+    "id": "AburaedEtAl2018",
+    "sentences": [
+        {
+            "0": [
+                "Current estimates indicate that the number of scientific publications grows at unprecedented rates: between 0.7 and 1.5 million new papers are published every year (Bornmann and Mutz, 2015; Jinha, 2010).",
+                0
+            ],
+            "1": [
+                "In this context of scientific information overload, text mining tools are of utmost importance for researchers who must read scientific papers in order to assess their value and make use of their contents.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "This paper describes some experiments on the detection of implicit citations in a paper, i.e. sentences that refer to the work done in another paper but do not contain an explicit citation marker.",
+                0
+            ],
+            "0": [
+                "Consider the fragment shown in Figure 1, which is an extract from (He et al., 2008) where they cite, amongst other papers, the Pyramid method defined in (Nenkova et al., 2007).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "The explicit citation is in sentence 217: The marker \"[5]\" refers to (Nenkova et al., 2007).",
+                0
+            ],
+            "1": [
+                "Several paragraphs later, from sentence 247 onwards, they describe properties of the Pyramid method and compare it to what they did and to other methods.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Notice that in these sentences, they use the name of the method defined in the reference paper instead of the author, but nonetheless they are talking about the same paper.",
+                0
+            ],
+            "0": [
+                "Authors can use several techniques for implicitly referring to a paper (Athar and Teufel, 2012), for example: using only the name of the main author, using pronouns that could be resolved as the mentioned work, or using keywords that refer to a distinguishing topic in the paper (in the previous example, the Pyramid method).",
+                0
+            ],
+            "1": [
+                "Also, the implicit citations can be present far from the explicit citations.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

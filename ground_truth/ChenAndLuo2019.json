@@ -1,0 +1,35 @@
+{
+    "id": "ChenAndLuo2019",
+    "sentences": [
+        {
+            "-1": [
+                "In the information society, the creation, distribution, utilization, and manipulation of information become important works, making the importance of intellectual work significantly increased.",
+                0
+            ],
+            "0": [
+                "There is a consensus that effective knowledge management can bring an organization competitive advantage over its rivals [1].",
+                0
+            ],
+            "1": [
+                "When researchers and practitioners paid much of their attention to the knowledge management to explore its value, more and more documentation has been accumulated to record the generated knowledge.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Due to human\u2019s limited cognitive capacity, it is a great challenge to retrieve and obtain the knowledge from the accumulated documentation in a human-friendly and efficient way.",
+                0
+            ],
+            "0": [
+                "According to epistemology, there exist two perspectives on the knowledge related principles for a consensus: objectivist perspective and practice-based perspective [1].",
+                0
+            ],
+            "1": [
+                "From the objectivist perspective, knowledge is regarded as an entity that can be codified and kept independently among people who possesses and uses it.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

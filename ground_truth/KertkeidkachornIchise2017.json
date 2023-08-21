@@ -1,0 +1,183 @@
+{
+    "id": "KertkeidkachornIchise2017",
+    "sentences": [
+        {
+            "-1": [
+                "A knowledge graph (KG) is a graph-structured knowledge base that stores knowledge in the form of the relation between entities.",
+                0
+            ],
+            "0": [
+                "An example KG is DBpedia(Auer et al. 2007).",
+                0
+            ],
+            "1": [
+                "The KG plays an important role in various applications, e.g., question answering, browsing knowledge and data visualization.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The KG plays an important role in various applications, e.g., question answering, browsing knowledge and data visualization.",
+                0
+            ],
+            "0": [
+                "However, most of the published data is unstructured data and the trend of publishing such data is dramatically growing faster than publishing structured data (Kriz et al. 2014).",
+                0
+            ],
+            "1": [
+                "Consequently, a large amount of data cannot be straightforwardly transformed into a KG and so is left as unstructured data.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Consequently, a large amount of data cannot be straightforwardly transformed into a KG and so is left as unstructured data.",
+                0
+            ],
+            "0": [
+                "Recently, many approaches have proposed transforming unstructured text to structured text in order to create a KG (Carlson et al. 2010; Fader, Soderland, and Etzioni 2011; Schmitz et al. 2012; Cattoni et al. 2012; Augenstein, Pado, and Rudolph 2012; Kriz et al. 2014; Exner and Nugues 2012).",
+                0
+            ],
+            "1": [
+                "Although those studies perform well for extracting triples (subject, predicate, object) from unstructured text, they still have a limitation regarding mapping a predicate of a triple extracted from unstructured text to its identical predicate in the KG.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "Although those studies perform well for extracting triples (subject, predicate, object) from unstructured text, they still have a limitation regarding mapping a predicate of a triple extracted from unstructured text to its identical predicate in the KG.",
+                -1
+            ],
+            "0": [
+                "Generally, many studies (Augenstein, Pado, and Rudolph 2012; Ratinov et al. 2011; Mendes et al. 2011) focus on mapping only an entity, which is usually a subject or an object of a triple, to its identical entity in a KG.",
+                0
+            ],
+            "1": [
+                "Mapping a whole predicate to its identical predicate is usually ignored.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Mapping a predicate to its identical predicate in a KG is an essential procedure because it can reduce the heterogeneity problem and increase the searchability over a KG.",
+                0
+            ],
+            "0": [
+                "Although one study (Exner and Nugues 2012) introduced mapping a predicate of a triple extracted from unstructured text to an identical predicate in a KG, the approach uses the simple rule-based approach.",
+                0
+            ],
+            "1": [
+                "As a result, it cannot efficiently deal with the limitation of rule generation due to the sparsity of unstructured text.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "Based on these tasks, previous approaches can be roughly divided into three groups.",
+                0
+            ],
+            "0": [
+                "The first group (Carlson et al. 2010; Fader, Soderland, and Etzioni 2011; Schmitz et al. 2012) mainly focuses on knowledge extraction from unstructured text.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "NELL (Carlson et al. 2010) is a never-ending system that learns to read the web.",
+                0
+            ],
+            "1": [
+                "To extract triples in NELL, bootstrap constraints are used to learn new constraints.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "To extract triples in NELL, bootstrap constraints are used to learn new constraints.",
+                0
+            ],
+            "0": [
+                "ReVerb (Fader, Soderland, and Etzioni 2011) and OLLIE (Schmitz et al. 2012) are open information systems that extract a triple from a sentence by using syntactic and lexical patterns.",
+                0
+            ],
+            "1": [
+                "Although these approaches successfully extract triples from unstructured text, they still do not consider entity mapping.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "As a result, ambiguity of an extracted entity might occur.",
+                0
+            ],
+            "0": [
+                "The second group (Cattoni et al. 2012; Augenstein, Pado, and Rudolph 2012; Kriz et al. 2014) also investigates knowledge extraction and entity mapping.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "In some studies (Cattoni et al. 2012; Kriz et al. 2014), a triple is extracted from unstructured text by using Natural Language Processing (NLP) techniques.",
+                0
+            ],
+            "1": [
+                "Then, a triple is stored as an RDF triple by using its own ontology.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Then, a triple is stored as an RDF triple by using its own ontology.",
+                0
+            ],
+            "0": [
+                "LODifier (Augenstein, Pado, and Rudolph 2012) uses a deep semantic analysis system and a named entity recognition system with a coreference resolution system to acquire a triple and generates an RDF triple by using WordNet representation without considering other ontologies.",
+                0
+            ],
+            "1": [
+                "Even though these approaches can resolve the ambiguity of an extracted entity, all elements of a triple are not yet integrated into other KGs.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "Even though these approaches can resolve the ambiguity of an extracted entity, all elements of a triple are not yet integrated into other KGs.",
+                0
+            ],
+            "0": [
+                "The third group (Exner and Nugues 2012) considers all aspects for creating a KG.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Exner et al. use a semantic role labeling method with a state-of-the-art NLP to extract a triple from Wikipedia and then applies a rule-based approach to integrate an RDF triple into the ontology of the KG (Exner and Nugues 2012).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Although this approach (Exner and Nugues 2012) can integrate a predicate into the ontology of a KG, it still has the following severe limitation.",
+                -1
+            ],
+            "1": [
+                "Due to the sparsity of unstructured text, bootstrapping training data for generating rules might not cover all possible patterns; consequently, some rules are missing.",
+                -1
+            ],
+            "final_score": -1
+        }
+    ]
+}

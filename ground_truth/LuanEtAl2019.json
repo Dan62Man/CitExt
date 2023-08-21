@@ -1,0 +1,181 @@
+{
+    "id": "LuanEtAl2019",
+    "sentences": [
+        {
+            "-1": [
+                "Thus, we might expect that knowledge learned from one task might benefit another.",
+                0
+            ],
+            "0": [
+                "Most previous work in IE (e.g., (Nadeau and Sekine, 2007; Chan and Roth, 2011)) employs a pipeline approach, first detecting entities and then using the detected entity spans for relation extraction and coreference resolution.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "To avoid cascading errors introduced by pipeline-style systems, recent work has focused on coupling different IE tasks as in joint modeling of entities and relations (Miwa and Bansal, 2016; Zhang et al., 2017), entities and coreferences (Hajishirzi et al., 2013; Durrett and Klein, 2014), joint inference (Singh et al., 2013) or multi-task (entity/relation/coreference) learning (Luan et al., 2018a).",
+                0
+            ],
+            "1": [
+                "These models mostly rely on the first layer LSTM to share span representations between different tasks and are usually designed for specific domains.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "The nodes in the graph are dynamically selected from a beam of highly-confident mentions, and the edges are weighted according to the confidence scores of relation types or coreferences.",
+                0
+            ],
+            "0": [
+                "Unlike the multi-task method that only shares span representations from the local context (Luan et al., 2018a), our framework leverages rich contextual span representations by propagating information through coreference and relation links.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Unlike previous BIO-based entity recognition systems (Collobert and Weston, 2008; Lample et al., 2016; Ma and Hovy, 2016) that assign a text span to at most one entity, our framework enumerates and represents all possible spans to recognize arbitrarily overlapping entities.",
+                0 (?)
+            ],
+            "1": [
+                "We evaluate DYGIE on several datasets spanning many domains (including news, scientific articles, and wet lab experimental protocols), achieving state-of-the-art performance across all tasks and domains and demonstrating the value of coupling related tasks to learn richer span representations.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "1) We introduce the dynamic span graph framework as a method to propagate global contextual information, making the code publicly available.",
+                0
+            ],
+            "0": [
+                "2) We demonstrate that our framework significantly outperforms the state-of-the-art on joint entity and relation detection tasks across four datasets: ACE 2004, ACE 2005, SciERC and the Wet Lab Protocol Corpus.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "3) We further show that our approach excels at detecting entities with overlapping spans, achieving an improvement of up to 8 F1 points on three benchmarks annotated with overlapped spans: ACE 2004, ACE 2005 and GENIA.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Previous studies have explored joint modeling (Miwa and Bansal, 2016; Zhang et al., 2017; Singh et al., 2013; Yang and Mitchell, 2016)) and multi-task learning (Peng and Dredze, 2015; Peng et al., 2017; Luan et al., 2018a, 2017a) as methods to share representational strength across related information extraction tasks.",
+                0
+            ],
+            "1": [
+                "The most similar to ours is the work in Luan et al. (2018a) that takes a multi-task learning approach to entity, relation, and coreference extraction.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "In contrast, DYGIE uses dynamic graph propagation to explicitly incorporate rich contextual information into the span representations.",
+                0
+            ],
+            "0": [
+                "Entity recognition has commonly been cast as a sequence labeling problem, and has benefited substantially from the use of neural architectures (Collobert et al., 2011; Lample et al., 2016; Ma and Hovy, 2016; Luan et al., 2017b, 2018b).",
+                0
+            ],
+            "1": [
+                "However, most systems based on sequence labeling suffer from an inability to extract entities with overlapping spans.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "However, most systems based on sequence labeling suffer from an inability to extract entities with overlapping spans.",
+                -1
+            ],
+            "0": [
+                "Recently Katiyar and Cardie (2018) and Wang and Lu (2018) have presented methods enabling neural models to extract overlapping entities, applying hypergraph-based representations on top of sequence labeling systems.",
+                0
+            ],
+            "1": [
+                "Our framework offers an alternative approach, forgoing sequence labeling entirely and simply considering all possible spans as candidate entities.",
+                0
+            ],
+            "final_score": 1
+        },
+        {
+            "-1": [
+                "Neural graph-based models have achieved significant improvements over traditional featurebased approaches on several graph modeling tasks.",
+                0
+            ],
+            "0": [
+                "Knowledge graph completion (Yang et al., 2015; Bordes et al., 2013) is one prominent example.",
+                1
+            ],
+            "final_score": 1
+        },
+        {
+            "0": [
+                "For relation extraction tasks, graphs have been used primarily as a means to incorporate pipelined features such as syntactic or discourse relations (Peng et al., 2017; Song et al., 2018; Zhang et al., 2018).",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Christopoulou et al. (2018) models all possible paths between entities as a graph, and refines pair-wise embeddings by performing a walk on the graph structure.",
+                0
+            ],
+            "1": [
+                "All these previous works assume that the nodes of the graph (i.e. the entity candidates to be considered during relation extraction) are predefined and fixed throughout the learning process.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "On the other hand, our framework does not require a fixed set of entity boundaries as an input for graph construction.",
+                0
+            ],
+            "0": [
+                "Motivated by state-ofthe-art span-based approaches to coreference resolution (Lee et al., 2017, 2018) and semantic role labeling (He et al., 2018), the model uses a beam pruning strategy to dynamically select high-quality spans, and constructs a graph using the selected spans as nodes.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "0": [
+                "Many state-of-the-art RE models rely upon domain-specific external syntactic tools to construct dependency paths between the entities in a sentence (Li and Ji, 2014; Xu et al., 2015; Miwa and Bansal, 2016; Zhang et al., 2017).",
+                0
+            ],
+            "1": [
+                "These systems suffer from cascading errors from these tools and are hard to generalize to different domains.",
+                -1
+            ],
+            "final_score": -1
+        },
+        {
+            "-1": [
+                "These systems suffer from cascading errors from these tools and are hard to generalize to different domains.",
+                -1
+            ],
+            "0": [
+                "To make the model more general, we combine the multitask learning framework with ELMo embeddings (Peters et al., 2018) without relying on external syntactic tools and risking the cascading errors that accompany them, and improve the interaction between tasks through dynamic graph propagation.",
+                0
+            ],
+            "final_score": 1
+        },
+        {
+            "0": [
+                "While the performance of DyGIE benefits from ELMo, it advances over some systems (Luan et al., 2018a; Sanh et al., 2019) that also incorporate ELMo.",
+                0
+            ],
+            "1": [
+                "The analyses presented here give insights into the benefits of joint modeling.",
+                0
+            ],
+            "final_score": 0
+        }
+    ]
+}

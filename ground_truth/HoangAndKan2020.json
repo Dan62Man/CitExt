@@ -1,0 +1,35 @@
+{
+    "id": "HoangAndKan2020",
+    "sentences": [
+        {
+            "-1": [
+                "In fact, existing works in the NLP and recommendation systems communities have already begun work that fits towards the completion of the first two tasks.",
+                0
+            ],
+            "0": [
+                "Citation prediction (Nallapati et al., 2008) is a growing research area that has aimed both at predicting citation growth over time within a community and at individual paper citation patterns.",
+                0
+            ],
+            "1": [
+                "This year, an automatic keyphrase extraction task from scientific articles was first fielded in SemEval-2, partially addressing Task 1.",
+                0
+            ],
+            "final_score": 0
+        },
+        {
+            "-1": [
+                "This year, an automatic keyphrase extraction task from scientific articles was first fielded in SemEval-2, partially addressing Task 1.",
+                1
+            ],
+            "0": [
+                "Also, automatic survey generation (Mohammad et al., 2009) is becoming a growing field within the summarization community.",
+                0
+            ],
+            "1": [
+                "However, to date, we have not yet seen any work that examines topic-biased summarization of multiple scientific articles.",
+                0
+            ],
+            "final_score":  0
+        }
+    ]
+}
