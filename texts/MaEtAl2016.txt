@@ -35,3 +35,34 @@ experiment details. Preliminary experiment results
 and discussions about the results are structured in
 section 5 and 6. Finally, we summarize our work
 and discuss possible directions of future work. 
+domain-specific external syntactic tools to construct dependency paths between the entities in
+a sentence (Li and Ji, 2014; Xu et al., 2015; Miwa
+and Bansal, 2016; Zhang et al., 2017). These systems suffer from cascading errors from these tools
+and are hard to generalize to different domains.
+To make the model more general, we combine
+the multitask learning framework with ELMo embeddings (Peters et al., 2018) without relying on
+external syntactic tools and risking the cascading
+errors that accompany them, and improve the interaction between tasks through dynamic graph propagation. While the performance of DyGIE benefits
+from ELMo, it advances over some systems (Luan
+et al., 2018a; Sanh et al., 2019) that also incorporate
+ELMo. The analyses presented here give insights
+into the benefits of joint modeling.
+Athar (2011) continued this thread of research
+and focused in polarity classification of citations.
+They experimented the SVM classifier with rich
+features, such as negation, sentence splitting and dependency features. Athar (2012) published the Citation Sentiment Corpus, which contains 8736 annotated sentences.
+Jochim (2012) used the following facet scheme
+to describe the nature of a citation: conceptual vs.
+operational; organic vs. perfunctory; evolutionary
+vs. juxtapositional; based on vs. alternative work;
+confirmative vs. negational.
+Dong (2011) performed semi-supervised classification over categories: background, fundamental
+idea, technical basis and performance comparison.
+They have also developed the ACL Anthology
+Searchbench, which provides very practical paper
+search functionality with graphical presentation of
+local citation network of searched paper.1
+Abu-jbara et al. (2013) has also contributed to
+this field by working on citation context identification, citation purpose classification and citation polarity identification. Their method achieved good
+performance by using SVM with linear kernel on a
+rich feature set.

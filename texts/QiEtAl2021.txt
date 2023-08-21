@@ -1,0 +1,58 @@
+A knowledge graph (KG) organizes entities, attributes, relations, and other information in a structured format [Hogan et
+al., 2020]. One single KG is often incomplete while different
+KGs can complement each other to form a larger and more
+comprehensive KG via alignment, i.e., discovering equivalent entities, relations, and others across two KGs. Due to
+wide KG applications, KG alignment, especially entity alignment, has attracted massive attention.
+KG embeddings have become a powerful tool to exploit KGs by encoding entities, relations, and others into a
+low-dimensional vector space [Wang et al., 2017]. Many
+embedding-based models have been proposed for entity
+alignment [Sun et al., 2020], and usually comply with the
+following paradigm. They first embed the to-be-aligned KGs
+into one vector space and then discover the mappings by calculating the vector distance or similarity.
+Although the embedding-based models have achieved encouraging results, they are still limited in some aspects especially in industrial deployment. These models usually require a number of known mappings (i.e., alignment seeds) for
+training. However, seed annotation requires massive manual
+work, which may not be available in practice. An industrial
+evaluation study has shown the number and the sampling distribution of alignment seeds can dramatically influence the
+alignment performance [Zhang et al., 2020]. The embeddingbased models emphasize establishing expressive embeddings
+to capture entity features and then independently predict each
+mapping, ignoring the holistic analysis and logical consistency, which often leads to some false mappings.
+In contrast, conventional KG alignment systems exploit
+various more traditional techniques such as logical reasoning and lexical matching. For example, the classic system
+LogMap [Jimenez-Ruiz and Grau, 2011 ´ ] iteratively discovers
+mappings by lexical and graph matching, and repairs mappings by logical reasoning. PARIS [Suchanek et al., 2012] is
+another representative system that utilizes probabilistic reasoning and lexical matching. Specifically, after getting initial
+mappings by matching with attributes such as names, PARIS
+expands the entity and relation mappings in each iteration by
+inferring the entity and relation equivalence with probabilistic
+reasoning. As no training is needed, these systems never rely
+on any alignment seeds, and are quite scalable and efficient.
+It is worth noting that PARIS and LogMap often outperform
+those embedding-based models according to the recent studies [Sun et al., 2020; Zhang et al., 2020]. On the other hand,
+these conventional systems use traditional lexical and graph
+matching techniques that are weak at exploiting and utilizing
+the graph structure and other contextual information.
+In light of the complementarity between the embeddingbased models and conventional systems, we propose to construct a unified framework that absorbs the advantages of
+both. The main challenge is to find the effective ways to
+make two completely different models work together. In this
+work, an unsupervised iterative framework named PRASE
+is proposed, which is composed of a Probabilistic Reasoning (PR) module and a Semantic Embedding (SE) module.
+Specifically, the PR module initializes the mappings and infers logically consistent mappings with the entity embeddings
+from the SE module, while the SE module emphasizes learning high-quality cross-KG embeddings that encode the graph
+structures and the entity contexts. Note that the SE module
+is compatible with all kinds of embedding-based alignment
+models; while the PR module is currently developed based
+on the conventional system PARIS, but it can be extended to
+other reasoning-based systems such as LogMap.
+The contributions of this paper are threefold. First, an unsupervised KG alignment framework termed PRASE is proposed, which integrates probabilistic reasoning and semantic
+embedding using an iterative algorithm. To the best of our
+knowledge, this is the first to combine traditional reasoning
+techniques and state-of-the-art embedding techniques for KG
+alignment. Second, the PRASE framework has been implemented with PARIS and multiple different embedding-based
+models. Third, the PRASE framework has been evaluated
+on five widely used datasets and one industry dataset. The
+results show the state-of-the-art performance of PRASE. On
+average, the F1-score of PRASE is 28.6% higher than the
+best embedding-based model and 5.96% higher than the best
+conventional system. Different settings of PRASE, such as
+the feedback from the SE module to the PR module and the
+iteration number, have also been studied.

@@ -1,0 +1,45 @@
+Tracking citations is an important component of analyzing
+scholarly big data. Citations provide a quantitative way to
+measure the quality of published works, to detect emerging
+research topics, and to follow evolving ones.
+In this work we argue that not all citations are equal.
+While some indeed indicate that the cited work is used or,
+more importantly, extended in the new publication, some are
+less important, e.g., they discuss the cited work in the context of related work that does not directly impact the new
+effort. To illustrate this point, Table 1 lists several citations
+in increasing order of importance. We further argue that because current citation tracking algorithms do not distinguish
+between important vs. incidental citations, all of the above
+applications (e.g., measuring the quality of a publication, or
+tracking research topics) are negatively affected.
+To our knowledge, this work is among the first to tackle
+the problem of identifying important citations. The contributions of our work are the following:
+1. We introduce the novel task of identifying important citations, defined as a classification task with either two
+classes (important vs. non-important citation) or four
+classes (following the examples in Table 1).
+2. We annotate a dataset of approximately 450 citations with
+citation importance information. The dataset is publicly
+available in the hope that it will foster further research on
+this topic.
+3. We propose a supervised classification approach that separates important from incidental citations using a battery
+of features, ranging from citation counts to where the citation appears in the body of the paper. Our approach
+models both direct citations, i.e., citations that follow established proceeding formats, and indirect citations, i.e.,
+which use a description of the algorithm instead (e.g.,
+“Stanford parser”). Our method performs well, obtaining
+a precision of 65% for a recall of 90%.
+There has been considerable effort in the past decade on
+citation indexing systems (Giles, Bollacker, and Lawrence
+1998; Lawrence, Giles, and Bollacker 1999; Councill, Lee,
+and Giles 2006) and on algorithms that analyze these citation graphs to, e.g., understand the flow of research topics in the literature, model the influence of specific papers in their field, or recommend citations for a given
+topic; see, inter alia, (Dietz, Bickel, and Scheffer 2007;
+Gruber, Rosen-Zvi, and Weiss. 2008; Nallapati et al. 2008;
+Daume III 2009; Sun et al. 2009; Wong et al. 2009; Nallapati, McFarland, and Manning 2011). However, by and large,
+these works assume that all citations are important, which
+we dispute in our work. We argue that by identifying the citations that are truly important, we will arrive at a better understanding of published research, which will lead to novel
+or more accurate applications of scholarly big data.
+Our work is closest to (Zhu et al. 2013), which focuses on
+identifying key references for a given paper. Zhu et al. create
+a dataset of citations, labeled according to their influence by
+the authors of the citing papers, and train a supervised classifier with four features to predict academic influence. Our
+work is different in that our dataset of citations is annotated
+by (unbiased) domain experts and we explore a much larger
+feature set (twelve vs. four).

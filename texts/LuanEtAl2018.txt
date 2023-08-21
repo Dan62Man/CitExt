@@ -57,3 +57,54 @@ detect scientific entities, relations, and coreference
 clusters without hand-engineered features. We use
 our unified framework to build a scientific knowledge graph from a large collection of documents
 and analyze information in scientific literature.
+There has been growing interest in research on automatic methods for information extraction from
+scientific articles. Past research in scientific IE
+addressed analyzing citations (Athar and Teufel,
+2012b,a; Kas, 2011; Gabor et al., 2016; Sim et al.,
+2012; Do et al., 2013; Jaidka et al., 2014; AbuJbara and Radev, 2011), analyzing research community (Vogel and Jurafsky, 2012; Anderson et al.,
+2012), and unsupervised methods for extracting scientific entities and relations (Gupta and Manning,
+2011; Tsai et al., 2013; Gabor et al. , 2016).
+More recently, two datasets in SemEval 2017
+and 2018 have been introduced, which facilitate
+research on supervised and semi-supervised learning for scientific information extraction. SemEval
+17 (Augenstein et al., 2017) includes 500 paragraphs from articles in the domains of computer
+science, physics, and material science. It includes
+three types of entities (called keyphrases): Tasks,
+Methods, and Materials and two relation types:
+hyponym-of and synonym-of. SemEval 18 (Gabor ´
+et al., 2018) is focused on predicting relations between entities within a sentence. It consists of six
+relation types. Using these datasets, neural models (Ammar et al., 2017, 2018; Luan et al., 2017b;
+Augenstein and Søgaard, 2017) are introduced for
+extracting scientific information. We extend these
+datasets by increasing relation coverage, adding
+cross-sentence coreference linking, and removing
+some annotation constraints. Different from most
+previous IE systems for scientific literature and general domains (Miwa and Bansal, 2016; Xu et al.,
+2016; Peng et al., 2017; Quirk and Poon, 2017;
+Luan et al., 2018; Adel and Schutze ¨ , 2017), which
+use preprocessed syntactic, discourse or coreference features as input, our unified framework does
+not rely on any pipeline processing and is able to
+model overlapping spans.
+While Singh et al. (2013) show improvements
+by jointly modeling entities, relations, and coreference links, most recent neural models for these
+tasks focus on single tasks (Clark and Manning,
+2016; Wiseman et al., 2016; Lee et al., 2017; Lample et al., 2016; Peng et al., 2017) or joint entity
+and relation extraction (Katiyar and Cardie, 2017;
+Zhang et al., 2017; Adel and Schutze ¨ , 2017; Zheng
+et al., 2017). Among those studies, many papers assume the entity boundaries are given, such as (Clark
+and Manning, 2016), Adel and Schutze ¨ (2017) and
+Peng et al. (2017). Our work relaxes this constraint
+and predicts entity boundaries by optimizing over
+all possible spans. Our model draws from recent
+end-to-end span-based models for coreference resolution (Lee et al., 2017, 2018) and semantic role
+labeling (He et al., 2018) and extends them for the
+multi-task framework involving the three tasks of
+identification of entity, relation and coreference.
+Neural multi-task learning has been applied to
+a range of NLP tasks. Most of these models share
+word-level representations (Collobert and Weston,
+2008; Klerke et al., 2016; Luan et al., 2016, 2017a;
+Rei, 2017), while Peng et al. (2017) uses high-order
+cross-task factors. Our model instead propagates
+cross-task information via span representations,
+which is related to Swayamdipta et al. (2017).

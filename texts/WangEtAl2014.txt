@@ -1,0 +1,135 @@
+Knowledge graphs such as Freebase (Bollacker et al. 2008),
+WordNet (Miller 1995) and GeneOntology (Ashburner et
+al. 2000) have become very important resources to support
+many AI related applications, such as web/mobile search,
+Q&A, etc. A knowledge graph is a multi-relational graph
+composed of entities as nodes and relations as different types
+of edges. An instance of edge is a triplet of fact (head entity,
+relation, tail entity) (denoted as (h, r, t)). In the past decade,
+there have been great achievements in building large scale
+knowledge graphs, however, the general paradigm to support
+computing is still not clear. Two major difficulties are: (1) A
+knowledge graph is a symbolic and logical system while
+applications often involve numerical computing in continuous spaces; (2) It is difficult to aggregate global knowledge
+over a graph. The traditional method of reasoning by formal
+logic is neither tractable nor robust when dealing with
+long range reasoning over a real large scale knowledge
+graph. Recently a new approach has been proposed to deal
+with the problem, which attempts to embed a knowledge
+graph into a continuous vector space while preserving
+certain properties of the original graph (Socher et al. 2013;
+Bordes et al. 2013a; Weston et al. 2013; Bordes et al. 2011;
+2013b; 2012; Chang, Yih, and Meek 2013). For example,
+each entity h (or t) is represented as a point h (or t) in
+the vector space while each relation r is modeled as an
+operation in the space which is characterized by an a vector
+r, such as translation, projection, etc. The representations
+of entities and relations are obtained by minimizing a
+global loss function involving all entities and relations.
+As a result, even the embedding representation of a single
+entity/relation encodes global information from the whole
+knowledge graph. Then the embedding representations can
+be used to serve all kinds of applications. A straightforward
+one is to complete missing edges in a knowledge graph. For
+any candidate triplet (h, r, t), we can confirm the correctness
+simply by checking the compatibility of the representations
+h and t under the operation characterized by r.
+Generally, knowledge graph embedding represents an
+entity as a k-dimensional vector h (or t) and defines a
+scoring function fr(h, t) to measure the plausibility of the
+triplet (h, r, t) in the embedding space. The score function
+implies a transformation r on the pair of entities which
+characterizes the relation r. For example, in translation
+based method (TransE) (Bordes et al. 2013b), fr(h, t) ,
+kh+r−tk`1/2
+, i.e., relation r is characterized by the translating (vector) r. With different scoring functions, the implied
+transformations vary between simple difference (Bordes et
+al. 2012), translation (Bordes et al. 2013b), affine (Chang,
+Yih, and Meek 2013), general linear (Bordes et al. 2011),
+bilinear (Jenatton et al. 2012; Sutskever, Tenenbaum, and
+Salakhutdinov 2009), and nonlinear transformations (Socher
+et al. 2013). Accordingly the model complexities (in terms
+of number of parameters) vary significantly. (Please refer to
+Table 1 and Section “Related Works” for details.)
+Among previous methods, TransE (Bordes et al. 2013b) is
+a promising one as it is simple and efficient while achieving
+state-of-the-art predictive performance. However, we find
+that there are flaws in TransE when dealing with relations
+with mapping properties of reflexive/one-to-many/manyto-one/many-to-many. Few previous work discuss the role
+of these mapping properties in embedding. Some advanced
+models with more free parameters are capable of preserving
+these mapping properties, however, the model complexity
+and running time is significantly increased accordingly.
+Moreover, the overall predictive performances of the
+advanced models are even worse than TransE (Bordes et al.
+2013b). This motivates us to propose a method which makes
+a good trad-off between model complexity and efficiency
+so that it can overcome the flaws of TransE while inheriting
+the efficiency.
+In this paper, we start by analyzing the problems of
+TransE on reflexive/one-to-many/many-to-one/many-tomany relations. Accordingly we propose a method named
+translation on hyperplanes (TransH) which interprets a
+relation as a translating operation on a hyperplane. In
+TransH, each relation is characterized by two vectors, the
+norm vector (wr) of the hyperplane, and the translation
+vector (dr) on the hyperplane. For a golden triplet (h, r, t),
+that it is correct in terms of worldly facts, the projections
+of h and t on the hyperplane are expected to be connected
+by the translation vector dr with low error. This simple
+method overcomes the flaws of TransE in dealing with
+reflexive/one-to-many/many-to-one/many-to-many relations while keeping the model complexity almost the same
+as that of TransE. Regarding model training, we point out
+that carefully constructing negative labels is important in
+knowledge embedding. By utilizing the mapping properties
+of relations in turn, we propose a simple trick to reduce
+the chance of false negative labeling. We conduct extensive
+experiments on the tasks of link prediction, triplet classification and fact extraction on benchmark datasets like
+WordNet and Freebase, showing impressive improvements
+on different metrics of predictive accuracy. We also show
+that the running time of TransH is comparable to TransE.
+The most related work is briefly summarized in Table 1. All
+these methods embed entities into a vector space and enforce the embedding compatible under a scoring function.
+Different models differ in the definition of scoring functions
+fr(h, r) which imply some transformations on h and t.
+TransE (Bordes et al. 2013b) represents a relation by
+a translation vector r so that the pair of embedded entities in a triplet (h, r, t) can be connected by r with low
+error. TransE is very efficient while achieving state-of-theart predictive performance. However, it has flaws in dealing
+with reflexive/one-to-many/many-to-one/many-to-many relations.
+Unstructured is a simplified case of TransE, which considers the graph as mono-relational and sets all translations
+r = 0, i.e., the scoring function is kh − tk. It is used as a
+naive baseline in (Bordes et al. 2012; 2013b). Obviously it
+cannot distinguish different relations.
+Distant Model (Bordes et al. 2011) introduces two independent projections to the entities in a relation. It represents
+a relation by a left matrix Wrh and a right matrix Wrt. Dissimilarity is measured by L1 distance between Wrhh and
+Wrtt. As pointed out by (Socher et al. 2013), this model is
+weak in capturing correlations between entities and relations
+as it uses two separate matrices.
+Bilinear Model (Jenatton et al. 2012; Sutskever, Tenenbaum, and Salakhutdinov 2009) models second-order correlations between entity embeddings by a quadratic form:
+h
+>Wrt. Thus, each component of an entity interacts with
+each component of the other entity.
+Single Layer Model (Socher et al. 2013) introduces
+nonlinear transformations by neural networks. It concatenates h and t as an input layer to a non-linear hidden
+layer then the linear output layer gives the resulting score:
+u
+>
+r
+f(Wrhh + Wrtt + br). A similar structure is proposed
+in (Collobert and Weston 2008).
+NTN (Socher et al. 2013) is the most expressive model
+so far. It extends the Single Layer Model by considering
+the second-order correlations into nonlinear transformation
+(neural networks). The score function is u
+>
+r
+f(h
+>Wrt +
+Wrhh + Wrtt + br). As analyzed by the authors, even
+when the tensor Wr degenerates to a matrix, it covers all
+the above models. However, the model complexity is much
+higher, making it difficult to handle large scale graphs.
+Beyond these works directly targeting the same problem
+of embedding knowledge graphs, there are extensive related
+works in the wider area of multi-relational data modeling,
+matrix factorization, and recommendations. Please refer to
+the Introduction part of (Bordes et al. 2013b).

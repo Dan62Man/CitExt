@@ -1,0 +1,44 @@
+Knowledge graph is a core component of new generation online education platforms for intelligent education. Different
+from traditional massive open online course (MOOC) platforms focusing on learning resources provision, new generation online education platforms target on intelligent personalized educational services, such as automatic learning obstacle
+diagnosis, personalized learning resource recommendation,
+subject concept and relation visualization, and concept-level
+knowledge proficiency examination. Our Smart Learning
+Partner (SLP) is such a new generation education platform,
+developed by Beijing Normal University, that officially serves
+more than 15,000 local primary and middle school students
+in Beijing. To better support SLP services, we propose this
+K12EduKG system which can automatically build knowledge
+graphs for different K-12 subjects by consisting of subject
+concepts as nodes and concept relations as edges.
+Compared to generic knowledge graphs, educational knowledge graph construction faces two major challenges: firstly,
+the desired educational concept entities are more abstract than
+real world entities like PERSON, ORGANIZATION, LOCATION. Secondly, the desired relations are more cognitive and
+implicit, so cannot be derived from the literal meanings of text
+like generic knowledge graphs. In this paper, we try to tackle
+these two challenges with this proposed K12EduKG system.
+More specifically, for abstract educational concept extraction,
+we utilize special data sources like curriculum standards from
+the education domain. In addition, we utilize students’ performance data collected from our SLP education platform to
+identify relations through data mining techniques.
+The proposed K12EduKG system endeavors to tackle the
+above challenges, and it principally makes the following key
+contributions:
+We propose a novel but practical system to construct knowledge graphs specifically for k-12 educational subjects.
+We employ named entity recognition (NER) techniques to
+extract educational concepts, and propose association rule
+mining algorithms to identify prerequisite relations among
+the concepts.
+We demonstrate an exemplary case with constructing a
+knowledge graph for the subject of mathematics.
+In the education domain, a few studies have been conducted
+on knowledge graph construction recently. Chaplot and
+Koedinger use educational data to induce the prerequisite
+relations among multiple units in a course [2], and Liang et al.
+recovers prerequisite relations from course dependencies [4].
+Another group of researchers utilize the observed relations
+among courses to create a directed universal concept graph [8,
+5]. Different from those systems, our system tries to construct
+knowledge graph on subject concepts rather than courses, and
+the objective is to aid teaching and learning rather than finding course dependencies. In addition, we utilize students’
+performance data rather than course descriptions to identify
+relations.

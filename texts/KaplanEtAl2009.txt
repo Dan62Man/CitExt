@@ -44,4 +44,4 @@ define terminology, discuss the construction of our
 corpus and the results found through its analysis,
 and then move on to our proposed method using coreference-chains. We evaluate the proposed
 method by using the constructed corpus, and then
-conclude the paper
+conclude the paper.
