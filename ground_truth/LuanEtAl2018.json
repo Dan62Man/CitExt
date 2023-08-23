@@ -38,7 +38,7 @@
             ],
             "0": [
                 "Our experiments show that the unified model is better at predicting span boundaries, and it outperforms previous state-of-the-art scientific IE systems on entity and relation extraction (Luan et al., 2017b; Augenstein et al., 2017).",
-                0 (?)
+                0
             ],
             "1": [
                 "In addition, we build a scientific knowledge graph integrating terms and relations extracted from each article.",

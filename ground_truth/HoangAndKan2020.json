@@ -19,7 +19,7 @@
         {
             "-1": [
                 "This year, an automatic keyphrase extraction task from scientific articles was first fielded in SemEval-2, partially addressing Task 1.",
-                1
+                0
             ],
             "0": [
                 "Also, automatic survey generation (Mohammad et al., 2009) is becoming a growing field within the summarization community.",
@@ -29,7 +29,7 @@
                 "However, to date, we have not yet seen any work that examines topic-biased summarization of multiple scientific articles.",
                 0
             ],
-            "final_score":  0
+            "final_score": 0
         }
     ]
 }

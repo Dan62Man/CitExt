@@ -37,7 +37,7 @@
         {
             "0": [
                 "Unlike previous BIO-based entity recognition systems (Collobert and Weston, 2008; Lample et al., 2016; Ma and Hovy, 2016) that assign a text span to at most one entity, our framework enumerates and represents all possible spans to recognize arbitrarily overlapping entities.",
-                0 (?)
+                0
             ],
             "1": [
                 "We evaluate DYGIE on several datasets spanning many domains (including news, scientific articles, and wet lab experimental protocols), achieving state-of-the-art performance across all tasks and domains and demonstrating the value of coupling related tasks to learn richer span representations.",
@@ -111,9 +111,9 @@
             ],
             "0": [
                 "Knowledge graph completion (Yang et al., 2015; Bordes et al., 2013) is one prominent example.",
-                1
+                0
             ],
-            "final_score": 1
+            "final_score": 0
         },
         {
             "0": [

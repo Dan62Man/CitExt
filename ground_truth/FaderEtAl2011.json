@@ -23,7 +23,7 @@
             ],
             "1": [
                 "The automatic identification of relation phrases enables the extraction of arbitrary relations from sentences, obviating the restriction to a pre-specified vocabulary.",
-                0.5
+                0
             ],
             "final_score": 1
         },
@@ -107,18 +107,18 @@
         {
             "0": [
                 "The WOE systems introduced by Wu and Weld make use of Wikipedia as a source of training data for their extractors, which leads to further improvements over TEXTRUNNER (Wu and Weld, 2010).",
-                1
+                0
             ],
             "1": [
                 "Wu and Weld also show that dependency parse features result in a dramatic increase in precision and recall over shallow linguistic features, but at the cost of extraction speed.",
-                -0.5
+                0
             ],
-            "final_score": 0.5
+            "final_score": 0
         },
         {
             "-1": [
                 "Wu and Weld also show that dependency parse features result in a dramatic increase in precision and recall over shallow linguistic features, but at the cost of extraction speed.",
-                -0.5
+                0
             ],
             "0": [
                 "Other approaches to large-scale IE have included Preemptive IE (Shinyama and Sekine, 2006), OnDemand IE (Sekine, 2006), and weak supervision for IE (Mintz et al., 2009; Hoffmann et al., 2010).",
@@ -128,12 +128,12 @@
                 "Preemptive IE and On-Demand IE avoid relationspecific extractors, but rely on document and entity clustering, which is too costly for Web-scale IE.",
                 -0.5
             ],
-            "final_score": -1
+            "final_score": -0.5
         },
         {
             "-1": [
                 "While this allows for learning relation-specific extractors at a larger scale than what was previously possible, the extractions are still restricted to a specific ontology.",
-                -0.5
+                0
             ],
             "0": [
                 "Many systems have used syntactic patterns based on verbs to extract relation phrases, usually relying on a full dependency parse of the input sentence (Lin and Pantel, 2001; Stevenson, 2004; Specia and Motta, 2006; Kathrin Eichler and Neumann, 2008).",
@@ -156,7 +156,7 @@
             ],
             "1": [
                 "This paper reports on a substantially improved model of binary relation phrases, which increases the recall of the Banko-Etzioni model (see Section 3.3).",
-                1 (?)
+                1
             ],
             "final_score": 0
         },
@@ -178,7 +178,7 @@
         {
             "-1": [
                 "This difference is particularly important when operating on the Web corpus due to its size and heterogeneity.",
-                1
+                0
             ],
             "0": [
                 "Finally, SRL requires hand-constructed semantic resources like Propbank and Framenet (Martha and Palmer, 2002; Baker et al., 1998) as input.",

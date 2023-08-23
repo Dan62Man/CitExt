@@ -4,167 +4,167 @@
         {
             "0": [
                 "AI has a long history of research on autonomous agents, problem solving, and learning, e.g., SOAR (Laird, Newell, and Rosenbloom 1987), PRODIGY (Carbonell et al. 1991), EURISKO (Lenat 1983), ACT-R (Anderson et al. 2004), and ICARUS (Langley et al. 1991).",
-                0.0005093481792300737
+                0
             ],
             "1": [
                 "In comparison, our focus to date has been on semi-supervised learning to read, with less focus on problem-solving search.",
-                1.2666066876932022e-05
+                0
             ],
-            "final_score": 0.0005220142461070057
+            "final_score": 0
         },
         {
             "-1": [
                 "Nevertheless, earlier work provides a variety of design principles upon which we have drawn.",
-                3.702236644898023e-05
+                0
             ],
             "0": [
                 "For example, the role of the KB in our approach is similar to the role of the \u201cblackboard\u201d in early systems for speech recognition (Erman et al. 1980), and the frame-based representation of our KB is a reimplementation of the THEO system (Mitchell et al. 1991) which was originally designed to support integrated representation, inference and learning.",
-                0.0004846188609000991
+                0
             ],
-            "final_score": 0.0004475964944511189
+            "final_score": 0
         },
         {
             "0": [
                 "There is also previous research on life-long learning, such as Thrun and Mitchell (1995), which focuses on using previously learned functions (e.g., a robot\u2019s next-state function) to bias learning of new functions (e.g., the robot\u2019s control function).",
-                0.0003443522975153713
+                0
             ],
-            "final_score": 0.0003443522975153713
+            "final_score": 0
         },
         {
             "0": [
                 "Banko and Etzioni (2007) consider a lifelong learning setting where an agent builds a theory of a domain, and explore different strategies for deciding which of many possible learning tasks to tackle next.",
-                0.0003870201603149327
+                0
             ],
             "1": [
                 "Although our current system uses a simpler strategy of training all functions on each iteration, choosing what to learn next is an important capability for lifelong learning.",
-                0.000711485420517022
+                0
             ],
-            "final_score": 0.0010985055808319546
+            "final_score": 0
         },
         {
             "-1": [
                 "Our approach employs semi-supervised bootstrap learning methods, which begin with a small set of labeled data, train a model, then use that model to label more data.",
-                0.0005078165303338268
+                0
             ],
             "0": [
                 "Yarowsky (1995) uses bootstrap learning to train classifiers for word sense disambiguation.",
-                0.0004021762445034938
+                0
             ],
-            "final_score": -0.00010564028583033298
+            "final_score": 0
         },
         {
             "0": [
                 "Bootstrap learning has also been employed successfully in many applications, including web page classification (Blum and Mitchell 1998), and named entity classification (Collins and Singer 1999).",
-                0.0013657225390147688
+                0
             ],
-            "final_score": 0.0013657225390147688
+            "final_score": 0
         },
         {
             "0": [
                 "Bootstrap learning approaches can often suffer from \u201csemantic drift,\u201d where labeling errors in the learning process can accumulate (Riloff and Jones 1999; Curran, Murphy, and Scholz 2007).",
-                -0.017860640399277313
+                0
             ],
             "1": [
                 "There is evidence that constraining the learning process helps to mitigate this issue.",
-                5.2004940130246105e-05
+                0
             ],
-            "final_score": -0.017808635459147067
+            "final_score": 0
         },
         {
             "-1": [
                 "There is evidence that constraining the learning process helps to mitigate this issue.",
-                5.2004940130246105e-05
+                0
             ],
             "0": [
                 "For example, if classes are mutually exclusive, they can provide negative examples for each other (Yangarber 2003).",
-                -0.9959341287612915
+                0
             ],
             "1": [
                 "Relation arguments can also be type-checked to ensure that they match expected types (Pas\u00b8ca et al. 2006).",
-                0.0005928203486988083
+                0
             ],
-            "final_score": -0.995393313352723
+            "final_score": 0
         },
         {
             "-1": [
                 "Relation arguments can also be type-checked to ensure that they match expected types (Pas\u00b8ca et al. 2006).",
-                0.0005928203486988083
+                0
             ],
             "0": [
                 "Carlson et al. (2010) employ such strategies and use multiple extraction methods, which are required to agree.",
-                0.0005741913666803101
+                0
             ],
             "1": [
                 "Carlson et al. refer to the idea of adding many constraints between functions being learned as \u201ccoupled semi-supervised learning.",
-                0.00041296811081181783
+                0
             ],
-            "final_score": 0.0003943391287933196
+            "final_score": 0
         },
         {
             "-1": [
                 "Carlson et al. refer to the idea of adding many constraints between functions being learned as \u201ccoupled semi-supervised learning.",
-                0.00041296811081181783
+                0
             ],
             "0": [
                 "\u201d Chang, Ratinov, and Roth (2007) also showed that enforcing constraints given as domain knowledge can improve semi-supervised learning.",
-                0.00041472584712565213
+                0
             ],
-            "final_score": 1.757736313834303e-06
+            "final_score": 0
         },
         {
             "0": [
                 "Pennacchiotti and Pantel (2009) present a framework for combining the outputs of an ensemble of extraction methods, which they call \u201cEnsemble Semantics.",
-                0.0003844911998868384
+                0
             ],
             "1": [
                 "\u201d Multiple extraction systems provide candidate category instances, which are then ranked using a learned function that uses features from many different sources (e.g., query logs, Wikipedia).",
-                0.0006845227562251922
+                0
             ],
-            "final_score": 0.0010690139561120306
+            "final_score": 0
         },
         {
             "-1": [
                 "Thus, their ideas are complementary to our work, as we could use their ranking method as part of our general approach.",
-                -5.7190195896339094e-05
+                0
             ],
             "0": [
                 "Other previous work has demonstrated that pattern-based and list-based extraction methods can be combined in a synergistic fashion to achieve significant improvements in recall (Etzioni et al. 2004).",
-                0.0005960846219679184
+                0
             ],
-            "final_score": 0.0006532748178642576
+            "final_score": 0
         },
         {
             "0": [
                 "Downey, Etzioni, and Soderland (2005) presented a probabilistic model for using and training multiple extractors where the extractors (in their work, different extraction patterns) make uncorrelated errors.",
-                0.00031062722058408106
+                0
             ],
             "1": [
                 "It would be interesting to apply a similar probabilistic model to cover the setting in this paper, where there are multiple extraction methods which themselves employ multiple extractors (e.g., textual patterns, wrappers, rules).",
-                3.693693962532074e-05
+                0
             ],
-            "final_score": 0.0003475641602094018
+            "final_score": 0
         },
         {
             "-1": [
                 "It would be interesting to apply a similar probabilistic model to cover the setting in this paper, where there are multiple extraction methods which themselves employ multiple extractors (e.g., textual patterns, wrappers, rules).",
-                3.693693962532074e-05
+                0
             ],
             "0": [
                 "Nahm and Mooney (2000) first demonstrated that inference rules could be mined from beliefs extracted from text.",
-                -0.00010318917702534216
+                0
             ],
-            "final_score": -0.0001401261166506629
+            "final_score": 0
         },
         {
             "0": [
                 "Our work can also be seen as an example of multi-task learning in which several different functions are trained together, as in (Caruana 1997; Yang, Kim, and Xing 2009), in order to improve learning accuracy.",
-                0.00045206025908228764
+                0
             ],
             "1": [
                 "Our approach involves a kind of multi-task learning of multiple types of functions \u2014 531 functions in total in the experiments reported here \u2014 in which different methods learn different functions with overlapping inputs and outputs, and where constraints provided by the ontology (e.g., \u2018athlete\u2019 is a subset of \u2018person\u2019, and mutually exclusive with \u2018city\u2019) support accurate semisupervised learning of the entire ensemble of functions.",
-                0.0004894119665735276
+                0
             ],
-            "final_score": 0.0009414722256558153
+            "final_score": 0
         }
     ]
 }

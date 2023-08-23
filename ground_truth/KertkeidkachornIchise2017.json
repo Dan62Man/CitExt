@@ -42,14 +42,14 @@
             ],
             "1": [
                 "Although those studies perform well for extracting triples (subject, predicate, object) from unstructured text, they still have a limitation regarding mapping a predicate of a triple extracted from unstructured text to its identical predicate in the KG.",
-                -1
+                0
             ],
-            "final_score": -1
+            "final_score": 0
         },
         {
             "-1": [
                 "Although those studies perform well for extracting triples (subject, predicate, object) from unstructured text, they still have a limitation regarding mapping a predicate of a triple extracted from unstructured text to its identical predicate in the KG.",
-                -1
+                0
             ],
             "0": [
                 "Generally, many studies (Augenstein, Pado, and Rudolph 2012; Ratinov et al. 2011; Mendes et al. 2011) focus on mapping only an entity, which is usually a subject or an object of a triple, to its identical entity in a KG.",
@@ -171,13 +171,13 @@
         {
             "0": [
                 "Although this approach (Exner and Nugues 2012) can integrate a predicate into the ontology of a KG, it still has the following severe limitation.",
-                -1
+                0
             ],
             "1": [
                 "Due to the sparsity of unstructured text, bootstrapping training data for generating rules might not cover all possible patterns; consequently, some rules are missing.",
-                -1
+                0
             ],
-            "final_score": -1
+            "final_score": 0
         }
     ]
 }

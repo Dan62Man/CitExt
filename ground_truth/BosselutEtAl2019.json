@@ -37,9 +37,9 @@
         {
             "0": [
                 "OpenIE approaches display this property of open text entities and relations (Etzioni et al., 2011; Fader et al., 2011; Mausam et al., 2012), but being extractive, they only capture knowledge that is explicitly mentioned in text, limiting their applicability for capturing commonsense knowledge, which is often implicit (Gordon and Van Durme, 2013).",
-                -1 (?)
+                0
             ],
-            "final_score": -1 (?)
+            "final_score": 0
         },
         {
             "0": [
