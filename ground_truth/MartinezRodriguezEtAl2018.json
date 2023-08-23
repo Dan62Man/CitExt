@@ -19,7 +19,7 @@
         {
             "-1": [
                 "However, much of such data is unstructured, in the form of text, which is unfeasible or very expensive to process due to its large scale and heterogeneity.",
-                0
+                -1
             ],
             "0": [
                 "In this sense, one of the aims of the Semantic Web (Daconta et al., 2003) is to extract and formally represent information by leveraging formal data interchange formats, standards, and technologies of the Web.",
@@ -59,7 +59,7 @@
                 "Although OpenIE has received less attention (in the context of RDF triple extractions) than the above-mentioned approaches, it is a useful technique that allows a semantic representation through predicative statements (clauses where the verb is the core of the relation) that may be helpful for shallow questions (e.g., who directed the Star Wars movie?).",
                 0
             ],
-            "final_score": 0 (?)
+            "final_score": 0
         },
         {
             "-1": [

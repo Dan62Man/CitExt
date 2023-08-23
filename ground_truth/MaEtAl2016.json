@@ -52,13 +52,13 @@
             ],
             "0": [
                 " Teufel et al. (2006) was one of the pioneers in the field of citation classification.",
-                1 (?) ["was"]
+                0
             ],
             "1": [
                 "She proposed a classification scheme of 12 citation functions and used supervised technique for the classification task.",
                 0
             ],
-            "final_score": 1
+            "final_score": 0
         },
         {
             "-1": [
