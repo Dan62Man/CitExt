@@ -1,3 +1,4 @@
+Title: Multi-Task Identification of Entities, Relations, and Coreference for Scientific Knowledge Graph Construction
 As scientific communities grow and evolve, new
 tasks, methods, and datasets are introduced and
 different methods are compared with each other.

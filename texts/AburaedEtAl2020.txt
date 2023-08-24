@@ -1,3 +1,4 @@
+Title: A Multi-level Annotated Corpus of Scientific Papers for Scientific Document Summarization and Cross-document Relation Discovery
 Most scientific papers include a related work section
 providing, in a well organized and condensed form, the
 key information from a carefully selected list of publications which contextualize and ground the research

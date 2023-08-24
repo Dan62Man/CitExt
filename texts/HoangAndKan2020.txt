@@ -1,3 +1,4 @@
+Title: Towards Automated Related Work Summarization
 In many fields, a scholar needs to show an understanding of the context of his problem and relate
 his work to prior community knowledge. A related work section is often the vehicle for this purpose; it contextualizes the scholar’s contributions
 and helps readers understand the critical aspects

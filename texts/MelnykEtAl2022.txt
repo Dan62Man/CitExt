@@ -1,3 +1,4 @@
+Title: Knowledge Graph Generation From Text
 Automatic Knowledge Graph (KG) construction is
 an active research area aiming at representing the
 information present in abundant textual corpora in

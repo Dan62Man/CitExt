@@ -1,3 +1,4 @@
+Title: An automatic literature knowledge graph and reasoning network modeling framework based on ontology and natural language processing
 Along with the transformation from an industrial society to an information society starting from the 1970s, knowledge becomes one of
 the key assets for the organizations. In the information society, the
 creation, distribution, utilization, and manipulation of information

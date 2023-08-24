@@ -1,3 +1,4 @@
+Title: Automatic Extraction of Citation Contexts for Research Paper Summarization: A Coreference-chain based Approach
 Review and comprehension of existing research is
 fundamental to the ongoing process of conducting
 research; however, the ever increasing volume of

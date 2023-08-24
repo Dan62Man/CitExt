@@ -1,3 +1,4 @@
+Title: Sentiment Analysis of Citations Using Word2vec
 The evolution of scientific ideas happens when old ideas are replaced by
 new ones. Researchers usually conduct scientific experiments based on the
 previous publications. They either take use of others work as a solution

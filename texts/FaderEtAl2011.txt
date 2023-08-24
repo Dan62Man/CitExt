@@ -1,3 +1,4 @@
+Title: Identifying Relations for Open Information Extraction
 Typically, Information Extraction (IE) systems learn
 an extractor for each target relation from labeled training examples (Kim and Moldovan, 1993;
 Riloff, 1996; Soderland, 1999). This approach to IE

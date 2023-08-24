@@ -1,3 +1,4 @@
+Title: An Automatic Knowledge Graph Construction System for K-12 Education
 Knowledge graph is a core component of new generation online education platforms for intelligent education. Different
 from traditional massive open online course (MOOC) platforms focusing on learning resources provision, new generation online education platforms target on intelligent personalized educational services, such as automatic learning obstacle
 diagnosis, personalized learning resource recommendation,

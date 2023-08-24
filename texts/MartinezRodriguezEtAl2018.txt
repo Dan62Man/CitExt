@@ -1,3 +1,4 @@
+Title: OpenIE-based approach for Knowledge Graph construction from text
 Information consumed every day by people in a variety
 of services such as supermarkets, banks, libraries, and web
 search engines is internally stored in a structured fashion to be efficiently queried and transformed. However,

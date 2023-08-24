@@ -1,3 +1,4 @@
+Title: A survey on sentiment analysis of scientific citations
 With the rapid growth of digital libraries and the wide access to scholarly publications, it
 has become possible for researchers to explore and process massive amounts of scientific
 data with the aim of extracting scientific knowledge. Currently, digital libraries contain a
@@ -50,10 +51,8 @@ slightly different from the definition in sentiment analysis (SA). Positive cita
 expresses the strength of the cited papers, e.g. if the cited work compared with other works
 and considered better in the final results. Negative citation expresses the drawbacks and
 weakness of cited work explicitly, e.g., if it is compared to another paper and considered
-
 worse in any way. Neutral citation is just a description of a specific idea without any senti-
 ments.
-
 So far, social media platforms are the main source of opinionated information. Currently,
 scholarly databases are the new domain that can provide an opportunity to find out authors’
 sentiment through evaluating citation information in academic publications. However, mining
