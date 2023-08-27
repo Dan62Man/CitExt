@@ -7,7 +7,7 @@ and ICARUS (Langley et al. 1991). In comparison, our focus to date has been on s
 with less focus on problem-solving search. Nevertheless,
 earlier work provides a variety of design principles upon
 which we have drawn. For example, the role of the KB in
-our approach is similar to the role of the “blackboard” in
+our approach is similar to the role of the "blackboard" in
 early systems for speech recognition (Erman et al. 1980),
 and the frame-based representation of our KB is a reimplementation of the THEO system (Mitchell et al. 1991) which
 was originally designed to support integrated representation,
@@ -23,7 +23,7 @@ Yarowsky (1995) uses bootstrap learning to train classifiers
 for word sense disambiguation. Bootstrap learning has also
 been employed successfully in many applications, including web page classification (Blum and Mitchell 1998), and
 named entity classification (Collins and Singer 1999).
-Bootstrap learning approaches can often suffer from “semantic drift,” where labeling errors in the learning process
+Bootstrap learning approaches can often suffer from "semantic drift," where labeling errors in the learning process
 can accumulate (Riloff and Jones 1999; Curran, Murphy,
 and Scholz 2007). There is evidence that constraining the
 learning process helps to mitigate this issue. For example,
@@ -33,12 +33,12 @@ expected types (Pas¸ca et al. 2006). Carlson et al. (2010)
 employ such strategies and use multiple extraction methods,
 which are required to agree. Carlson et al. refer to the idea
 of adding many constraints between functions being learned
-as “coupled semi-supervised learning.” Chang, Ratinov, and
+as "coupled semi-supervised learning." Chang, Ratinov, and
 Roth (2007) also showed that enforcing constraints given as
 domain knowledge can improve semi-supervised learning.
 Pennacchiotti and Pantel (2009) present a framework
 for combining the outputs of an ensemble of extraction
-methods, which they call “Ensemble Semantics.” Multiple extraction systems provide candidate category instances,
+methods, which they call "Ensemble Semantics." Multiple extraction systems provide candidate category instances,
 which are then ranked using a learned function that uses
 features from many different sources (e.g., query logs,
 Wikipedia). Their approach uses a more sophisticated ranking method than ours, but is not iterative. Thus, their ideas

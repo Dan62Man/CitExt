@@ -1,0 +1,32 @@
+Anderson, J. R.; Byrne, M. D.; Douglass, S.; Lebiere, C.; and Qin, Y. 2004. An integrated theory of the mind. Psychological Review 111(4):1036–1050.
+Banko, M., and Etzioni, O. 2007. Strategies for lifelong knowledge extraction from the web. In Proc. of K-CAP.
+Blum, A., and Mitchell, T. 1998. Combining labeled and unlabeled data with co-training. In Proc. of COLT.
+Callan, J., and Hoy, M. 2009. Clueweb09 data set. http://boston.lti.cs.cmu.edu/Data/clueweb09/.
+Carbonell, J.; Etzioni, O.; Gil, Y.; Joseph, R.; Knoblock, C.; Minton, S.; and Veloso, M. 1991. PRODIGY: an integrated architecture for planning and learning. SIGART Bull. 2(4):51–55.
+Carlson, A.; Betteridge, J.; Wang, R. C.; Jr., E. R. H.; and Mitchell, T. M. 2010. Coupled semi-supervised learning for information extraction. In Proc. of WSDM.
+Caruana, R. 1997. Multitask learning. Machine Learning 28:41–75.
+Chang, M.-W.; Ratinov, L.-A.; and Roth, D. 2007. Guiding semi-supervision with constraint-driven learning. In Proc. of ACL.
+Collins, M., and Singer, Y. 1999. Unsupervised models for named entity classification. In Proc. of EMNLP.
+Curran, J. R.; Murphy, T.; and Scholz, B. 2007. Minimising semantic drift with mutual exclusion bootstrapping. In Proc. of PACLING.
+Downey, D.; Etzioni, O.; and Soderland, S. 2005. A probabilistic model of redundancy in information extraction. In Proc. of IJCAI.
+Druck, G.; Settles, B.; and McCallum, A. 2009. Active learning by labeling features. In Proc. of EMNLP.
+Erman, L.; Hayes-Roth, F.; Lesser, V.; and Reddy, D. 1980.
+The HEARSAY-II speech-understanding system: Integrating knowledge to resolve uncertainty. Computing Surveys 12(2):213–253.
+Etzioni, O.; Cafarella, M.; Downey, D.; Popescu, A.-M.; Shaked, T.; Soderland, S.; Weld, D. S.; and Yates, A. 2004. Methods for domain-independent information extraction from the web: an experimental comparison. In Proc. of AAAI.
+Hearst, M. A. 1992. Automatic acquisition of hyponyms from large text corpora. In Proc. of COLING.
+Laird, J.; Newell, A.; and Rosenbloom, P. 1987. SOAR: An architecture for general intelligence. Artif. Intel. 33:1–64.
+Langley, P.; McKusick, K. B.; Allen, J. A.; Iba, W. F.; and Thompson, K. 1991. A design for the ICARUS architecture. SIGART Bull. 2(4):104–109.
+Lenat, D. B. 1983. Eurisko: A program that learns new heuristics and domain concepts. Artif. Intel. 21(1-2):61–98.
+Mitchell, T. M.; Allen, J.; Chalasani, P.; Cheng, J.; Etzioni, O.; Ringuette, M. N.; and Schlimmer, J. C. 1991. Theo: A framework for self-improving systems. Arch. for Intelligence 323–356.
+Nahm, U. Y., and Mooney, R. J. 2000. A mutually beneficial integration of data mining and information extraction. In Proc. of AAAI.
+Pas¸ca, M.; Lin, D.; Bigham, J.; Lifchits, A.; and Jain, A. 2006. Names and similarities on the web: fact extraction in the fast lane. In Proc. of ACL.
+Pennacchiotti, M., and Pantel, P. 2009. Entity extraction via ensemble semantics. In Proc. of EMNLP.
+Quinlan, J. R., and Cameron-Jones, R. M. 1993. Foil: A midterm report. In Proc. of ECML.
+Riloff, E., and Jones, R. 1999. Learning dictionaries for information extraction by multi-level bootstrapping. In Proc. of AAAI.
+Settles, B. 2009. Active learning literature survey. Computer Sciences Technical Report 1648, University of Wisconsin–Madison.
+Thrun, S., and Mitchell, T. 1995. Lifelong robot learning.
+In Robotics and Autonomous Systems, volume 15, 25–46.
+Wang, R. C., and Cohen, W. W. 2009. Character-level analysis of semi-structured documents for set expansion. In Proc. of EMNLP.
+Yang, X.; Kim, S.; and Xing, E. 2009. Heterogeneous multitask learning with joint sparsity constraints. In NIPS 2009.
+Yangarber, R. 2003. Counter-training in discovery of semantic patterns. In Proc. of ACL.
+Yarowsky, D. 1995. Unsupervised word sense disambiguation rivaling supervised methods. In Proc. of ACL.

@@ -25,7 +25,7 @@ this topic.
 of features, ranging from citation counts to where the citation appears in the body of the paper. Our approach
 models both direct citations, i.e., citations that follow established proceeding formats, and indirect citations, i.e.,
 which use a description of the algorithm instead (e.g.,
-“Stanford parser”). Our method performs well, obtaining
+"Stanford parser"). Our method performs well, obtaining
 a precision of 65% for a recall of 90%.
 There has been considerable effort in the past decade on
 citation indexing systems (Giles, Bollacker, and Lawrence

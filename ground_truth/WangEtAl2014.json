@@ -71,7 +71,7 @@
             ],
             "0": [
                 "Moreover, the overall predictive performances of the advanced models are even worse than TransE (Bordes et al. 2013b).",
-                -1 (?)
+                -1
             ],
             "1": [
                 "This motivates us to propose a method which makes a good trad-off between model complexity and efficiency so that it can overcome the flaws of TransE while inheriting the efficiency.",
@@ -131,7 +131,7 @@
             ],
             "0": [
                 "As pointed out by (Socher et al. 2013), this model is weak in capturing correlations between entities and relations as it uses two separate matrices.",
-                0 (?) [the other model is weak, not the referenced one]
+                0
             ],
             "final_score": 0
         },

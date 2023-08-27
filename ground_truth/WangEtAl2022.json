@@ -40,7 +40,7 @@
         {
             "0": [
                 "Due to the success of pre-trained language models (PTM) (e.g., BERT [8] and RoBERTa [9]), a general paradigm for NLI is to fine-tune a PTM on downstream dataset.",
-                1
+                0
             ],
             "1": [
                 "However, PTMs fine-tuned on specific-domain data often suffer from a cross-domain problem since they are pre-trained on general domain corpora such as news articles and Wikipedia.",

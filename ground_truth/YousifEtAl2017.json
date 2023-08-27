@@ -90,13 +90,13 @@
             ],
             "0": [
                 "However, this evaluation method is incomplete and may not calculate the impact of research units perfectly (Abu-Jbara et al. 2013).",
-                0
+                -1
             ],
             "1": [
                 "Therefore, many researchers have exploited citation contexts to analyze the reasons, influence, and sentiment of the cited articles in the citing articles to build more accurate methods to evaluate the research results.",
                 0
             ],
-            "final_score": 0
+            "final_score": -1
         },
         {
             "-1": [
@@ -312,7 +312,7 @@
                 "The authors also presented composition statement, automatic entity recognition, sarcasm detec- tion and subjectivity classification as the new open issues in SA domains.",
                 0
             ],
-            "final_score": 0.0007450669670745927
+            "final_score": 0
         },
         {
             "-1": [

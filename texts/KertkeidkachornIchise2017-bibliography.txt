@@ -1,0 +1,16 @@
+Auer, S.; Bizer, C.; Kobilarov, G.; Lehmann, J.; Cyganiak, R.; and Ives, Z. 2007. DBpedia: A nucleus for a web of open data. Springer.
+Augenstein, I.; Pado, S.; and Rudolph, S. 2012. Lodifier: Generating linked data from unstructured text. In The Semantic Web: Research and Applications. Springer. 210–224.
+Carlson, A.; Betteridge, J.; Kisiel, B.; Settles, B.; Hruschka Jr, E. R.; and Mitchell, T. M. 2010. Toward an Architecture for Never-Ending Language Learning. In Proceedings of AAAI.
+Cattoni, R.; Corcoglioniti, F.; Girardi, C.; Magnini, B.; Serafini, L.; and Zanoli, R. 2012. The KnowledgeStore: an Entity-Based Storage System. In Proceedings of LREC,3639–3646.
+Exner, P., and Nugues, P. 2012. Entity extraction: From unstructured text to dbpedia rdf triples. In The Web of Linked Entities Workshop, 58–69. CEUR-WS.
+Fader, A.; Soderland, S.; and Etzioni, O. 2011. Identifying relations for open information extraction. In Proceedings of the Conference on Empirical Methods in Natural Language Processing, 1535–1545. ACL.
+Fillmore, C. J. 1976. Frame semantics and the nature of language. Annals of the New York Academy of Sciences 280(1):20–32.
+Gerber, D.; Hellmann, S.; Buhmann, L.; Soru, T.; Usbeck, R.; and Ngomo, A.-C. N. 2013. Real-time RDF extraction from unstructured data streams. In Proceedings of The Semantic Web–ISWC 2013, 135–150. Springer.
+Kertkeidkachorn, N.; Ichise, R.; Suchato, A.; and Punyabukkana, P. 2013. An automatic instance expansion framework for mapping instances to linked data resources. In Joint International Semantic Technology Conference, 380–395.
+Kriz, V.; Hladka, B.; Necasky, M.; and Knap, T. 2014. Data Extraction Using NLP Techniques and Its Transformation to Linked Data. In Proceedings of 13th Mexican International Conference on Artificial Intelligence, 113–124. Springer.
+Lee, H.; Peirsman, Y.; Chang, A.; Chambers, N.; Surdeanu, M.; and Jurafsky, D. 2011. Stanford’s multi-pass sieve coreference resolution system at the CoNLL-2011 shared task. In Proceedings of the 15th Conference on Computational Natural Language Learning: Shared Task, 28–34. ACL.
+Mendes, P. N.; Jakob, M.; Garcia-Silva, A.; and Bizer, C. 2011. DBpedia spotlight: shedding light on the web of documents. In Proceedings of the 7th International Conference on Semantic Systems, 1–8. ACM.
+Mikolov, T.; Sutskever, I.; Chen, K.; Corrado, G. S.; and Dean, J. 2013. Distributed representations of words and phrases and their compositionality. In Proceedings of Advances in neural information processing systems, 3111– 3119.
+Raghunathan, K.; Lee, H.; Rangarajan, S.; Chambers, N.; Surdeanu, M.; Jurafsky, D.; and Manning, C. 2010. A multi-pass sieve for coreference resolution. In Proceedings of the Conference on Empirical Methods in Natural Language Processing, 492–501. ACL.
+Ratinov, L.; Roth, D.; Downey, D.; and Anderson, M. 2011. Local and Global Algorithms for Disambiguation to Wikipedia. In Proceedings of ACL.
+Schmitz, M.; Bart, R.; Soderland, S.; and Etzioni, O. 2012. Open language learning for information extraction. In Proceedings of the Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning, 523–534. ACL.

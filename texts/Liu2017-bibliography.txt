@@ -1,0 +1,13 @@
+1. A. Abu-Jbara, J. Ezra, and D. R. Radev, "Purpose and polarity of citation: Towards nlp-based bibliometrics." in HLT-NAACL, 2013, pp. 596–606.
+2. C. Jochim and H. Sch¨utze, "Improving citation polarity classification with product reviews." in ACL (2), 2014, pp. 42–48.
+3. A. Athar, "Sentiment analysis of citations using sentence structure-based features," in Proceedings of the ACL 2011 student session. Association for Computational Linguistics, 2011, pp. 81–87.
+4. T. Mikolov, K. Chen, G. Corrado, and J. Dean, "Efficient estimation of word representations in vector space," arXiv preprint arXiv:1301.3781, 2013.
+5. D. Tang, F. Wei, N. Yang, M. Zhou, T. Liu, and B. Qin, "Learning sentimentspecific word embedding for twitter sentiment classification," in Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics, vol. 1, 2014, pp. 1555–1565.
+6. M. J. Hinton, Geoffrey and D. Rumelhart, "Distributed representations," 1986.
+7. Y. Bengio, R. Ducharme, P. Vincent, and C. Janvin, "A neural probabilistic language model," The Journal of Machine Learning Research, vol. 3, pp. 1137–1155, 2003.
+8. B. Xue, C. Fu, and Z. Shaobin, "A study on sentiment computing and classification of sina weibo with word2vec," in Big Data (BigData Congress), 2014 IEEE International Congress on. IEEE, 2014, pp. 358–363.
+9. D. Zhang, H. Xu, Z. Su, and Y. Xu, "Chinese comments sentiment classification based on word2vec and svm perf," Expert Systems with Applications, vol. 42, no. 4, pp. 1857–1863, 2015.
+10. J. Lilleberg, Y. Zhu, and Y. Zhang, "Support vector machines and word2vec for text classification with semantic features," in Cognitive Informatics & Cognitive Computing (ICCI* CC), 2015 IEEE 14th International Conference on. IEEE, 2015, pp. 136–140.
+11. A. Sadeghian and A. R. Sharafat, "Bag of words meets bags of popcorn," 2015.
+12. S. Bird, R. Dale, B. J. Dorr, B. R. Gibson, M. Joseph, M.-Y. Kan, D. Lee, B. Powley, D. R. Radev, and Y. F. Tan, "The acl anthology reference corpus: A reference dataset for bibliographic research in computational linguistics." in LREC, 2008.
+13. A. Athar and S. Teufel, "Detection of implicit citations for sentiment detection," in Proceedings of the Workshop on Detecting Structure in Scholarly Discourse, ser. ACL ’12. Stroudsburg, PA, USA: Association for Computational Linguistics, 2012, pp. 18–26. [Online]. Available: http://dl.acm.org/citation.cfm?id=2391171.2391176

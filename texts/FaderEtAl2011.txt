@@ -30,7 +30,7 @@ phrase is made in one fell swoop instead of on the
 basis of multiple, word-by-word decisions.
 Uninformative extractions are extractions that
 omit critical information. For example, consider the
-sentence “Faust made a deal with the devil.” Previous Open IE systems return the uninformative
+sentence "Faust made a deal with the devil." Previous Open IE systems return the uninformative
 (Faust, made, a deal)
 instead of
 (Faust, made a deal with, the devil).
@@ -82,9 +82,9 @@ the length of the sequence. Finally, the extractor
 chooses an extraction’s arguments heuristically, and
 cannot backtrack over this choice. This is problematic when a word that belongs in the relation phrase
 is chosen as an argument (for example, deal from
-the “made a deal with” sentence).
+the "made a deal with" sentence).
 Because of the feature sets utilized in previous
-work, the learned extractors ignore both “holistic”
+work, the learned extractors ignore both "holistic"
 aspects of the relation phrase (e.g., is it contiguous?)
 as well as lexical aspects (e.g., how many instances
 of this relation are there?). Thus, as we show in Section 5, systems such as TEXTRUNNER are unable

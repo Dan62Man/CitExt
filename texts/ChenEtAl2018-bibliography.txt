@@ -1,0 +1,8 @@
+1. Rakesh Agrawal, Ramakrishnan Srikant, and others. 1994. Fast algorithms for mining association rules. In Proc. 20th int. conf. very large data bases, VLDB, Vol. 1215. 487–499.
+2. Devendra Chaplot and Kenneth R Koedinger. 2016. Data-driven Automated Induction of Prerequisite Structure Graphs. In Proceedings of the Educational Data Mining (EDM).
+3. Yang Chen, Pierre-Henri Wuillemin, and Jean-Marc Labat. 2015. Discovering Prerequisite Structure of Skills through Probabilistic Association Rules Mining. In Proceedings of the 8th International Conference on Educational Data Mining (EDM ’15). 117–124.
+4. Chen Liang, Jianbo Ye, Zhaohui Wu, Bart Pursel, and C Lee Giles. 2017. Recovering Concept Prerequisite Relations from University Course Dependencies. In AAAI Conference on Artificial Intelligence.
+5. Hanxiao Liu, Wanli Ma, Yiming Yang, and Jaime Carbonell. 2016. Learning concept graphs from online educational data. Journal of Artificial Intelligence Research 55 (2016), 1059–1090.
+6. Liwen Sun, Reynold Cheng, David W Cheung, and Jiefeng Cheng. 2010. Mining uncertain data with probabilistic guarantees. In Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 273–282.
+7. Charles Sutton, Andrew McCallum, and others. 2012. An introduction to conditional random fields. Foundations and Trends® in Machine Learning 4, 4 (2012), 267–373.
+8. Yiming Yang, Hanxiao Liu, Jaime Carbonell, and Wanli Ma. 2015. Concept graph learning from educational data. In ACM International Conference on Web Search and Data Mining. ACM, 159–168.

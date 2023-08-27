@@ -51,7 +51,7 @@ bilinear (Jenatton et al. 2012; Sutskever, Tenenbaum, and
 Salakhutdinov 2009), and nonlinear transformations (Socher
 et al. 2013). Accordingly the model complexities (in terms
 of number of parameters) vary significantly. (Please refer to
-Table 1 and Section “Related Works” for details.)
+Table 1 and Section "Related Works" for details.)
 Among previous methods, TransE (Bordes et al. 2013b) is
 a promising one as it is simple and efficient while achieving
 state-of-the-art predictive performance. However, we find

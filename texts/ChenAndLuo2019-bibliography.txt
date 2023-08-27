@@ -1,0 +1,76 @@
+[1] P. Hager, A. Lee, A. Reich, P.O. Toole, E. Sallis, G. Jones, Knowledge Management in Organizations: A Critical Introduction, Oxford University Press, 2013, http://www.citeulike.org/group/420/article/302102.
+[2] R.M. Grant, Toward a knowledge-based theory of the firm, Strateg. Manag. J. 17 (1996) 109–122 http://10.0.3.234/smj.4250171110%0Ahttp://search.ebscohost.com/login.aspx?direct=true&db=buh&AN=12493198&site=ehost-live.
+[3] A. Yakhlef, The corporeality of practice-based learning, Org. Stud. 31 (2010) 409–430, https://doi.org/10.1177/0170840609357384.
+[4] V. Chang, A. Al-Hunaiyyan, A.T. Bimba, R.B. Mahmud, N. Idris, A. Abdelaziz, S. Khan, Towards knowledge modeling and manipulation technologies: a survey, Int. J. Inf. Manage. 36 (2016) 857–871, https://doi.org/10.1016/j.ijinfomgt.2016.05.022.
+[5] R. Studer, V.R. Benjamins, D. Fensel, Knowledge engineering: principles and methods, Data Knowl. Eng. 25 (1998) 161–197, https://doi.org/10.1016/S0169-023X(97)00056-6.
+[6] D. Sánchez, A methodology to learn ontological attributes from the web, Data Knowl. Eng. 69 (2010) 573–597, https://doi.org/10.1016/j.datak.2010.01.006.
+[7] Y. Wang, On a novel cognitive knowledge base (CKB) for cognitive robots and machine learning, Int. J. Softw. Sci. Comput. Intell. 6 (2015) 41–62, https://doi.org/10.4018/ijssci.2014040103.
+[8] Y. Tian, Y. Wang, M.L. Gavrilova, G. Ruhe, A formal knowledge representation system (FKRS) for the intelligent knowledge base of a cognitive learning engine, Int. J. Softw. Sci. Comput. Intell. 3 (2012) 1–17, https://doi.org/10.4018/jssci.2011100101.
+[9] Y. Wang, Concept algebra: a denotational mathematics for formal knowledge representation and cognitive robot learning, J. Adv. Math. Appl. 4 (2015) 61–86, https://doi.org/10.1166/jama.2015.1074.
+[10] T. Pedersen, S. Patwardhan, J. Michelizzi, WordNet: similarity: measuring the relatedness of concepts, Demonstr. Pap. HLT-NAACL 2004 (2004) 38–41.
+[11] L. Jiao, T. Denoeux, Q. Pan, A hybrid belief rule-based classification system based on uncertain training data and expert knowledge, IEEE Trans. Syst. Man Cybern.: Syst. 46 (2016) 1711–1723, https://doi.org/10.1109/TSMC.2015.2503381.
+[12] N. Walia, ANFIS: Adaptive neuro-fuzzy inference system – a survey, Int. J. Comput. Appl. 123 (2015) 32–38.
+[13] C. Antoun, C. Zhang, F.G. Conrad, M.F. Schober, Comparisons of online recruitment strategies for convenience samples, Field Methods 28 (2015) 231–246, https://doi.org/10.1177/1525822x15603149.
+[14] A. Srivastava, Parallel PageRank algorithms: a survey, International Journal on Recent and Innovation Trends in Computing and Communication, 2017, pp. 470–473.
+[15] J. Alcala-Fdez, J.M. Alonso, A survey of fuzzy systems software: Taxonomy, current research trends, and prospects, IEEE Trans. Fuzzy Syst. 24 (2016) 40–56, https://doi.org/10.1109/TFUZZ.2015.2426212.
+[16] B. Haymes, Towards a definition of knowledge, International Converence onSemantic Systems, Leipzig, 2016, pp. 11–15 https://doi.org/10.1007/978-1-349-19066-9_2.
+[17] H. Paulheim, Knowledge graph refinement: a survey of approaches and evaluation methods, Semant. Web (2016) 1.
+[18] A. Zaveri, D. Kontokostas, U. Leipzig, S. Hellmann, Linked data quality of DBpedia, Freebase, OpenCyc, Wikidata, and YAGO, Semant. Web (2017) 1–53, https://doi.org/10.1016/j.jhep.2015.06.023.
+[19] P. Ristoski, H. Paulheim, Semantic Web in data mining and knowledge discovery: a comprehensive survey, J. Web Semant. 36 (2016) 1–22, https://doi.org/10.1016/j.websem.2016.01.001.
+[20] Y. Zhang, H. Chen, J. Lu, G. Zhang, Detecting and predicting the topic change of knowledge-based Systems: a topic-based bibliometric analysis from 1991 to 2016, Knowl.-Based Syst. 133 (2017) (1991) 255–268, https://doi.org/10.1016/j.knosys.2017.07.011.
+[21] L. Waltman, A review of the literature on citation impact indicators, J. Informetr. 10 (2016) 365–391, https://doi.org/10.1016/j.joi.2016.02.007.
+[22] X. Pan, E. Yan, M. Cui, W. Hua, Examining the usage, citation, and diffusion patterns of bibliometric mapping software: a comparative study of three tools, J. Informetr. 12 (2018) 481–493, https://doi.org/10.1016/j.joi.2018.03.005.
+[23] D. Dou, H. Wang, H. Liu, Semantic data mining: A survey of ontology-based approaches, Proceedings of the 2015 IEEE 9th International Conference on Semantic Computing, IEEE ICSC 2015, 2015, pp. 244–251 https://doi.org/10.1109/ICOSC.2015.7050814.
+[24] M. Savonnet, E. Leclercq, P. Naubourg, EClims: an extensible and dynamic integration framework for biomedical information systems, IEEE J. Biomed. Health. Inf. 20 (2016) 1640–1649, https://doi.org/10.1109/JBHI.2015.2464353.
+[25] J. Mesarić, B. Dukić, An approach to creating domain ontologies for higher education in economics, Proceedings of the International Conference on Information Technology Interfaces, 2007, pp. 75–80 https://doi.org/10.1109/ITI.2007. 4283747.
+[26] M. El Kharbili, P. Stolarski, Building-up a reference generic regulation ontology: a bottom-up approach, Lecture Notes in Business Information Processing, in: 37 LNBIP, 2009, pp. 268–279. https://doi.org/10.1007/978-3-642-03424-4_33.
+[27] C. Feilmayr, W. Wöß, An analysis of ontologies and their success factors for application to business, Data Knowl. Eng. 101 (2016) 1–23, https://doi.org/10.1016/j.datak.2015.11.003.
+[28] M. Harper, Introducing Speech and Language Processing, Pearson London, 2006, https://doi.org/10.1162/coli.2006.32.1.137.
+[29] M. Gašić, D. Hakkani-Tür, A. Celikyilmaz, Spoken language understanding and interaction: machine learning for human-like conversational systems, Comput. Speech Lang. 46 (2017) 249–251, https://doi.org/10.1016/j.csl.2017.05.006.
+[30] M. Koponen, Is machine translation post-editing worth the effort? A survey of research into post-editing and effort, J. Special. Transl. 25 (2016) 131–148.
+[31] M.-F. Moens, Argumentation mining: how can a machine acquire world and common sense knowledge? Argum. Comput. 9 (2016) 3001, https://doi.org/10.3233/978-1-61499-686-6-4.
+[32] M. Zhou, What will search engines be changed what will search engines be changed by NLP advancements, Proceedings of the 2018 ACM SIGIR International Conference on Theory of Information Retrieval, (2018) pp. 7–7 https://doi.org/10.1145/3234944.3241521.
+[33] S. Biswas, D. Sengupta, R. Bhattacharjee, M. Handique, Text manipulation using regular expression, Proceedings – 6th International Advanced Computing Conference, IACC 2016, 2016, pp. 62–67 https://doi.org/10.1109/IACC.2016.22.
+[34] A. Maletti, Finite-state technology in natural language processing, Theoret. Comput. Sci. 679 (2005) 2005–2007 http://www.ims.uni-stuttgart.de/institut/mitarbeiter/maletti/pub/mal16.pdf.
+[35] J. Chiu, Spoken Term Detection and Spoken Word Sense Induction on Noisy Data, Dublin City University, 2015.
+[36] P. Majumder, M. Mitra, B. Chaudhuri, N-gram: a language independent approach to IR and NLP, Knowl. Lang. (2002), http://www.mt-archive.info/ICUKL-2002-Majumder.pdf.
+[37] E. Brill, Transformation-based error-driven learning and natural language processing: a case study in part of speech tagging, Comput. Linguist. 21 (1995) 1–37.
+[38] J.M. Conroy, D.P. O’leary, Text summarization via hidden Markov models, Proceedings of the 24th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, 2003, pp. 406–407 https://doi.org/10.1145/383952.384042.
+[39] R. Malouf, A comparison of algorithms for maximum entropy parameter estimation, Proceedings of the 6th Conference on Natural Language Learning, vol. 20, 2007, pp. 1–7 https://doi.org/10.3115/1118853.1118871
+[40] L. Shen, L. Champollion, A.K. Joshi, LTAG-spinal and the Treebank, Lang. Resour. Eval. 42 (2007) 1–19, https://doi.org/10.1007/s10579-007-9043-7.
+[41] J. Pater, Generative linguistics and neural networks at 60: foundation, friction, and fusion, Language (2019) 1–34.
+[42] K. Rayner, C. Clifton, Advances in natural language processing, Science 349 (2015) 261–316.
+[43] B. Chiu, G. Crichton, A. Korhonen, S. Pyysalo, How to train good word embeddings for biomedical NLP, Proceedings of the 15th Workshop on Biomedical Natural Language Processing, 2016, pp. 166–174 https://doi.org/10.18653/v1/w16-2922.
+[44] T. Mikolov, K. Chen, G. Corrado, J. Dean, Efficient Estimation of Word Representations in Vector Space, ArXiv Preprint ArXiv:1301.3781. 1 (2003) 1–12. http://arxiv.org/abs/1301.3781.
+[45] J. Pennington, R. Socher, C. Manning, Glove: Global vectors for word representation, Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2015, pp. 1532–1543 https://doi.org/10.3115/v1/d14-1162.
+[46] M.E. Peters, M. Neumann, M. Iyyer, M. Gardner, C. Clark, K. Lee, L. Zettlemoyer, Deep contextualized word representations, ArXiv Preprint ArXiv:1802.05365 (2018). doi: 10.18653/v1/N18-1202.
+[47] J. Devlin, M.-W. Chang, K. Lee, K. Toutanova, BERT: Pre-training of deep bidirectional transformers for language understanding, ArXiv Preprint ArXiv:1810.04805 (2018). doi: arXiv:1811.03600v2.
+[48] A.J.P. Tixier, M.R. Hallowell, B. Rajagopalan, D. Bowman, Automated content analysis for construction safety: a natural language processing system to extract precursors and outcomes from unstructured injury reports, Autom. Constr. 62 (2016) 45–56, https://doi.org/10.1016/j.autcon.2015.11.001.
+[49] A.J.P. Tixier, M.R. Hallowell, B. Rajagopalan, D. Bowman, Construction safety clash detection: identifying safety incompatibilities among fundamental attributes using data mining, Autom. Constr. 74 (2017) 39–54, https://doi.org/10.1016/j.autcon.2016.11.001.
+[50] M. Al Qady, A. Kandil, Concept relation extraction from construction documents using natural language processing, J. Constr. Eng. Manage. 136 (2010) 294–302, https://doi.org/10.1061/(ASCE)CO.1943-7862.0000131.
+[51] J. Zhang, N.M. El-gohary, Semantic NLP-based information extraction from construction regulatory documents for automated compliance checking, J. Comput. Civil Eng. 30 (2016) 1–42, https://doi.org/10.1061/(ASCE)CP.1943-5487.0000346.
+[52] Y. Zou, A. Kiviniemi, S.W. Jones, Retrieving similar cases for construction project risk management using Natural Language Processing techniques, Autom. Constr. 80 (2017) 66–76, https://doi.org/10.1016/j.autcon.2017.04.003.
+[53] K. Hirohata, N. Okazaki, S. Ananiadou, M. Ishizuka, Identifying sections in scientific abstracts using conditional random fields, Proceedings of the Third International Joint Conference on Natural Language Processing, (2008).
+[54] J.-C. Wu, Y.-C. Chang, H.-C. Liou, J.S. Chang, Computational analysis of move structures in academic abstracts, Proceedings of the COLING/ACL on Interactive Presentation Sessions, Association for Computational Linguistics, 2006, pp. 41–44 https://doi.org/10.3115/1225403.1225414.
+[55] L. Page, S. Brin, R. Motwani, T. Winograd, The PageRank citation ranking: bringing order to the web, World Wide Web Internet Web Inf. Syst. 54 (1998) 1–17 doi: 10.1.1.31.1768.
+[56] J.M. Kleinberg, Authoritative sources in a hyperlinked environment, J. ACM 46 (1999) 604–632, https://doi.org/10.1145/324133.324140.
+[57] L. Zhang, B. Ashuri, BIM log mining: discovering social networks, Autom. Constr. 91 (2018) 31–43, https://doi.org/10.1016/j.autcon.2018.03.009.
+[58] W.M.P. Van Der Aalst, H.A. Reijers, M. Song, Discovering social networks from event logs, Comput. Support. Coop. Work 14 (2005) 549–593, https://doi.org/101007/s10606-9005-9.
+[59] E. Valero, A. Sivanathan, F. Bosché, M. Abdel-Wahab, Analysis of construction trade worker body motions using a wearable and wireless motion sensor network, Autom. Constr. 83 (2017) 48–55, https://doi.org/10.1016/J.AUTCON.2017.08.001.
+[60] T. Pourrostam, A. Ismail, Study of methods for minimizing construction delays: evidences from a developing country, Adv. Mater. Res. 201–203 (2011) 2939–2942, https://doi.org/10.4028/www.scientific.net/AMR.201-203.2939.
+[61] H. Liu, M. Al-Hussein, M. Lu, BIM-based integrated approach for detailed construction scheduling under resource constraints, Autom. Constr. 53 (2015) 29–43, https://doi.org/10.1016/j.autcon.2015.03.008.
+[62] A. Shafahi, A. Haghani, Project selection and scheduling for phase-able projects with interdependencies among phases, Autom. Constr. 93 (2018) 47–62, https://doi.org/10.1016/j.autcon.2018.05.008.
+[63] Y. Yang, R. Liu, C. Deng, X. Gao, Multi-task human action recognition via exploring super-category, Signal Process. 124 (2016) 36–44, https://doi.org/10.1016/j.sigpro.2015.10.035.
+[64] A. Alhamoud, V. Muradi, D. Böhnstedt, R. Steinmetz, Activity recognition in multiuser environments using techniques of multi-label classification, Proceedings of the 6th International Conference on the Internet of Things, 2016, pp. 15–23 https://doi.org/10.1145/2991561.2991563.
+[65] P.E. Taylor, G.J.M. Almeida, J.K. Hodgins, T. Kanade, Multi-label classification for the analysis of human motion quality, Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS, 2012, pp. 2214–2218 https://doi.org/10.1109/EMBC.2012.6346402.
+[66] A. Kartelj, N. Šurlan, Z. Cekić, Case-based reasoning and electromagnetism-like method in construction management, Kybernetes 43 (2014) 265–280.
+[67] P. Torteeka, X.I.U. Chundi, Indoor positioning based on Wi-Fi fingerprint technique using fuzzy K-nearest neighbor, Proceedings of 2014 11th International Bhurban Conference on Applied Sciences & Technology (IBCAST) Islamabad, 14th–18th January, 2014, 2014, pp. 461–465.
+[68] N. Ur-Rahman, J.A. Harding, Textual data mining for industrial knowledge management and text classification: a business oriented approach, Expert Syst. Appl. 39 (2012) 4729–4739.
+[69] C.H. Caldas, L. Soibelman, Automating hierarchical document classification for construction management information systems, Autom. Constr. 12 (2003) 395–406.
+[70] H. Li, M. Lu, S.C. Hsu, M. Gray, T. Huang, Proactive behavior-based safety management for construction safety improvement, Saf. Sci. 75 (2015) 107–117, https://doi.org/10.1016/j.ssci.2015.01.013.
+[71] M. Mbala, C. Aigbavboa, J. Aliu, Causes of delay in various construction projects: a literature review, International Conference on Applied Human Factors and Ergonomics, 2018, pp. 489–495.
+[72] Z. Ismail, S. Doostdar, Z. Harun, Factors influencing the implementation of a safety management system for construction sites, Saf. Sci. 50 (2012) 418–423, https://doi.org/10.1016/j.ssci.2011.10.001.
+[73] P.X.W. Zou, G. Zhang, J. Wang, Identifying key risks in construction projects: life cycle and stakeholder perspectives related past research and risk classification, Architecture (1993) 1–14.
+[74] J.A. Gambatese, M. Asce, M. Behm, J.W. Hinze, Viability of designing for construction worker safety, J. Constr. Eng. Manage. @ ASCE 131 (2005) 1029–1036, https://doi.org/10.1061/(ASCE)0733-9364(2005)131:9(1029).
+[75] I. Nahmens, L. Ikuma, An empirical examination of the relationship between lean construction and safety in the industrialized housing industry, Lean Constr. J. 1 (2009) 1–12.
+[76] J. Park, K. Kim, Y.K. Cho, Framework of automated construction-safety monitoring using cloud-enabled BIM and BLE mobile tracking sensors, J. Constr. Eng. Manage. 143 (2016) 5016019.

@@ -45,9 +45,9 @@
             ],
             "1": [
                 "The embeddingbased models emphasize establishing expressive embeddings to capture entity features and then independently predict each mapping, ignoring the holistic analysis and logical consistency, which often leads to some false mappings.",
-                0
+                -0.5
             ],
-            "final_score": 0
+            "final_score": -0.5
         },
         {
             "-1": [

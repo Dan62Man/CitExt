@@ -94,14 +94,14 @@
             ],
             "1": [
                 "However, their method was applied only to single sentence-single triple generation, limiting applicability for larger graphs.",
-                -1
+                0
             ],
             "final_score": -1
         },
         {
             "-1": [
                 "However, their method was applied only to single sentence-single triple generation, limiting applicability for larger graphs.",
-                -1
+                0
             ],
             "0": [
                 "Other approaches, such as BT5 from (Agarwal et al., 2020) proposed to utilize large pre-trained T5 model to generate KG in a linearized form, where the object-predicatesubject triples are concatenated together and the entire text-to-graph problem is viewed as sequenceto-sequence modeling.",

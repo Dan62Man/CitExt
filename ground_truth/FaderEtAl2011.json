@@ -54,7 +54,7 @@
                 "We have observed that two types of errors are frequent in the output of Open IE systems such as TEXTRUNNER and WOE: incoherent extractions and uninformative extractions.",
                 -0.5
             ],
-            "final_score": 0
+            "final_score": -0.5
         },
         {
             "-1": [
