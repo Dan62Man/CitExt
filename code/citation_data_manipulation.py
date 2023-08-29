@@ -81,7 +81,9 @@ def append_reference_data(paper_data, text_id, citation):
       ref_author, author = get_author_with_ner(ref)
       #author = get_first_author_from_number(ref.split(','))
       break
-    else:
+    elif len(citation) >= 3:
+      print(citation)
+      print(re.search(r"\d{4}", citation))
       year = re.search(r"\d{4}", citation).group()
       if year in ref:
         ref_author, author = get_author_with_ner(citation.replace(year, ''))
