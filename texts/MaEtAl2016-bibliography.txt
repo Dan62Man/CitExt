@@ -1,0 +1,14 @@
+Amjad Abu-jbara, Jefferson Ezra. 2013 and Dragomir Radev. Purpose and polarity of citation: Towards NLP-based bibliometrics. In Proceedings of NAACLHLT, pages 596–606.
+Myriam H. Alvarez. and Jose M. Soriano. 2014. Sentiment,Polarity and Function Analysis in Bibiometrics: A Review, In Proceedings of the First Workshop on Argumentation Mining, pages 102-3, ACL
+Awais Athar. 2011. Sentiment analysis of citations using sentence structure-based features. In Proceedings of the ACL 2011 student session. Pages 81-87. ACL.
+Awais Athar and Simone Teufel. 2012. Context-enhanced citation sentiment detection. In Proceedings of the 2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. Pages 597-601. ACL.
+Susan Bonzi. 1982. Characteristics of a literature as predictors of relatedness between cited and citing works. Journal of the American Society for Information Science, 33(4):208–216.
+Ying Ding. 2011. Applying weighted PageRank to author citation networks. Journal of the American Society for Information Science and Technology 62.2 (2011): 236-245.
+Cailing Dong, and Ulrich Schäfer. 2011. Ensemble-style Self-training on Citation Classification. IJCNLP. Page 623-631.
+Leo Egghe. 2006 "Theory and practise of the g-index." Scientometrics 69.1 (2006): 131-152.
+Jorge E. Hirsch. 2005. An index to quantify an individual's scientific research output. In Proceedings of the National academy of Sciences of the United States of America, 102(46), 16569-16572.
+Chih-Wei Hsu, Chih-Chung Chang, and Chih-Jen Lin. 2003. A practical guide to support vector classification. Technical Report, National Taiwan University.
+Charles Jochim and Hinrich Schütze. 2012. Towards a generic and flexible citation classifier based on a faceted classification scheme. In Proceedings of the 2012 International Conference on Computational Linguistics, pages 1343–1358
+Lawrence Page, Sergey Brin, Rajeev Motwani & Terry Winograd. 1999. The PageRank citation ranking: bringing order to the web. Technical Report, Stanford University.
+Matjaz Perc. 2014.. The Matthew effect in empirical data. Journal of The Royal Society Interface, 11(98):20140378.
+Filippo Radicchi. 2012. In science “there is no bad publicity”: Papers criticized in comments have high scientific impact. Scientific Reports 2 Simone Teufel, Advaith Siddharthan, and Dan Tidhar. 2006. Automatic classification of citation function. In Proceedings of the 2006 conference on empirical  methods in natural language processing. ACL.

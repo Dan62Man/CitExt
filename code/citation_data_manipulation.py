@@ -5,47 +5,26 @@ from transformers import pipeline
 
 ner = pipeline("token-classification", model="Jean-Baptiste/roberta-large-ner-english", aggregation_strategy="simple")
 
-def get_first_author_from_number(names):
-  for name in names:
-    if ' and ' in name:
-      split_names = name.split(' and ')
-      first_last_name = split_names[0].split(' ')[-1]
-      second_last_name = re.split(r'[ .]', split_names[1])[-1]
-      return f"{first_last_name}And{second_last_name}"
-    pattern = re.compile(r'[A-Z]\.')
-    matches = pattern.findall(name)
-    if matches:
-      first_last_name = name.split('.')[-1].strip()
-    else:
-      first_last_name = name.split(' ')[-1].strip()
-    return first_last_name  # Break the loop after finding the first match
-  return ""
-
-
-def get_title_from_number(ref):
+def get_title_from_ref(ref):
+  entities = ner(ref.strip())
   parts = re.split(r'[,.;]', ref)
 
-  if '"' in ref:
-    return ref.split('"')[1]
+  if '\"' in ref:
+    title = ref.split('\"')[1]
+    print(title)
+    return title
 
   for part in parts:
-    if 'and' in part:
+    find_names = ner(part.strip())
+    if any( element['entity_group'] == 'PER' for element in find_names):
       continue
-    elif len(part.split()) >= 3:
+    if len(part.split()) >= 3:
       return part
 
   return ""
 
-def get_year_from_number(ref):
-  year_matches = re.findall(r'(?:\.|\,) \d{4}(?:\.|\,)', ref)
-
-  for year_match in year_matches:
-    year = year_match.strip('. ,')
-    return year
-  return 0
-
 def get_author_with_ner(ref):
-  entities = ner(ref)
+  entities = ner(ref.strip())
   for entity in entities:
     if entity['entity_group'] == 'PER':
       author = entity['word']
@@ -72,29 +51,24 @@ def append_reference_data(paper_data, text_id, citation):
   title = ""
   author = ""
   year = 0
-  ref_found = False
 
   for ref in refs:
     if ref[0] == citation or citation == ref[1]:
-      title = get_title_from_number(ref)
-      year = get_year_from_number(ref)
+      title = get_title_from_ref(ref)
+      year = re.search(r"\d{4}", ref).group()
       ref_author, author = get_author_with_ner(ref)
-      #author = get_first_author_from_number(ref.split(','))
       break
     elif len(citation) >= 3:
-      print(citation)
-      print(re.search(r"\d{4}", citation))
       year = re.search(r"\d{4}", citation).group()
       if year in ref:
         ref_author, author = get_author_with_ner(citation.replace(year, ''))
-        #ref_author, author = get_author_from_authors(citation)
         if author in ref:
-          title = get_title_from_number(ref)
+          title = get_title_from_ref(ref)
           break
 
   for paper in paper_data:
     data = paper_data[paper]
-    if str(year) == data["Year"] and author == data["Author"]:
+    if str(year) == data["Year"] and author.strip() == data["Author"]:
       return paper
 
   global_id = len(paper_data)

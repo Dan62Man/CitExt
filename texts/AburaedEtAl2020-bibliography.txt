@@ -1,0 +1,24 @@
+Shannon Bradshaw. 2003. Reference directed indexing: Redeeming relevance for subject search in citation indexes. In Proceedings of the 7th ECDL, pages 499–510.
+Eugene Garfield, Irving H. Sher, and Richard J. Torpie. 1964. The use of citation data in writing the history of science. Institute for Scientific Information, Philadelphia, Pennsylvania.
+Thorsten Joachims. 1999. Making large-scale support vector machine learning practical. In Bernhard Scholkopf, Christopher J. C. Burges, and Alexander J. Smola, editors, Advances in kernel methods: support vector learning, pages 169–184. MIT Press, Cambridge, MA, USA.
+Dain Kaplan and Takenobu Tokunaga. 2008. Sighting citation sites: A collective-intelligence approach for automatic summarization of research papers using c-sites. In ASWC 2008 Workshops Proceedings.
+Andrew Kehler. 2004. The (non)utility of predicateargument frequencies for pronoun interpretation. In In: Proceedings of 2004 North American chapter of the Association for Computational Linguistics annual meeting, pages 289–296.
+M. M. Kessler. 1963. Bibliographic coupling between scientific papers. American Documentation, 14(1):10–25.
+LDC2001T02. 2001. Message understanding conference (MUC) 7.
+Daniel Marcu. 2000. The rhetorical parsing of unrestricted texts: A surface-based approach. Computational Linguistics, 26(3):395–448.
+Hidetsugu Nanba, Noriko Kando, and Manabu Okumura. 2000. Classification of research papers using citation links and citation types: Towards automatic review article generation. In Proceedings of 11th SIG/CR Workshop, pages 117–134.
+Hidetsugu Nanba, Takeshi Abekawa, Manabu Okumura, and Suguru Saito. 2004. Bilingual presri integration of multiple research paper databases. In Proceedings of RIAO 2004, pages 195–211, Avignon, France.
+Vincent Ng and Claire Cardie. 2002. Improving machine learning approaches to coreference resolution. In Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, pages 104–111.
+J. Nie. 2002. Towards a unified approach to clir and multilingual ir. In In: Workshop on Cross Language Information Retrieval: A Research Roadmap in the 25th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval, pages 8–14.
+Masaki Noguchi, Kenta Miyoshi, Takenobu Tokunaga, Ryu Iida, Mamoru Komachi, and Kentaro Inui. 2008. Multiple purpose annotation using SLAT — Segment and link-based annotation tool —. In Proceedings of 2nd Linguistic Annotation Workshop, pages 61–64, May.
+John O’Connor. 1982. Citing statements: Computer recognition and use to improve retrieval. Information Processing & Management., 18(3):125–131. Vahed Qazvinian and Dragomir R. Radev. 2008. Scientific paper summarization using citation summary networks.
+Anna Ritchie, Simone Teufel, and Stephen Robertson. 2006. How to find better index terms through citations. In Proceedings of the Workshop on How Can Computational Linguistics Improve Information Retrieval?, pages 25–32, Sydney, Australia, July. Association for Computational Linguistics.
+Anna Ritchie, Stephen Robertson, and Simone Teufel. 2008. Comparing citation contexts for information retrieval. In CIKM ’08: Proceedings of the 17th ACM conference on Information and knowledge management, pages 213–222, New York, NY, USA. ACM.
+Serge Sharoff. 2006. Creating general-purpose corpora using automated search engine queries. In WaCky! Working papers on the Web as Corpus. Gedit.
+H. Small. 1973. Co-citation in the scientific literature: A new measure of the relationship between two documents. JASIS, 24:265–269.
+Wee Meng Soon, Daniel Chung, Daniel Chung Yong Lim, Yong Lim, and Hwee Tou Ng. 2001. A machine learning approach to coreference resolution of noun phrases. Computational Linguistics, 27(4):521–544.
+Simone Teufel, Advaith Siddharthan, and Dan Tidhar. 2006. Automatic classification of citation function. In In Proceedings of EMNLP-06.
+Sandra A. Thompson and William C. Mann. 1987. Rhetorical structure theory: A framework for the analysis of texts. Pragmatics, 1(1):79–105.
+Vladimir N. Vapnik. 1998. Statistical Learning Theory. Adaptive and Learning Systems for Signal Processing Communications, and control. John Wiley & Sons. Web-Scale NLP 2008. 2008. http://research.microsoft.com/ur/asia/research/NLP.aspx.
+M. Weinstock. 1971. Citation indexes. Encyclopedia of Library and Information Science, 5:16–41.
+Ying Zhang, Fei Huang, and Stephan Vogel. 2005. Mining translations of oov terms from the web through. In International Conference on Natural Language Processing and Knowledge Engineering (NLP-KE ’03), pages 669–670.

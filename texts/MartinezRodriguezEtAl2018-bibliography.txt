@@ -1,0 +1,41 @@
+Augenstein, I., Maynard, D., & Ciravegna, F. (2016). Distantly supervised web relation extraction for knowledge base population. Semantic Web Journal, 7, 335–349. URL: https://doi.org/10.3233/SW-150180.
+Augenstein, I., Padó, S., & Rudolph, S. (2012). LODifier: generating linked data from unstructured text. In Extended Semantic Web Conference (pp. 210–224). Springer. URL: https://doi.org/10.1007/978-3-642-30284-8_21.
+Bach, N., & Badaskar, S. (2007). A review of relation extraction. In Literature review for Language and Statistics II .
+Banko, M., Cafarella, M. J., Soderland, S., Broadhead, M., & Etzioni, O. (2007). Open information extraction from the web. In International Joint Conferences on Artificial Intelligence (IJCAI) (pp. 2670–2676).
+Van den Berge, J., Schouten, H., Boomstra, S., van Drunen Littel, S., & Braakman, R. (1979). Interobserver agreement in assessment of ocular signs in coma. Journal of Neurology, Neurosurgery & Psychiatry, 42, 1163–1168.
+Berners-Lee, T. (2010). The future of rdf. https://www.w3.org/DesignIssues/RDF-Future.html. [Online; accessed January-09-2018].
+Christensen, J., Mausam, Soderland, S., & Etzioni, O. (2011). An analysis of open information extraction based on semantic role labeling. In International Conference on Knowledge Capture (pp. 113–120). ACM. URL: http://doi.acm.org/10.1145/1999676.1999697.
+Corcoglioniti, F., Rospocher, M., & Aprosio, A. P. (2016). Frame based ontology population with PIKES. IEEE Trans. Knowl. Data Eng., 28, 3261–3275. URL: https://doi.org/10.1109/ TKDE.2016.2602206.
+Curran, J. R., Clark, S., & Bos, J. (2007). Linguistically motivated large-scale NLP with c&c and Boxer. In Annual meeting of the Association for Computational Linguistics. ACL.
+Daconta, M. C., Obrst, L. J., & Smith, K. T. (2003). The Semantic Web: A Guide to the Future of XML, Web Services, and Knowledge Management. Wiley Publishing, Inc.
+Del Corro, L., & Gemulla, R. (2013). Clausie: Clause-based open information extraction. In International Conference on World Wide Web (pp. 355–366). ACM. URL: http://doi.acm.org/10.1145/2488388.2488420.
+Dietterich, T. G. (2000). Ensemble methods in machine learning. In International workshop on multiple classifier systems (pp. 1–15). Springer.
+Dodds, L., & Davis, I. (2011). Linked Data Patterns: A Pattern Catalogue for Modelling, Publishing, and Consuming Linked Data. L. Dodds, I. Davis. URL: http://patterns.dataincubator.org/book.
+Dutta, A., Meilicke, C., & Stuckenschmidt, H. (2014). Semantifying triples from open information extraction systems. Frontiers in Artificial Intelligence and Applications, 264, 111–120.
+Dutta, A., Meilicke, C., & Stuckenschmidt, H. (2015). Enriching structured knowledge with open information. In International Conference on World Wide Web (pp. 267–277). WWW Steering Committee.
+Ehrlinger, L., & Wöß, W. (2016). Towards a definition of knowledge graphs. In SEMANTiCS-PD. CEUR-WS.org.
+Elliott, S. W. (2017). Projecting the impact of information technol1565 ogy on work and skills in the 2030s. In The Oxford Handbook of Skills and Training.
+Emani, C. K., Silva, C. F. D., Fiés, B., & Ghodous, P. (2016). Improving open information extraction for semantic web tasks. Trans. Computational Collective Intelligence, 21, 139–158. URL: https://doi.org/10.1007/978-3-662-49521-6_6.
+Erling, O. (2012). Virtuoso, a hybrid rdbms/graph column store. In IEEE Data Eng. Bull. (pp. 3–8). volume 35.
+Exner, P., & Nugues, P. (2012). Entity extraction: From unstructured text to dbpedia rdf triples. In The Web of Linked Entities Workshop. CEUR.
+Fader, A., Soderland, S., & Etzioni, O. (2011). Identifying relations for open information extraction. In Conference on Empirical Methods in Natural Language Processing (pp. 1535–1545). ACL.
+Färber, M., Bartscherer, F., Menne, C., & Rettinger, A. (2016). Linked data quality of DBpedia, Freebase, OpenCyc, Wikidata, and YAGO. Semantic Web, 9, 1–53. URL: https://doi.org/10.3233/SW-170275.
+Fillmore, C. J. (1976). Frame semantics and the nature of language. Annals of the New York Academy of Sciences, 280, 20–32.
+Foote, A., & Halawi, L. A. (2018). Knowledge management models within information technology projects. Journal of Computer Information Systems, 58, 89–97.
+Fossati, M., Dorigatti, E., & Giuliano, C. (2017). N-ary relation extraction for simultaneous t-box and a-box knowledge base aug1590 mentation. Semantic Web Journal, .
+Freitas, A., Carvalho, D. S., Da Silva, J. C., O’Riain, S., & Curry, E. (2012). A semantic best-effort approach for extracting structured discourse graphs from wikipedia. In Workshop on the Web of Linked Entities at ISWC.
+Gangemi, A. (2013). A comparison of knowledge extraction tools for the semantic web. In Extended Semantic Web Conference (pp. 351–366). Springer.
+Gangemi, A., Presutti, V., Recupero, D. R., Nuzzolese, A. G., Draicchio, F., & Mongiovì, M. (2017). Semantic web machine reading 1600 with FRED. Semantic Web, 8, 873–893. URL: https://doi.org/10.3233/SW-160240.
+Giuglea, A., & Moschitti, A. (2006). Semantic role labeling via framenet, verbnet and propbank. In Computational Linguistics and Annual Meeting of the ACL (pp. 929–936). ACL. URL: http://dx.doi.org/10.3115/1220175.1220292.
+Giuglea, A.-M., & Moschitti, A. (2004). Knowledge discovering using framenet, verbnet and propbank. In Workshop on Ontology and Knowledge Discovering at ECML.
+Grosz, B. J., Joshi, A. K., & Weinstein, S. (1983). Providing a unified account of definite noun phrases in discourse. In Annual meeting on Association for Computational Linguistics (pp. 44–50). ACL.
+He, D., Zhang, H., Hao, W., Zhang, R., & Cheng, K. (2017). A customized attention-based long short-term memory network for distant supervised relation extraction. Neural Computation, 29, 1964–1985. URL: https://doi.org/10.1162/NECO_a_00970.
+Hearst, M. A. (1992). Automatic acquisition of hyponyms from large text corpora. In Conference on Computational linguistics (pp. 539–545). ACL.
+Heath, T., & Bizer, C. (2009). Evolving the Web into a Global Data Space. Reading, Massachusetts: Morgan and Claypool publishers.
+Hernández, D., Hogan, A., & Krötzsch, M. (2015). Reifying RDF: what works well with wikidata? In International Workshop on Scalable Semantic Web Knowledge Base Systems (pp. 32–47). CEUR-WS.org. URL: http://ceur-ws.org/Vol-1457/SSWS2015_paper3.pdf.
+Hoffart, J., Yosef, M. A., Bordino, I., Fürstenau, H., Pinkal, M., Spaniol, M., Taneva, B., Thater, S., & Weikum, G. (2011). Robust disambiguation of named entities in text. In Empirical Methods in Natural Language Processing (pp. 782–792). Association for Computational Linguistics. URL: http://dl.acm.org/citation.cfm?id=2145432.2145521.
+Hogan, A. (2013). Linked data and the semantic web standards. In Linked Data and the Semantic Web Standards. Chapman and Hall/CRC Press.
+Ilievski, F., Rizzo, G., van Erp, M., Plu, J., & Troncy, R. (2016). Context-enhanced adaptive entity linking. In International Conference on Language Resources and Evaluation. European Language Resources Association (ELRA). URL: http://www. lrec-conf.org/proceedings/lrec2016/summaries/852.html.
+1640 Kamp, H., Genabith, J. V., & Reyle, U. (2011). Discourse representation theory. In Handbook of Philosophical Logic (pp. 125– 394). Springer volume 15. URL: http://dx.doi.org/10.1007/978-94-007-0485-5_3.
+Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. biometrics, (pp. 159–174).
+Lehmann, J., Isele, R., Jakob, M., Jentzsch, A., Kontokostas, D., Mendes, P. N., Hellmann, S., Morsey, M., van Kleef, P., Auer, S., & Bizer, C. (2015). DBpedia - A large-scale, multilingual knowledge base extracted from Wikipedia. Semantic Web, 6, 167–195. URL: http://dx.doi.org/10.3233/SW-140134.
