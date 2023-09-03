@@ -35,6 +35,8 @@ def get_title_from_ref(ref):
     find_names = ner(part.strip())
     if any(((element['entity_group'] == 'PER') & (element['word'] in part)) for element in find_names):
       continue
+    if part.startswith("and "):
+      continue
     if len(part.split()) >= 3:
       return part
 
@@ -71,6 +73,13 @@ def get_author_with_ner(ref):
 
   return author.strip(), author.strip()
 
+def get_data_from_numbered_bib(ref, citation):
+  title = get_title_from_ref(ref)
+  year = re.search(r"\d{4}", ref).group()
+  ref_author, author = get_author_with_ner(ref)
+  return ref_author, author, year, title
+
+
 def append_reference_data(paper_data, text_id, citation):
   bibl_file = "./texts/" + text_id + "-bibliography.txt"
   with open(bibl_file, 'r') as file:
@@ -85,21 +94,27 @@ def append_reference_data(paper_data, text_id, citation):
   for ref in refs:
     if len(citation) == 1:
       if ref[0] == citation or citation == ref[1]:
-        title = get_title_from_ref(ref)
-        year = re.search(r"\d{4}", ref).group()
-        ref_author, author = get_author_with_ner(ref)
+        ref_author, author, year, title = get_data_from_numbered_bib(ref, citation)
         break
+
     elif len(citation) == 2:
       if re.search(r"\d{2}", ref).group() == citation:
-        title = get_title_from_ref(ref)
-        year = re.search(r"\d{4}", ref).group()
-        ref_author, author = get_author_with_ner(ref)
+        ref_author, author, year, title = get_data_from_numbered_bib(ref, citation)
         break
+
     elif len(citation) >= 3:
       year = re.search(r"\d{4}", citation).group()
+
       if year in ref:
         ref_author, author = get_author_with_ner(citation.replace(year, ''))
-        if ref_author in ref:
+
+        if ' and ' in ref_author:
+          ref_authors = ref_author.split(' and ')
+
+          if ref_authors[0] in ref and ref_authors[1] in ref:
+            title = get_title_from_ref(ref)
+
+        elif ref_author in ref:
           title = get_title_from_ref(ref)
           break
 
@@ -111,7 +126,7 @@ def append_reference_data(paper_data, text_id, citation):
       
 
   global_id = get_global_id(paper_data, id, author, year, title)
-
+  
   paper_data[global_id] = {
     "Author": author,
     "Title": title,
