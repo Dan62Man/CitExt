@@ -1,25 +1,27 @@
-Amjad Abu-Jbara, Jefferson Ezra, and Dragomir R Radev. 2013. Purpose and polarity of citation: Towards NLP-based bibliometrics. In HLT-NAACL. pages 596–606.
-Awais Athar. 2011. Sentiment analysis of citations using sentence structure-based features. In Proceedings of the ACL 2011 Student Session. Association for Computational Linguistics, Stroudsburg, PA, USA, pages 81–87.
+Amjad Abu-Jbara, Jefferson Ezra, and Dragomir R Radev. 2013. Purpose and polarity of citation: Towards NLP-based bibliometrics. In HLT-NAACL. pages 596-606.
+Awais Athar. 2011. Sentiment analysis of citations using sentence structure-based features. In Proceedings of the ACL 2011 Student Session. Association for Computational Linguistics, Stroudsburg, PA, USA, pages 81-87.
 Steven Bird. 2008. The ACL anthology reference corpus: A reference dataset for bibliographic research in computational linguistics .
-Lutz Bornmann and Rudiger Mutz. 2015. Growth rates of modern science: A bibliometric analysis based on the number of publications and cited references. JASIST 66(11):2215–2222.
-Ziqiang Cao, Wenjie Li, and Dapeng Wu. 2016. PolyU at CL-SciSumm 2016. In BIRNDL@ JCDL. pages 132–138.
-Angelo Di Iorio, Andrea Giovanni Nuzzolese, and Silvio Peroni. 2013. Towards the automatic identification of the nature of citations. In SePublica. pages 63–74.
+Lutz Bornmann and Rudiger Mutz. 2015. Growth rates of modern science: A bibliometric analysis based on the number of publications and cited references. JASIST 66(11):2215-2222.
+Ziqiang Cao, Wenjie Li, and Dapeng Wu. 2016. PolyU at CL-SciSumm 2016. In BIRNDL@ JCDL. pages 132-138.
+Angelo Di Iorio, Andrea Giovanni Nuzzolese, and Silvio Peroni. 2013. Towards the automatic identification of the nature of citations. In SePublica. pages 63-74.
 Beatriz Fisas, Francesco Ronzano, and Horacio Saggion. 2016. A multi-layered annotated corpus of scientific papers. In Proceedings of the Tenth International Conference on Language Resources and Evaluation LREC 2016, Portoroz, Slovenia, May 23-28, 2016.
-Kokil Jaidka, Muthu Kumar Chandrasekaran, Sajal Rustagi, and Min-Yen Kan. 2016. Overview of the CL-SciSumm 2016 shared task. In Proceedings of the Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL) co-located with the Joint Conference on Digital Libraries 2016 (JCDL 2016), Newark, NJ, USA, June 23, 2016.. pages 93–102.
-Mikael Kageback, Olof Mogren, Nina Tahmasebi, and Devdatt Dubhashi. 2014. Extractive summarization using continuous vector space models. In Proceedings of the 2nd Workshop on Continuous Vector Space Models and their Compositionality (CVSC)@EACL. Citeseer, pages 31–39.
+Kokil Jaidka, Muthu Kumar Chandrasekaran, Sajal Rustagi, and Min-Yen Kan. 2016. Overview of the CL-SciSumm 2016 shared task. In Proceedings of the Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL) co-located with the Joint Conference on Digital Libraries 2016 (JCDL 2016), Newark, NJ, USA, June 23, 2016.. pages 93-102.
+Mikael Kageback, Olof Mogren, Nina Tahmasebi, and Devdatt Dubhashi. 2014. Extractive summarization using continuous vector space models. In Proceedings of the 2nd Workshop on Continuous Vector Space Models and their Compositionality (CVSC)@EACL. Citeseer, pages 31-39.
 Thomas S. Kuhn. 1970. The structure of scientific revolutions. University of Chicago Press, Chicago.
-Lei Li, Liyuan Mao, Yazhao Zhang, Junqi Chi, Taiwen Huang, Xiaoyue Cong, and Heng Peng. 2016. CIST system for CL-SciSumm 2016 shared task. In BIRNDL@ JCDL. pages 156–167.
+Lei Li, Liyuan Mao, Yazhao Zhang, Junqi Chi, Taiwen Huang, Xiaoyue Cong, and Heng Peng. 2016. CIST system for CL-SciSumm 2016 shared task. In BIRNDL@ JCDL. pages 156-167.
 Haixia Liu. 2017. Sentiment analysis of citations using word2vec. arXiv preprint arXiv:1704.00177 .
-Diana Maynard, Valentin Tablan, Hamish Cunningham, Cristian Ursu, Horacio Saggion, Kalina Bontcheva, and Yorick Wilks. 2002. Architectural elements of language engineering robustness. Natural Language Engineering 8(2-3):257–274.
+Diana Maynard, Valentin Tablan, Hamish Cunningham, Cristian Ursu, Horacio Saggion, Kalina Bontcheva, and Yorick Wilks. 2002. Architectural elements of language engineering robustness. Natural Language Engineering 8(2-3):257-274.
 Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. Efficient estimation of word representations in vector space. ICLR Workshop .
-Luis Moraes, Shahryar Baki, Rakesh Verma, and Daniel Lee. 2016. University of Houston at CLSciSumm 2016: SVMs with tree kernels and sentence similarity. In BIRNDL@ JCDL. pages 113–121.
-Michael J Moravcsik and Poovanalingam Murugesan. 1975. Some results on the function and quality of citations. Social studies of science 5(1):86–92.
-Roberto Navigli and Simone Paolo Ponzetto. 2012. BabelNet: The automatic construction, evaluation and application of a wide-coverage multilingual semantic network. Artif. Intell. 193:217–250.
-Tadashi Nomoto. 2016. Neal: A neurally enhanced approach to linking citation and reference. In BIRNDL@ JCDL. pages 168–174.
-Radim Rehurek and Petr Sojka. 2010. Software Framework for Topic Modelling with Large Corpora. In Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks. ELRA, Valletta, Malta, pages 45–50. http://is.muni.cz/publication/884893/en.
-Francesco Ronzano and Horacio Saggion. 2015. Dr. Inventor Framework: Extracting structured information from scientific publications. In International Conference on Discovery Science. Springer, pages 209–220.
-Horacio Saggion. 2008. SUMMA: A robust and adaptable summarization tool. Traitement Automatique des Langues 49(2):103–125.
-Horacio Saggion, Ahmed AbuRa’ed, and Francesco Ronzano. 2016. Trainable citation-enhanced summarization of scientific articles. In Proceedings of the Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL) co-located with the Joint Conference on Digital Libraries 2016 (JCDL 2016), Newark, NJ, USA, June 23, 2016.. pages 175–186.
-Horacio Saggion and Francesco Ronzano. 2016. Natural language processing for intelligent access to scientific information. In COLING 2016, 26th International Conference on Computational Linguistics, Tutorial Abstracts, December 11-16, 2016, Osaka, Japan. pages 9–13.
+Luis Moraes, Shahryar Baki, Rakesh Verma, and Daniel Lee. 2016. University of Houston at CLSciSumm 2016: SVMs with tree kernels and sentence similarity. In BIRNDL@ JCDL. pages 113-121.
+Michael J Moravcsik and Poovanalingam Murugesan. 1975. Some results on the function and quality of citations. Social studies of science 5(1):86-92.
+Roberto Navigli and Simone Paolo Ponzetto. 2012. BabelNet: The automatic construction, evaluation and application of a wide-coverage multilingual semantic network. Artif. Intell. 193:217-250.
+Tadashi Nomoto. 2016. Neal: A neurally enhanced approach to linking citation and reference. In BIRNDL@ JCDL. pages 168-174.
+Radim Rehurek and Petr Sojka. 2010. Software Framework for Topic Modelling with Large Corpora. In Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks. ELRA, Valletta, Malta, pages 45-50. http://is.muni.cz/publication/884893/en.
+Francesco Ronzano and Horacio Saggion. 2015. Dr. Inventor Framework: Extracting structured information from scientific publications. In International Conference on Discovery Science. Springer, pages 209-220.
+Horacio Saggion. 2008. SUMMA: A robust and adaptable summarization tool. Traitement Automatique des Langues 49(2):103-125.
+Horacio Saggion, Ahmed AbuRa'ed, and Francesco Ronzano. 2016. Trainable citation-enhanced summarization of scientific articles. In Proceedings of the Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL) co-located with the Joint Conference on Digital Libraries 2016 (JCDL 2016), Newark, NJ, USA, June 23, 2016.. pages 175-186.
+Horacio Saggion and Francesco Ronzano. 2016. Natural language processing for intelligent access to scientific information. In COLING 2016, 26th International Conference on Computational Linguistics, Tutorial Abstracts, December 11-16, 2016, Osaka, Japan. pages 9-13.
 D. Shotton. 2010. CiTO, the citation typing ontology. Journal of Biomedical Semantics 1.
-Ina Spiegel-Rosing. 1977. Science studies: Bibliometric and content analysis. Social Studies of Science 7(1):97–113.
+Ina Spiegel-Rosing. 1977. Science studies: Bibliometric and content analysis. Social Studies of Science 7(1):97-113.
+Simone Teufel, Advaith Siddharthan, and Dan Tidhar. 2006. An annotation scheme for citation function. In Proceedings of the 7th SIGdial Workshop on Discourse and Dialogue. Association for Computational Linguistics, Stroudsburg, PA, USA, SigDIAL '06, pages 80-87
+Marco Valenzuela, Vu Ha, and Oren Etzioni. 2015. Identifying meaningful citations. In AAAI Workshop: Scholarly Big Data.
