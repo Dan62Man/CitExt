@@ -9,17 +9,17 @@ ner = pipeline("token-classification", model="Jean-Baptiste/roberta-large-ner-en
 def get_global_id(paper_data, paper_id, author, year, title):
   cnt = 0
   alphabet = string.ascii_lowercase
-  for paper in paper_data:
-    if paper == paper_id:
-      data = paper_data[paper]
+  while cnt < 25:
+    if paper_id in paper_data:
+      data = paper_data[paper_id]
       if data["Title"] == title:
-        return paper
+        return paper_id
       else:
         cnt += 1
-  
-  if cnt == 0:
-    return paper_id
-  
+        paper_id = f"{paper_id}{alphabet[cnt]}"
+    else:
+      return paper_id
+
   return f"{paper_id}{alphabet[cnt]}"
 
 
@@ -32,13 +32,17 @@ def get_title_from_ref(ref):
     return title
 
   for part in parts:
+    if len(part.split()) < 3: 
+      continue
+    
     find_names = ner(part.strip())
+
     if any(((element['entity_group'] == 'PER') & (element['word'] in part)) for element in find_names):
       continue
+    
     if part.startswith("and "):
       continue
-    if len(part.split()) >= 3:
-      return part
+    return part
 
   return ""
 
