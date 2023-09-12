@@ -86,7 +86,7 @@ def get_data_from_numbered_bib(ref, citation):
 
 def append_reference_data(paper_data, text_id, citation):
   bibl_file = "./texts/" + text_id + "-bibliography.txt"
-  with open(bibl_file, 'r') as file:
+  with open(bibl_file, 'r', encoding="utf-8") as file:
     text = file.read()
 
   refs = text.split('\n')
